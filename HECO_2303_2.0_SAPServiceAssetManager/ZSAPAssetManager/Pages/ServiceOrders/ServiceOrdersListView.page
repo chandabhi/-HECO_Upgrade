@@ -1,0 +1,53 @@
+{
+    "Caption": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServiceOrderListViewCaption.js",
+    "OnReturning": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServiceOrderListViewOnReturning.js",
+    "ActionBar": {
+        "Items": [
+            "/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
+            {
+                "Position": "right",
+                "SystemItem": "Add",
+                "Text": "$(L,add)",
+                "Visible": true,
+                "OnPress": "/SAPAssetManager/Rules/ServiceOrders/CreateUpdate/ServiceOrderCreateNav.js"
+            },
+            {
+                "Position": "right",
+                "Icon": "$(PLT,'',/SAPAssetManager/Images/filter.android.png)",
+                "Text": "$(L,filter)",
+                "Visible": true,
+                "OnPress": "/SAPAssetManager/Actions/ServiceOrders/ServiceOrdersFilter.action"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "_Type" : "Control.Type.SectionedTable",
+            "_Name" : "SectionedTable",
+            "Sections": [
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/ServiceOrders/ServiceOrdersObjectTable.fragment",
+                    "Properties": {
+                        "Target": {
+                            "QueryOptions": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServiceOrderListViewQueryOptions.js"
+                        },
+                        "ObjectCell": {
+							"PreserveIconStackSpacing": true
+						},
+                        "Search": {
+                            "Enabled": true,
+                            "Delay": 500,
+                            "MinimumCharacterThreshold": 3,
+                            "Placeholder": "$(L,search)",
+                            "BarcodeScanner": true
+                        }
+                    }
+                }
+            ],
+            "Filters": "/SAPAssetManager/Rules/ServiceOrders/GetPreselectedFilter.js"
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "ServiceOrdersListViewPage"
+}

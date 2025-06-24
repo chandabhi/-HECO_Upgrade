@@ -1,0 +1,72 @@
+{
+    "Caption": "/SAPAssetManager/Rules/Supervisor/Reject/RejectReasonCaption.js",
+    "OnLoaded": "/SAPAssetManager/Rules/Supervisor/Reject/RejectOnPageLoad.js",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "right",
+                "SystemItem": "$(PLT,'Done','')",
+                "Text": "/SAPAssetManager/Rules/Common/Platform/DoneText.js",
+                "OnPress": "/SAPAssetManager/Actions/Supervisor/Reject/RejectedRequiredFields.action"
+            },
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "OnPress": "/SAPAssetManager/Rules/Common/CheckForChangesBeforeClose.js"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "Sections": [
+                {
+                    "Controls": [
+                        {
+                            "Caption": "/SAPAssetManager/Rules/Supervisor/Reject/RejectOrderFieldName.js",
+                            "IsEditable": false,
+                            "Value": "/SAPAssetManager/Rules/Supervisor/Reject/RejectWorkOrderCaption.js",
+                            "_Name": "WorkOrderNumber",
+                            "_Type": "Control.Type.FormCell.SimpleProperty"
+                        },
+                        {
+                            "Caption": "/SAPAssetManager/Rules/Supervisor/Reject/RejectOperationFieldName.js",
+                            "IsEditable": false,
+                            "Value": "/SAPAssetManager/Rules/Supervisor/Reject/RejectOperationValue.js",
+                            "_Name": "OperationNumber",
+                            "_Type": "Control.Type.FormCell.SimpleProperty",
+                            "IsVisible": "/SAPAssetManager/Rules/Supervisor/Reject/RejectShowOperation.js"
+                        },
+                        {
+                            "AllowMultipleSelection": false,
+                            "Caption": "/SAPAssetManager/Rules/Supervisor/Reject/RejectReasonFieldName.js",
+                            "IsEditable": true,
+                            "IsSelectedSectionEnabled": false,
+                            "IsPickerDismissedOnSelection": true,
+                            "IsSearchCancelledAfterSelection": true,
+                            "OnValueChange": "/SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput.js",
+                            "PickerItems": "/SAPAssetManager/Rules/Supervisor/Reject/RejectReasonItems.js",
+                            "Search":
+                            {
+                                "Enabled": true
+                            },
+                            "_Name": "ReasonLstPkr",
+                            "_Type": "Control.Type.FormCell.ListPicker"
+                        },
+                        {
+                            "Caption": "/SAPAssetManager/Rules/Supervisor/Reject/NoteFieldName.js",
+                            "PlaceHolder": "/SAPAssetManager/Rules/Supervisor/Reject/NoteFieldName.js",
+                            "Value": "",
+                            "_Name": "LongTextNote",
+                            "_Type": "Control.Type.FormCell.Note",
+                            "IsAutoResizing": true
+                        }
+                    ]
+                }
+            ],
+            "_Name": "FormCellContainer",
+            "_Type": "Control.Type.FormCellContainer"
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "RejectReason"
+}

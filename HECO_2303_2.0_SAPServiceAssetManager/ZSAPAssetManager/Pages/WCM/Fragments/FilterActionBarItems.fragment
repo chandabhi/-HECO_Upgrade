@@ -1,0 +1,13 @@
+[
+    {
+        "Position": "left",
+        "SystemItem": "Cancel",
+        "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
+    },
+    {
+        "Position": "right",
+        "SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
+        "Text": "/SAPAssetManager/Rules/Filter/FilterText.js",
+        "OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js"
+    }
+]

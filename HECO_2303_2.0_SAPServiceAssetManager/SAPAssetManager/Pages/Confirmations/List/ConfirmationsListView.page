@@ -1,0 +1,80 @@
+{
+	"Caption": "/SAPAssetManager/Rules/Confirmations/List/GetConfirmationListViewCaption.js",
+    "OnReturning": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServiceOrderListViewOnReturning.js",
+    "ActionBar": {
+		"Items": [
+            "/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
+			{
+				"Position": "right",
+				"Icon": "$(PLT,'',/SAPAssetManager/Images/filter.android.png)",
+				"Text": "$(L,filter)",
+                "OnPress": "/SAPAssetManager/Actions/Confirmations/List/ConfirmationListFilter.action"
+			},
+			{
+				"Position": "right", 
+				"SystemItem": "Add",
+				"OnPress": "/SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/ServiceConfirmationCreateNav.js",
+                "Visible": "/SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/IsServiceConfirmationCreateEnabled.js"
+			}
+		]
+	},
+	"Controls": [
+        {
+            "Sections":[
+				{
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/Fragments/Confirmations/ConfirmationsObjectTableSection.fragment",
+                    "Properties": {
+                        "Footer": {
+                            "Visible": false
+                        },
+                        "Target": {
+                            "QueryOptions": "/SAPAssetManager/Rules/Confirmations/List/GetConfirmationListViewQueryOptions.js"
+                        },
+						"Search": {
+							"Enabled": true
+						}
+                    }
+                }
+			],
+            "FilterFeedbackBar": {
+                "_Type": "Control.Type.FilterFeedbackBar",
+                "_Name": "FilterFeedback",
+                "ShowAllFilters": true,
+                "FastFilters": [
+                    {  
+                        "_Name": "OpenFilter",
+                        "_Type": "Control.Type.FastFilterItem",
+                        "CustomQueryGroup": "OpenFilter",
+                        "FilterType": "Filter",
+                        "FilterProperty": "",
+                        "DisplayValue": "$(L, open)",
+                        "ReturnValue": "MobileStatus_Nav/MobileStatus eq 'OPEN'"
+                    },
+                    {  
+                        "_Name": "FinalFilter",
+                        "_Type": "Control.Type.FastFilterItem",
+                        "CustomQueryGroup": "FinalFilter",
+                        "FilterType": "Filter",
+                        "FilterProperty": "",
+                        "DisplayValue": "$(L, final_text)",
+                        "ReturnValue": "FinalConfirmation eq 'Y'"
+                    },
+                    {  
+                        "_Name": "CompletedFilter",
+                        "_Type": "Control.Type.FastFilterItem",
+                        "CustomQueryGroup": "CompletedFilter",
+                        "FilterType": "Filter",
+                        "FilterProperty": "",
+                        "DisplayValue": "$(L, completed)",
+                        "ReturnValue": "MobileStatus_Nav/MobileStatus eq 'COMPLETED'"
+                    }
+                ]
+            },
+            "_Type" : "Control.Type.SectionedTable",
+            "_Name" : "SectionedTable"
+        }
+    ],
+	"_Name": "S4ConfirmationsListViewPage",
+	"_Type": "Page"
+}

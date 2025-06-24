@@ -1,0 +1,32 @@
+{
+    "Header": {
+        "Caption": "$(L,follow_on_notifications)",
+        "UseTopPadding": false
+    },
+    "EmptySection": {
+        "Caption": "$(L,no_notifications_available)"
+    },
+    "Search": {
+		"Enabled": true,
+		"Delay": 500,
+		"MinimumCharacterThreshold": 3,
+		"Placeholder": "Search",
+		"BarcodeScanner": true
+	},
+    "ObjectCell": "/SAPAssetManager/Pages/Fragments/Notification/NotificationHistoryObjectCell.fragment",
+    "Footer": {
+        "Caption": "$(L,see_all)",
+        "AccessoryType": "disclosureIndicator",
+        "FooterStyle": "attribute",
+        "AttributeLabel": "/SAPAssetManager/Rules/Notifications/FollowOn/FollowOnNotificationsCount.js",
+        "OnPress": "/SAPAssetManager/Actions/Notifications/FollowOn/FollowOnNotificationsListViewNav.action",
+        "Visible": "/SAPAssetManager/Rules/Notifications/FollowOn/FollowOnNotificationsFooterIsVisible.js"
+    },
+    "Target": {
+        "EntitySet" : "MyNotificationHeaders",
+        "Service" : "/SAPAssetManager/Services/AssetManager.service",
+        "QueryOptions" : "/SAPAssetManager/Rules/Notifications/FollowOn/FollowOnNotificationsQueryOptions.js"
+    },
+    "_Name": "FollowOnNotificationsList",
+    "_Type": "Section.Type.ObjectTable"
+}

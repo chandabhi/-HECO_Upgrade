@@ -1,0 +1,31 @@
+{
+    "mdk.referenceApplications": [
+        {
+            "name": "SAPAssetManager",
+            "path": "/Users/abhishekchand/Desktop/HECO/HECO_2303_2.0_SAPServiceAssetManager/SAPAssetManager/Application.app",
+            "comp": "ZSAPAssetManager"
+        },
+        {
+            "name": "ZSAPAssetManager",
+            "path": "/Users/abhishekchand/Desktop/HECO/HECO_2303_2.0_SAPServiceAssetManager/ZSAPAssetManager/Application.app",
+            "comp": "SAPAssetManager"
+        }
+    ],
+    "mdk.targetClient": "MDK 23.4+",
+    "mdk.autoBundle": false,
+    "mdk.validateBeforeBundle": false,
+    "mdk.bundlerPath": "",
+    "mdk.debugAppRoot": "/Users/chris/Documents/AssetManager/2305/MDK23.4.1/OmniSAMU4D",
+    "mdk.bundlerExternals": [
+        "@nativescript/core/accessibility",
+			"@nativescript/geolocation",
+			"@nota/nativescript-webview-ext",
+			"extension-LocationService",
+			"uuid"
+    ],
+    "mdk.createUploadBundleZip": true,
+    "mdk.mobileservice": {
+        "adminAPI": "https://mobile-service-cockpit-web.cfapps.us20.hana.ondemand.com/cockpit/v1/org/7480c726-05e6-47d1-83c2-ffc75aa6ef47/space/7ebd23e4-be01-4e3d-a3ee-3925b1032051",
+        "appId": "SAP.SAM2305.U4D"
+    }
+}

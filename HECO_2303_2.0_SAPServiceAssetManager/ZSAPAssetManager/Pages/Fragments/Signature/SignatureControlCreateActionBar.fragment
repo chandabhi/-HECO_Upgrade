@@ -1,0 +1,13 @@
+[
+    {
+        "_Name": "left",
+        "Position": "left",
+        "SystemItem": "Cancel"
+    },
+    {
+        "_Name": "right",
+        "Position": "right",
+        "SystemItem": "$(PLT,'Done','')",
+        "Text": "/SAPAssetManager/Rules/Common/Platform/DoneText.js"
+    }
+]

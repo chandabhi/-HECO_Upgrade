@@ -1,0 +1,53 @@
+{
+	"PopoverItems": [
+        {
+            "Title": "$(L, add_service_order)",
+            "OnPress": "/SAPAssetManager/Rules/ServiceOrders/CreateUpdate/ServiceOrderCreateNav.js"
+        },
+        {
+            "Title": "$(L, add_item)",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/IsServiceItemOrderNotCompleted.js",
+            "OnPress": "/SAPAssetManager/Rules/ServiceItems/CreateUpdate/CreateServiceItemNav.js"
+        },
+        {
+            "Title": "$(L, add_confirmation_item)",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/AddConfirmationToServiceItemEnabled.js",
+            "OnPress": "/SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/ServiceConfirmationCreateNav.js"
+        },
+        {
+            "Title": "$(L, add_hoc_confirmation_item)",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/AddConfirmationToServiceItemEnabled.js",
+            "OnPress": "/SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/ServiceHocConfirmationCreateUpdateNav.js"
+        },
+        {
+            "Title" : "/SAPAssetManager/Rules/Notes/NotePopoverSelectionText.js",
+            "OnPress" : "/SAPAssetManager/Rules/Notes/NoteCreateNav.js",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceOrderIsNotCompleted.js"
+        },
+        {
+            "Title": "$(L,add_service_request)",
+            "OnPress": "/SAPAssetManager/Rules/ServiceOrders/CreateUpdate/ServiceRequestCreateNav.js"
+        },
+        {
+            "Title" : "$(L,add_reminder)",
+            "OnPress" : "/SAPAssetManager/Rules/Reminders/ReminderCreateNav.js",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceOrderIsNotCompleted.js"
+        },
+        {
+            "Title": "$(L,take_readings)",
+            "OnPress": "/SAPAssetManager/Rules/Measurements/Points/MeasuringPointsDataEntryNavWrapper.js",
+            "Visible":"/SAPAssetManager/Rules/Measurements/Points/MeasuringPointsTakeReadingsIsVisible.js"
+        },
+        {
+            "Title": "$(L,add_attachment)",
+            "OnPress": "/SAPAssetManager/Rules/Documents/Create/DocumentCreateBDSNav.js",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceOrderIsNotCompleted.js"
+        },
+        {
+            "Title": "$(L, generate_service_report)",
+            "Visible": "/SAPAssetManager/Rules/ServiceOrders/IsServiceOrderLevel.js",
+            "OnPress": "/SAPAssetManager/Rules/PDF/PDFGenerate.js"
+        }
+    ],
+	"_Type": "Action.Type.PopoverMenu"
+}

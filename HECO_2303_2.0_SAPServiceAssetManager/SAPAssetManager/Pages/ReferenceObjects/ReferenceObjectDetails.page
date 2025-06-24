@@ -1,0 +1,238 @@
+{
+    "Caption": "$(L,reference_object)",
+    "Controls": [
+        {
+            "Sections": [
+                {
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L,product_details)"
+							}
+						}
+					],
+					"Footer": {
+						"UseBottomPadding": false
+					},
+					"_Type": "Section.Type.SimplePropertyCollection"
+				},
+                {
+                    "_Name": "ProductsTableSection",
+                    "_Type": "Section.Type.DataTable",
+                    "Header": {
+                        "DataTable": {
+                            "Items": [
+                                {
+                                    "Text": "",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,ID)",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,description)",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,main_object_flag)",
+                                    "TextAlignment": "left"
+                                }
+                            ]
+                        }
+					},
+                    "EmptySection": {
+                        "Caption": "$(L,no_product_details_available)"
+                    },
+                    "Row": {
+                        "Layout": {
+                            "ColumnWidth": [
+                                30,
+                                150,
+                                200,
+                                -1
+                            ]
+                        },
+                        "Items": [
+                            {
+                                "Text": "",
+                                "TextAlignment": "left"
+                            },
+							{
+                                "Text": "{ProductID}",
+                                "TextAlignment": "left"
+                            },
+							{
+                                "Text": "{Material_Nav/Description}",
+                                "TextAlignment": "left"
+                            },
+                            {
+								"Text": "/SAPAssetManager/Rules/ReferenceObjects/MainRefObjectFlagValue.js",
+                                "TextAlignment": "left"
+							}
+                        ]
+                    },
+                    "Target": {
+                        "EntitySet": "/SAPAssetManager/Rules/ReferenceObjects/ReferenceObjectsEntitySet.js",
+                        "Service": "/SAPAssetManager/Services/AssetManager.service",
+                        "QueryOptions": "$filter=sap.entityexists(Material_Nav)&$expand=Material_Nav"
+                    }
+                },
+                {
+                    "SimplePropertyCells": [
+                        {
+                            "SimplePropertyCell": {
+                                "KeyName": "$(L,equipment_details)"
+                            }
+                        }
+                    ],
+                    "Footer": {
+                        "UseBottomPadding": false
+                    },
+                    "_Type": "Section.Type.SimplePropertyCollection"
+                },
+                {
+                    "_Name": "EquipmentsTableSection",
+                    "_Type": "Section.Type.DataTable",
+                    "Header": {
+                        "DataTable": {
+                            "Items": [
+                                {
+                                    "Text": "",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,ID)",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,description)",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,main_object_flag)",
+                                    "TextAlignment": "left"
+                                }
+                            ]
+                        }
+                    },
+                    "EmptySection": {
+                        "Caption": "$(L,no_equipment_details_available)"
+                    },
+                    "Row": {
+                        "Layout": {
+                            "ColumnWidth": [
+                                30,
+                                150,
+                                200,
+                                -1
+                            ]
+                        },
+                        "Items": [
+                            {
+                                "Text": "",
+                                "TextAlignment": "left"
+                            },
+                            {
+                                "Text": "{EquipID}",
+                                "TextAlignment": "left"
+                            },
+                            {
+                                "Text": "/SAPAssetManager/Rules/ReferenceObjects/EquipDescriptionValue.js",
+                                "TextAlignment": "left"
+                            },
+                            {
+                                "Text": "/SAPAssetManager/Rules/ReferenceObjects/MainRefObjectFlagValue.js",
+                                "TextAlignment": "left"
+                            }
+                        ]
+                    },
+                    "Target": {
+                        "EntitySet": "/SAPAssetManager/Rules/ReferenceObjects/ReferenceObjectsEntitySet.js",
+                        "Service": "/SAPAssetManager/Services/AssetManager.service",
+                        "QueryOptions": "/SAPAssetManager/Rules/ReferenceObjects/EquipReferenceObjectsQueryOptions.js"
+                    }
+                },
+                {
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L,functional_location_details)"
+							}
+						}
+					],
+					"Footer": {
+						"UseBottomPadding": false
+					},
+					"_Type": "Section.Type.SimplePropertyCollection"
+				},
+                {
+                    "_Name": "FLocsTableSection",
+                    "_Type": "Section.Type.DataTable",
+                    "Header": {
+                        "DataTable": {
+                            "Items": [
+                                {
+                                    "Text": "",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,ID)",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,description)",
+                                    "TextAlignment": "left"
+                                },
+                                {
+                                    "Text": "$(L,main_object_flag)",
+                                    "TextAlignment": "left"
+                                }
+                            ]
+                        }
+					},
+                    "EmptySection": {
+                        "Caption": "$(L,no_functional_location_details_available)"
+                    },
+                    "Row": {
+                        "Layout": {
+                            "ColumnWidth": [
+                                30,
+                                150,
+                                200,
+                                -1
+                            ]
+                        },
+                        "Items": [
+                            {
+                                "Text": "",
+                                "TextAlignment": "left"
+                            },
+							{
+                                "Text": "/SAPAssetManager/Rules/ReferenceObjects/FLocIDValue.js",
+                                "TextAlignment": "left"
+                            },
+							{
+                                "Text": "/SAPAssetManager/Rules/ReferenceObjects/FLocDescriptionValue.js",
+                                "TextAlignment": "left"
+                            },
+                            {
+								"Text": "/SAPAssetManager/Rules/ReferenceObjects/MainRefObjectFlagValue.js",
+                                "TextAlignment": "left"
+							}
+                        ]
+                    },
+                    "Target": {
+                        "EntitySet": "/SAPAssetManager/Rules/ReferenceObjects/ReferenceObjectsEntitySet.js",
+                        "Service": "/SAPAssetManager/Services/AssetManager.service",
+                        "QueryOptions": "/SAPAssetManager/Rules/ReferenceObjects/FLocReferenceObjectsQueryOptions.js"
+                    }
+                }
+            ],
+            "_Type": "Control.Type.SectionedTable",
+            "_Name": "SectionedTable"
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "ReferenceObjectsDetailsPage"
+}

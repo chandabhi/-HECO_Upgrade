@@ -1,0 +1,22 @@
+{
+	"Header": {
+		"Caption": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNoteCaption.js"
+	},
+	"EmptySection": {
+		"Caption": "-"
+	},
+	"SimplePropertyCell": {
+		"KeyName": "{TextString}",
+		"AccessoryType": "disclosureIndicator",
+		"OnPress": "/SAPAssetManager/Actions/WCM/WCMNotes/WCMNoteDetailsNav.action"
+	},
+	"Target": {
+		"EntitySet": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNoteEntitySet.js",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"Layout": {
+        "NumberOfColumns": 1
+    },
+	"Visible": "/SAPAssetManager/Rules/WCM/WCMNotes/IsNoteSectionVisible.js",
+	"_Type": "Section.Type.SimplePropertyCollection"
+}

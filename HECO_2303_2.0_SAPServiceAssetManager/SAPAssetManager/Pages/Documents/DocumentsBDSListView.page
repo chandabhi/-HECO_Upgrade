@@ -1,0 +1,34 @@
+{
+	"Caption": "$(L,documents)",
+	"ActionBar":
+	{
+		"Items":
+		[{
+			"Position": "right",
+			"Icon": "$(PLT,'',/SAPAssetManager/Images/filter.android.png)",
+			"Text": "$(L,filter)",
+            "OnPress": "/SAPAssetManager/Actions/Documents/DocumentFilter.action"
+		},
+		{
+			"Position": "right",
+			"SystemItem": "Add",
+			"OnPress": "/SAPAssetManager/Rules/Documents/Create/DocumentCreateBDSNav.js",
+			"Visible": "/SAPAssetManager/Rules/UserAuthorizations/Attachments/EnableAttachmentCreate.js"
+		}]
+	},
+	"Controls":
+	[{
+		"Sections":
+		[{
+			"_Type": "Fragment",
+			"Fragment": "/SAPAssetManager/Pages/Fragments/Documents/DocumentObjectTable.fragment"
+		}],
+		"_Type" : "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"OnLoaded": "/SAPAssetManager/Rules/Documents/DocumentListViewOnLoad.js",
+	"OnReturning": "/SAPAssetManager/Rules/Documents/OnBDSListReturning.js",
+	"_Name": "DocumentsListView",
+	"DataSubscriptions": ["Documents","MyFuncLocDocuments","MyEquipDocuments","MyWorkOrderDocuments","MyNotifDocuments", "S4ServiceOrderDocuments", "S4ServiceConfirmationDocuments","S4ServiceRequestDocuments"]
+}

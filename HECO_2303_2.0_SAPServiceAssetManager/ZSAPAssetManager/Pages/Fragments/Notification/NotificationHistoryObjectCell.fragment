@@ -1,0 +1,11 @@
+{
+    "AccessoryType": "disclosureIndicator",
+    "Description": "/SAPAssetManager/Rules/Notifications/RelatedNotifications/NotificationHistoryLongTexts.js",
+    "Title": "{NotificationDescription}",
+    "Subhead": "{NotificationNumber}",
+    "Footnote": "/SAPAssetManager/Rules/Notifications/RelatedNotifications/RelatedNotificationEndDate.js",
+    "StatusText": "#Property:HistoryPriority_Nav/#Property:PriorityDescription",
+    "SubstatusText": "{PriorityType}",
+    "OnPress": "/SAPAssetManager/Actions/Notifications/RelatedNotifications/RelatedNotificationsDetailsNav.action",
+    "PreserveIconStackSpacing":false
+}

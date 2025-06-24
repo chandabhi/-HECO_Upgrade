@@ -1,0 +1,13 @@
+{ 
+    "_Type": "Action.Type.PopoverMenu",
+    "PopoverItems": [
+        {
+            "Title": "$(L, add_service_order)",
+            "OnPress": "/SAPAssetManager/Rules/ServiceOrders/CreateUpdate/ServiceOrderCreateNav.js"
+        },
+        {
+            "Title": "$(L,add_service_request)",
+            "OnPress": "/SAPAssetManager/Rules/ServiceOrders/CreateUpdate/ServiceRequestCreateNav.js"
+        }
+    ]
+}

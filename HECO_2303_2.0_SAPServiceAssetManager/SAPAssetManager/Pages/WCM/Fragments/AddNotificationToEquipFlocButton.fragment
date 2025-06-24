@@ -1,0 +1,6 @@
+{
+	"Position": "right",
+	"SystemItem": "Add",
+	"Visible": "/SAPAssetManager/Rules/WCM/Common/IsAddNotificationToEquipFlocVisible.js",
+	"OnPress": "/SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationCreateChangeSetNav.js"
+}

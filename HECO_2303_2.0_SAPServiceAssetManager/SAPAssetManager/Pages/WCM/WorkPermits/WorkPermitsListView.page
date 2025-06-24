@@ -1,0 +1,69 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/WorkPermits/WorkPermitsCaption.js",
+	"OnReturning": "/SAPAssetManager/Rules/WCM/WorkPermits/WorkPermitsListViewOnReturning.js",
+	"ActionBar":
+	{
+		"Items":
+		[
+			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
+			{
+				"_Type": "Fragment",
+				"Fragment": "/SAPAssetManager/Pages/Fragments/FilterButton.fragment",
+				"Properties": {
+					"OnPress": "/SAPAssetManager/Actions/WCM/WorkPermitsFilter.action"
+				}
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WorkPermitObjectTable.fragment"
+				}
+			],
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar",
+				"_Name": "FilterFeedback",
+				"ShowAllFilters": false,
+				"FastFilters": [
+					{
+						"_Type": "Fragment",
+						"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/VeryHighPriority.fragment"
+					},
+					{
+						"_Type": "Fragment",
+						"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/WorkPermitPrinted.fragment"
+					},
+					{
+						"_Type": "Fragment",
+						"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/Approved.fragment"
+					},
+					{
+						"_Name": "Closed",
+						"_Type": "Control.Type.FastFilterItem",
+						"FilterType": "Filter",
+						"FilterProperty": "ActualSystemStatus",
+						"DisplayValue": "/SAPAssetManager/Rules/WCM/Common/StatusClosedText.js",
+						"ReturnValue": "/SAPAssetManager/Globals/SystemStatuses/Closed.global"
+					},
+					{
+						"_Name": "HandedOut",
+						"_Type": "Control.Type.FastFilterItem",
+						"FilterType": "Filter",
+						"FilterProperty": "ActualSystemStatus",
+						"DisplayValue": "/SAPAssetManager/Rules/WCM/WorkPermits/StatusWorkPermitHandedOutText.js",
+						"ReturnValue": "/SAPAssetManager/Globals/SystemStatuses/HandedOut.global"
+					}
+				]
+			},
+			"Filters": "/SAPAssetManager/Rules/WCM/WorkPermits/WorkPermitListViewFilters.js",
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "WorkPermitsListViewPage",
+	"_Type": "Page",
+	"DataSubscriptions": "/SAPAssetManager/Rules/Common/DataSubscriptions.js"
+}

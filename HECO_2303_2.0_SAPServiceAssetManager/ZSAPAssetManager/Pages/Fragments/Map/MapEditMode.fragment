@@ -1,0 +1,6 @@
+{
+    "IsInitialOn": false,
+    "OnAllowEnterEditMode": "/SAPAssetManager/Rules/Maps/MapAllowEnterEditMode.js",
+    "OnDisallowEnterEditMode": "/SAPAssetManager/Rules/Maps/MapDisallowEnterEditMode.js",
+    "EditModeConfig": {}
+}

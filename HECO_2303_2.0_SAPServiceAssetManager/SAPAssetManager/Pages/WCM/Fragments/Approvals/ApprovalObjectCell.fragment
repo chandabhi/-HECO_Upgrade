@@ -1,0 +1,8 @@
+{
+	"_Type": "Control.Type.ObjectCell",
+	"Title": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalTitle.js",
+	"Subhead": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalSubhead.js",
+	"PreserveIconStackSpacing": false,
+	"AccessoryType": "disclosureIndicator",
+	"OnPress": "/SAPAssetManager/Actions/WCM/Approvals/ApprovalDetailsNav.action"
+}

@@ -1,0 +1,29 @@
+{
+    "Header": {
+        "Caption": "$(L,notification)"
+    },
+    "EmptySection": {
+        "Caption": "$(L,no_notifications_available)"
+    },
+    "ObjectCell": {
+        "Icons":"/SAPAssetManager/Rules/Notifications/ListView/NotificationListViewIconImages.js",
+        "Title": "{NotificationDescription}",
+        "Subhead": "{{#Property:NotificationNumber}} - {{#Property:NotificationType}}",
+        "Footnote": "/SAPAssetManager/Rules/Notifications/ListView/NotificationsListViewFormat.js",
+        "StatusText": "/SAPAssetManager/Rules/Notifications/ListView/NotificationsListViewFormat.js",
+        "SubstatusText": "/SAPAssetManager/Rules/Notifications/ListView/NotificationsListViewFormat.js",
+        "Styles": {
+			"StatusText":  "/SAPAssetManager/Rules/Priority/NotificationPriorityStatusStyle.js"
+		},
+        "AccessoryType": "disclosureIndicator",
+        "OnPress" : "/SAPAssetManager/Rules/Notifications/Details/NotificationDetailsNav.js"
+    },
+    "Target": {
+        "EntitySet" : "{{#Property:@odata.readLink}}/Notification",
+        "Service" : "/SAPAssetManager/Services/AssetManager.service",
+        "QueryOptions" : "/SAPAssetManager/Rules/Notifications/NotificationsListViewQueryOption.js"
+    },
+    "_Name": "NotificationsList",
+    "_Type": "Section.Type.ObjectTable",
+    "DataSubscriptions": ["MyNotificationHeaders"]
+}

@@ -1,0 +1,58 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/SafetyCertificates/SafetyCertificatesCaption.js",
+	"OnReturning": "/SAPAssetManager/Rules/WCM/SafetyCertificates/SafetyCertificatesListViewOnReturning.js",
+	"ActionBar":
+	{
+		"Items":
+		[
+			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
+			{
+				"_Type": "Fragment",
+				"Fragment": "/SAPAssetManager/Pages/Fragments/FilterButton.fragment",
+				"Properties": {
+					"OnPress": "/SAPAssetManager/Actions/WCM/SafetyCertificatesFilter.action"
+				}
+			}
+		]
+	},
+	"Controls":
+	[{
+		"Sections":
+		[{
+			"_Type": "Fragment",
+            "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/SafetyCertificatesObjectTable.fragment"
+		}],
+		"FilterFeedbackBar": {
+			"_Type": "Control.Type.FilterFeedbackBar",
+			"_Name": "FilterFeedback",
+			"ShowAllFilters": false,
+			"FastFilters": [
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/Approved.fragment"
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/VeryHighPriority.fragment"
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/TagPrinted.fragment"
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/TestTagPrinted.fragment"
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/Untag.fragment"
+				}
+			]
+		},
+		"Filters": "/SAPAssetManager/Rules/WCM/SafetyCertificates/SafetyCertificatesListViewFilters.js",
+		"_Type" : "Control.Type.SectionedTable",
+		"_Name" : "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "SafetyCertificatesListViewPage"
+}

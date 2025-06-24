@@ -1,0 +1,56 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsListViewCaption.js",
+	"ActionBar":
+	{
+		"Items":[
+			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
+			{
+				"Position": "right",
+				"Icon": "$(PLT,'',/SAPAssetManager/Images/filter.android.png)",
+				"Text": "$(L,filter)",
+				"OnPress": "/SAPAssetManager/Actions/WCM/OperationalItems/OperationalItemsListFilter.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/OperationalItems/OperationalItemsObjectTable.fragment"
+				}
+			],
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar",
+				"_Name": "FilterFeedback",
+				"ShowAllFilters": false,
+				"FastFilters": [
+					"/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/MobileTagPrinted.fragment",
+					"/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/MobileTestTagPrinted.fragment",
+					"/SAPAssetManager/Pages/WCM/Fragments/FastFilterItems/MobileUntag.fragment",
+					{
+						"_Name": "ElectricalOpGroup",
+						"_Type": "Control.Type.FastFilterItem",
+						"FilterType": "Filter",
+						"FilterProperty": "OpGroup",
+						"DisplayValue": "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/ElectricalOpGroupText.js",
+						"ReturnValue": "/SAPAssetManager/Globals/WCM/OperationalGroups/Electrical.global"
+					},
+					{
+						"_Name": "MechanicalOpGroup",
+						"_Type": "Control.Type.FastFilterItem",
+						"FilterType": "Filter",
+						"FilterProperty": "OpGroup",
+						"DisplayValue": "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/MechanicalOpGroupText.js",
+						"ReturnValue": "/SAPAssetManager/Globals/WCM/OperationalGroups/Mechanical.global"
+					}
+				]
+			},
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "OperationalItemsListViewPage",
+	"_Type": "Page",
+	"DataSubscriptions": "/SAPAssetManager/Rules/Common/DataSubscriptions.js"
+}

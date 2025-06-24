@@ -1,0 +1,9 @@
+{
+    "AllowMultipleSelection": true,
+    "AllowEmptySelection": true,
+    "Caption": "$(L,priority)",
+    "FilterProperty": "/SAPAssetManager/Rules/WCM/Common/WCMPriorityFilter.js",
+    "_Name": "PriorityFilter",
+    "_Type": "Control.Type.FormCell.Filter",
+    "IsEditable": true
+}

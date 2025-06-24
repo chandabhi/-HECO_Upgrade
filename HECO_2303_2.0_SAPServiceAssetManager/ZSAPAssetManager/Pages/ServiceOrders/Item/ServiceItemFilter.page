@@ -1,0 +1,108 @@
+{
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
+            },
+            {
+                "Position": "right",
+                "SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
+                "Text": "/SAPAssetManager/Rules/Filter/FilterText.js",
+                "OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js"
+            }
+        ]
+    },
+    "Caption":"$(L,filter)",
+    "Result": "/SAPAssetManager/Rules/ServiceOrders/Item/Filter/ServiceItemListFilterResults.js",
+    "Controls":[
+        {
+            "Sections":[
+                {
+                    "Controls":[
+                        {
+                            "AllowEmptySelection":false,
+                            "Caption":"$(L,sort_by)",
+                            "SortByItems":
+                            [{
+                                "ReturnValue":"ItemCategory",
+                                "DisplayValue":"$(L,type)"
+                            },
+                            {
+                                "ReturnValue":"ProductID",
+                                "DisplayValue":"$(L,serviceitem_id)"
+                            },
+                            {
+                                "ReturnValue":"DueBy",
+                                "DisplayValue":"$(L,due_date)"
+                            }],
+                            "_Name":"SortFilter",
+                            "_Type":"Control.Type.FormCell.Sorter",
+                            "IsEditable":true
+                        }
+                    ]
+                },
+                {
+					"Controls": [
+						{
+							"Caption": "$(L,type)",
+							"_Name": "TypeLstPicker",
+							"IsPickerDismissedOnSelection": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+                            "Search": { 
+                                "Enabled": true,
+                                "Delay": 500,
+                                "MinimumCharacterThreshold": 3,
+                                "Placeholder": "$(L,search)",
+								"BarcodeScanner": true
+                            },
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/Item/Filter/SetItemTypePickerValue.js",
+                            "PickerItems": "/SAPAssetManager/Rules/ServiceOrders/Item/Filter/GetItemTypePickerItems.js",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					]
+				},
+                {
+					"Controls": [
+						{
+							"Caption": "$(L, status)",
+							"_Name": "StatusLstPicker",
+							"IsPickerDismissedOnSelection": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+                            "Search": { 
+                                "Enabled": true,
+                                "Delay": 500,
+                                "MinimumCharacterThreshold": 3,
+                                "Placeholder": "$(L,search)",
+								"BarcodeScanner": true
+                            },
+                            "PickerItems": "/SAPAssetManager/Rules/ServiceOrders/Item/Filter/ServiceItemListStatuses.js",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"FilterProperty": "MobileStatus_Nav/MobileStatus"
+						}
+					]
+				},
+                {
+                    "Controls": [
+                        {
+                            "Title": "$(L,reset_all)",
+                            "OnPress": "/SAPAssetManager/Rules/WorkOrders/WorkOrderListFilterReset.js",
+                            "_Type": "Control.Type.FormCell.Button",
+                            "ButtonType": "Text",
+                            "Semantic": "Tint",
+                            "_Name": "ResetButton",
+                            "TextAlignment": "/SAPAssetManager/Rules/Common/Platform/ModalButtonAlign.js"
+                        }
+                    ]
+                }
+            ],
+            "_Name":"FormCellContainer",
+            "_Type":"Control.Type.FormCellContainer"
+        }
+    ],
+    "_Type":"Page",
+    "_Name":"ServiceItemFilterPage"
+}

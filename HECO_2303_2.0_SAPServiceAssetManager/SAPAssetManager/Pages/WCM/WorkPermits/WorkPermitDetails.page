@@ -1,0 +1,175 @@
+{
+    "Caption": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/WorkPermitDetailsCaption.js",
+    "Controls": [
+        {
+            "Sections": [
+                {
+                    "ObjectHeader": {
+                        "HeadlineText": "{WorkPermitDescr}",
+                        "Tags": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/WorkPermitDetailsTags.js",
+                        "Description": "$(DV,'/SAPAssetManager/Rules/WCM/Common/EquipmentOrFunclocDescriptionOrEmpty.js','-')",
+                        "Labels": "/SAPAssetManager/Rules/WCM/Common/ApprovalStatusTextIconLabel.js",
+                        "StatusText": "/SAPAssetManager/Rules/WCM/Common/PriorityStatusText.js",
+                        "Styles": {
+                            "StatusText": "/SAPAssetManager/Rules/Priority/WCMPriorityStatusStyle.js"
+                        }
+                    },
+                    "_Type": "Section.Type.ObjectHeader",
+                    "_Name": "WorkPermitObjectHeaderSection"
+                },
+                "/SAPAssetManager/Pages/WCM/Fragments/ProgressTrackerSection.fragment",
+                {
+                    "_Type": "Section.Type.SimplePropertyCollection",
+                    "SimplePropertyCells": [
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,approvals)",
+                                "Value": "/SAPAssetManager/Rules/WCM/Approvals/RelatedApprovalsCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/WCM/Approvals/ApprovalsListViewNav.action"
+                            }
+                        }
+                    ],
+                    "Layout": {
+                        "NumberOfColumns": 1
+                    },
+                    "_Name": "RelatedWorkApprovalsSection"
+                },
+                {
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "WorkPermitDetailsSection",
+                    "Header": {
+                        "Caption": "$(L,work_permit_details)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L,main_work_center)",
+                            "Value": "/SAPAssetManager/Rules/WCM/Common/GetWorkCenterIdDescription.js"
+                        },
+                        {
+                            "KeyName": "$(L,wcm_valid_from_slash_valid_to)",
+                            "Value": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/ValidFromSlashValidTo.js"
+                        },
+                        {
+                            "KeyName": "$(L,planner_group)",
+                            "Value": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsPlannerGroup.js"
+                        },
+                        {
+                            "KeyName": "$(L,extension)",
+                            "Value": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/Extension.js"
+                        }
+                    ]
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L,wcm_work_type_slash_requirements)",
+                        "UseTopPadding": false
+                    },
+                    "MaxItemCount": 4,
+                    "ObjectCell": {
+                        "PreserveIconStackSpacing": false,
+                        "Title": "{Title}",
+                        "Tags": "{Tags}",
+                        "AccessoryType": "disclosureIndicator",
+                        "OnPress": "/SAPAssetManager/Actions/WCM/WorkPermits/WorkTypeRequirementModalNav.action"
+                    },
+                    "Target": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/WorkTypeRequirementData.js",
+                    "_Name": "WorkTypesRequirementsListSection",
+                    "_Type": "Section.Type.ObjectTable"
+                },
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/RelatedWorkOrders/RelatedWorkOrdersObjectTable.fragment",
+                    "Properties": {
+                        "Header": {
+                            "Caption": "$(L,workorders)"
+                        },
+                        "MaxItemCount": 2,
+                        "Footer": {
+                            "AttributeLabel": "/SAPAssetManager/Rules/WCM/RelatedWorkOrders/GetRelatedWorkOrdersCount.js",
+                            "Visible": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/HasMoreThanTwoRelatedWorkOrders.js"
+                        }
+                    }
+                },
+                "/SAPAssetManager/Pages/WCM/Fragments/RelatedSafetyCertificateObjectTable.fragment",
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/RelatedSingleFunctionalLocationObjectTable.fragment",
+                    "Properties": {
+                        "Target": {
+                            "EntitySet": "{{#Property:@odata.readLink}}/MyFunctionalLocations"
+                        }
+                    }
+                },
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/RelatedSingleMyEquipmentObjectTable.fragment",
+                    "Properties": {
+                        "Target": {
+                            "EntitySet": "{{#Property:@odata.readLink}}/MyEquipments"
+                        }
+                    }
+                },
+                {
+                    "SimplePropertyCells": [
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,wcm_catalogs)",
+                                "Value": "/SAPAssetManager/Rules/WCM/WCMCatalogs/RelatedCatalogsCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/WCM/WCMCatalogs/WCMCatalogsNav.action"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,wcm_work_approvals)",
+                                "Value": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/GetRelatedWCMApprovalsCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/WCM/WorkApprovalsListViewNav.action",
+                                "Visible": "/SAPAssetManager/Rules/WCM/Common/WCMWorkApprovalsVisible.js"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,wcm_involved_parties)",
+                                "Value": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/InvolvedPartiesCount.js",
+                                "OnPress":"/SAPAssetManager/Actions/WCM/WorkPermits/InvolvedPartiesModalPageNav.action"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,documents)",
+                                "Value": "/SAPAssetManager/Rules/Documents/Count/DocumentsBDSCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/Documents/DocumentsBDSListNav.action"
+                            }
+                        },
+                        {
+                            "_Type": "Fragment",
+                            "Fragment": "/SAPAssetManager/Pages/Fragments/Notes/NotesFacet.fragment",
+                            "Properties": {
+                                "SimplePropertyCell": {
+                                    "Value": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNotesCount.js",
+                                    "OnPress": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNotesListNav.js"
+                                }
+                            }
+                        }
+                    ],
+                    "Layout": {
+                        "NumberOfColumns": 2
+                    },
+                    "_Type": "Section.Type.SimplePropertyCollection",
+                    "DataSubscriptions": [
+                        "WCMApprovalApplications",
+                        "WCMApplicationAttachments"
+                    ]
+                }
+            ],
+            "_Name": "SectionedTable",
+            "_Type": "Control.Type.SectionedTable"
+        }
+    ],
+    "_Name": "WorkPermitDetails",
+    "_Type": "Page"
+}

@@ -1,0 +1,313 @@
+{
+    "Caption": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemHeader.js",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "right",
+                "SystemItem": "Edit",
+                "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/EditSericeItemEnabled.js",
+                "OnPress": "/SAPAssetManager/Rules/ServiceItems/CreateUpdate/EditSericeItemNav.js"
+            },
+            {
+				"Position": "right",
+				"SystemItem": "Add",
+				"OnPress": "/SAPAssetManager/Actions/ServiceOrders/Item/CreateItemPopover.action"
+			}
+        ]
+    },
+    "Controls": [
+        {
+            "Sections": [
+                {
+                    "_Type": "Section.Type.FormCell",
+                    "Visible": "/SAPAssetManager/Rules/TimelineControl/IsTimelineControlVisible.js",
+                    "Controls":[
+                        {
+                            "_Type": "Control.Type.FormCell.Extension",
+                            "Module": "extension-ProgressTrackerFramework",
+                            "Control": "ProgressTrackerExtension",
+                            "Class": "ProgressTrackerExtension",
+                            "Height": "/SAPAssetManager/Rules/TimelineControl/ProgressTrackerHeight.js",
+                            "ExtensionProperties": {
+                                "Config": {
+                                    "IsIndexVisible": false,
+                                    "IsCompactMode": false,
+                                    "IsCentered": false
+                                },
+                                "InitialSteps": "/SAPAssetManager/Rules/TimelineControl/ProgressTrackerInitialSteps.js",
+                                "OnStepSelected": "",
+                                "OnDataChanged": "/SAPAssetManager/Rules/TimelineControl/ProgressTrackerOnDataChanged.js",
+                                "IsSelectable": false
+                            },
+                            "Visible": true,
+                            "_Name": "ProgressTrackerExtensionControl",
+                            "DataSubscriptions": ["PMMobileStatuses"]
+                        }
+                    ],
+                    "_Name": "ProgressTrackerExtensionSection",
+                    "Header": {
+                        "Caption": "$(L, activity)"
+                    }
+                },
+                {
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "ServiceItemDetailsSection",
+                    "Header": {
+                        "Caption": "$(L,item_details)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L,description)",
+                            "Value": "{ItemDesc}"
+                        },
+                        {
+                            "KeyName": "$(L,product_id_label)",
+                            "Value": "{ProductID}"
+                        },
+                        {
+                            "KeyName": "$(L,unit)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemUnitValue.js",
+                            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/IsServiceItemCategory.js"
+                        },
+                        {
+                            "KeyName": "$(L,amount)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemAmountValue.js",
+                            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/IsNonServiceItemCategory.js"
+                        },
+                        {
+                            "KeyName": "$(L,product_description)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemProductDescriptionValue.js"
+                        },
+                        {
+                            "KeyName": "$(L,quantity)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemQuantityValue.js"
+                        },
+                        {
+                            "KeyName": "$(L,planned_duration)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemDurationValue.js",
+                            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/IsServiceItemCategory.js"
+                        },
+                        {
+                            "KeyName": "$(L,status)",
+                            "Value": "/SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersListViewFormat.js"
+                        },
+                        {
+                            "KeyName": "$(L,unit)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemUnitValue.js",
+                            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/IsNonServiceItemCategory.js"
+                        },
+                        {
+                            "KeyName": "$(L,service_type)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemServiceTypeValue.js",
+                            "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/IsServiceItemCategory.js"
+                        },
+                        {
+                            "KeyName": "$(L,net_value)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemNetValue.js"
+                        }
+                    ]
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L,dates)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L,requested_start)",
+                            "Value": "/SAPAssetManager/Rules/DateTime/RequestStartDate.js"
+                        },
+                        {
+                            "KeyName": "$(L,due_by)",
+                            "Value": "/SAPAssetManager/Rules/DateTime/DueDate.js"
+                        },
+                        {
+                            "KeyName": "$(L,requested_end)",
+                            "Value": "/SAPAssetManager/Rules/DateTime/RequestEndDate.js"
+                        }
+                    ],
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "ServiceItemDatesSection"
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L,service_order)"
+                    },
+                    "EmptySection": {
+                        "Caption": "$(L,no_order_available)"
+                    },
+                    "ObjectCell": {
+                        "AccessoryType": "disclosureIndicator",
+                        "Title": "{Description}",
+                        "Footnote": "/SAPAssetManager/Rules/DateTime/DueDate.js",
+                        "PreserveIconStackSpacing": false,
+                        "Subhead": "{ObjectID}",
+                        "OnPress": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServiceOrderDetailsNav.js"
+                    },
+                    "Target": {
+                        "EntitySet": "{{#Property:@odata.readLink}}/S4ServiceOrder_Nav",
+                        "Service": "/SAPAssetManager/Services/AssetManager.service"
+                    },
+                    "_Type": "Section.Type.ObjectTable",
+                    "_Name": "ServiceOrdersListSection"
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L,service_contract_warranty)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L,service_contract)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/ServiceContractValue.js"
+                        },
+                        {
+                            "KeyName": "$(L,service_profile)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemServiceProfileValue.js"
+                        },
+                        {
+                            "KeyName": "$(L,response_profile)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemResponseProfileValue.js"
+                        },
+                        {
+                            "KeyName": "$(L,accounting_indicator)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemAccountingIndicatorValue.js"
+                        },
+                        {
+                            "KeyName": "$(L,warranty)",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/ServiceItemWarrantyValue.js"
+                        }
+                    ],
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "ServiceContractWarrantySection"
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L,categorization)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L,category) 1",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category1Value.js"
+                        },
+                        {
+                            "KeyName": "$(L,category) 2",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category2Value.js"
+                        },
+                        {
+                            "KeyName": "$(L,category) 3",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category3Value.js"
+                        },
+                        {
+                            "KeyName": "$(L,category) 4",
+                            "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category4Value.js"
+                        }
+                    ],
+                    "Target": {
+						"EntitySet": "{@odata.readLink}",
+						"Service": "/SAPAssetManager/Services/AssetManager.service",
+						"QueryOptions": "$select=SchemaID,CategoryID,Category1_Nav/CategoryName,Category2_Nav/CategoryName,Category3_Nav/CategoryName,Category4_Nav/CategoryName&$expand=Category1_Nav,Category2_Nav,Category3_Nav,Category4_Nav"
+					},
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "CategorizationSection"
+                },
+                {
+                    "SimplePropertyCells": [
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,notes)",
+                                "Value": "/SAPAssetManager/Rules/Notes/NotesCount.js",
+                                "OnPress": "/SAPAssetManager/Rules/Notes/NotesViewNav.js"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": "/SAPAssetManager/Pages/Fragments/Documents/DocumentsSimplePropertyCell.fragment"
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,service_contract)",
+                                "Value": "/SAPAssetManager/Rules/ServiceOrders/ServiceContracts/ServiceContractCount.js",
+                                "OnPress": "/SAPAssetManager/Rules/ServiceOrders/ServiceContracts/ServiceContractDetailsNav.js"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,business_partners)",
+                                "Value": "/SAPAssetManager/Rules/BusinessPartners/BusinessPartnersCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/BusinessPartners/BusinessPartnersListViewNav.action"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "AccessoryType": "disclosureIndicator",
+                                "KeyName": "$(L,reference_objects)",
+                                "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/ReferenceObjectsCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/ReferenceObjects/ReferenceObjectDetailsNav.action",
+								"Visible": "/SAPAssetManager/Rules/ServiceOrders/IsS4ServiceIntegrationEnabled.js"
+                            }
+                        },
+                        {
+                            "SimplePropertyCell": {
+                                "KeyName": "$(L, organizational_data)",
+                                "AccessoryType": "disclosureIndicator",
+                                "OnPress": "/SAPAssetManager/Rules/ServiceOrders/Details/OrganizationalData/OrganizationalDataNav.js",
+                                "Visible": "/SAPAssetManager/Rules/ServiceOrders/Details/OrganizationalData/IsOrganizationalDataEnabled.js"
+                            }
+                        }
+                    ],
+                    "Layout":
+                    {
+                        "NumberOfColumns": 2,
+                        "MinimumInteritemSpacing": "$(PLT,66,0)"
+                    },
+                    "_Type" : "Section.Type.SimplePropertyCollection",
+                    "DataSubscriptions": ["S4ServiceOrderLongTexts", "S4ServiceOrderPartners", "S4ServiceOrderDocuments", "S4ServiceOrderRefObjs", "ServiceOrgs", "SalesOrgs", "SalesRespOrgs"]
+                }
+            ],
+            "_Type": "Control.Type.SectionedTable",
+            "_Name": "SectionedTable"
+        }
+    ],
+    "ToolBar": {
+		"Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceItems/Details/ServiceItemDetailsToolbarVisibility.js",
+		"Items": [
+			{
+				"_Name": "ServiceItemDetailsPageTbI0",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetCaption.js",
+				"OnPress": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetOnPress.js",
+				"Visible": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetVisibility.js",
+				"DataSubscriptions": ["PMMobileStatuses", "S4ServiceItems"]
+			},
+			{
+				"_Name": "FlexibleSpaceLeftTbI",
+				"_Type": "Control.Type.ToolbarItem",
+				"SystemItem": "FlexibleSpace"
+			},
+			{
+				"_Name": "ServiceItemDetailsPageTbI1",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetCaption.js",
+				"OnPress": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetOnPress.js",
+				"Visible": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetVisibility.js",
+				"DataSubscriptions": ["PMMobileStatuses", "S4ServiceItems"]
+			},
+			{
+				"_Name": "FlexibleSpaceRightTbI",
+				"_Type": "Control.Type.ToolbarItem",
+				"SystemItem": "FlexibleSpace"
+			},
+			{
+				"_Name": "ServiceItemDetailsPageTbI2",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetCaption.js",
+				"OnPress": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetOnPress.js",
+				"Visible": "/SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarItemGetVisibility.js",
+				"DataSubscriptions": ["PMMobileStatuses", "S4ServiceItems"]
+			}
+		]
+	},
+    "_Type": "Page",
+    "_Name": "ServiceItemDetailsPage"
+}

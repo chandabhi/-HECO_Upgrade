@@ -1,0 +1,14 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "UserPreferences",
+        "Service": "/SAPAssetManager/Services/AssetManager.service",
+        "QueryOptions": "/SAPAssetManager/Rules/HECO/ZHECOAvailableQuery.js"
+    },
+    "Properties": {
+        "UserGuid": "/SAPAssetManager/Rules/UserPreferences/UserPreferencesUserGuidOnCreate.js",
+        "PreferenceGroup": "HECO",
+        "PreferenceName": "Available",
+        "PreferenceValue": "/SAPAssetManager/Rules/User/ZHECOGetAvailability.js"
+    }
+}

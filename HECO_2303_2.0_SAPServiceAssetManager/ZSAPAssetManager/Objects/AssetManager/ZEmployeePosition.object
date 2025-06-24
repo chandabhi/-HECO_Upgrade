@@ -1,0 +1,19 @@
+{
+	"Collection": [
+		"ZEmployeePositions"
+	],
+	"Properties": [
+		{
+			"Key": true,
+			"_Name": "ZPositionID",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "ZPositionDesc",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/SAPAssetManager/Services/AssetManager.service",
+	"_Name": "ZEmployeePosition"
+}

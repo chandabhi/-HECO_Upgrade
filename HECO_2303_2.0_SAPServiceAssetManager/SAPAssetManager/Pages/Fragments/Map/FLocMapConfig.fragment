@@ -1,0 +1,14 @@
+{
+    "Target": {
+        "EntitySet": "GISMapParameters",
+        "Service": "/SAPAssetManager/Services/AssetManager.service",
+        "Properties": [],
+        "KeyProperties": []
+    },
+    "ViewConfig": {
+        "ZoomOnLocationEnabled": false,
+        "UseDynamicLayerDisplayPrefs": true
+    },
+    "BaseMaps": [],
+    "FeatureLayers": []
+}

@@ -1,0 +1,63 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalsPageCaption.js",
+	"ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "$(PLT,'','Cancel')",
+				"Text": "$(L, close)",
+                "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
+            }
+        ]
+    },
+	"Controls": [
+		{
+			"Sections": [
+				{
+                    "ObjectHeader": {
+						"HeadlineText": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalsListHeadlineText.js",
+						"Labels": [
+									{
+										"ImagePosition": "Leading",
+										"Image": "/SAPAssetManager/Rules/WCM/Common/ApprovalStatusIcon.js",
+										"Text": "/SAPAssetManager/Rules/WCM/Common/ApprovalStatusText.js"
+									}
+						]
+                    },
+                    "_Type": "Section.Type.ObjectHeader",
+                    "_Name": "ApprovalsListViewObjectHeader"
+                },
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/Approvals/ApprovalsObjectTable.fragment",
+					"Properties": {
+						"_Name": "ReceivedApprovalsListSection",
+						"ObjectCell": {
+								"Footnote": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalInfoFormat.js",
+								"StatusText": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalInfoFormat.js",
+								"SubstatusText": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalInfoFormat.js",
+								"Icons": ["/SAPAssetManager/Images/approved.png"]
+						},
+						"Target": {
+							"QueryOptions": "/SAPAssetManager/Rules/WCM/Approvals/ReceivedApprovalsQueryOptions.js"
+						}
+					}
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/Approvals/ApprovalsObjectTable.fragment",
+					"Properties": {
+						"_Name" : "PendingApprovalsListSection",
+						"Target": {
+							"QueryOptions": "/SAPAssetManager/Rules/WCM/Approvals/PendingApprovalsQueryOptions.js"
+						}
+					}
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ApprovalsListViewPage",
+	"_Type": "Page"
+}

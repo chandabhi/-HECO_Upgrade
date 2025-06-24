@@ -1,0 +1,48 @@
+{
+	"Caption": "$(L, notes)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WCMNotes/WCMNoteSection.fragment",
+					"Properties": {
+						"_Name": "LongTextSection"
+					}
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WCMNotes/WCMNoteSection.fragment",
+					"Properties": {
+						"_Name": "RequalificationTextSection"
+					}
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WCMNotes/WCMNoteSection.fragment",
+					"Properties": {
+						"_Name": "TaggingTextSection"
+					}
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WCMNotes/WCMNoteSection.fragment",
+					"Properties": {
+						"_Name": "UntaggingTextSection"
+					}
+				},
+				{
+					"_Type": "Fragment",
+					"Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WCMNotes/WCMNoteSection.fragment",
+					"Properties": {
+						"_Name": "RejectionTextSection"
+					}
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "WCMNotesListPage",
+	"_Type": "Page"
+}

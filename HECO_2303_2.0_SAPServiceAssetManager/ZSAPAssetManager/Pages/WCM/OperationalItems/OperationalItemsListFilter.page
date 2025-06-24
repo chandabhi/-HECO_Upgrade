@@ -1,0 +1,158 @@
+{
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
+            },
+            {
+                "Position": "right",
+                "SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
+                "Text": "/SAPAssetManager/Rules/Filter/FilterText.js",
+                "OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js"
+            }
+        ]
+    },
+    "Caption":"$(L,filter)",
+    "Result":
+    [
+        "#Page:OperationalItemsListFilter/#Control:SortFilter/#Value",
+        "#Page:OperationalItemsListFilter/#Control:StatusFilter/#FilterValue",
+        "#Page:OperationalItemsListFilter/#Control:TechnicalObjectFilter/#FilterValue",
+        "#Page:OperationalItemsListFilter/#Control:PriorityFilter/#Value",
+        "#Page:OperationalItemsListFilter/#Control:OperationalGroupFilter/#Value",
+        "#Page:OperationalItemsListFilter/#Control:TagFormatFilter/#Value"
+    ],
+    "Controls":
+    [{
+        "Sections":[
+            {
+            "Controls":[
+                {
+                    "AllowEmptySelection":true,
+                    "Caption":"$(L,sort_by)",
+                    "SortByItems":
+                    [{
+                        "ReturnValue":"WCMDocumentHeaders/Priority",
+                        "DisplayValue":"$(L,related_safety_certificate_priority)"
+                    },
+                    {
+                        "ReturnValue":"WCMDocumentHeaders/WCMDocument",
+                        "DisplayValue":"$(L,related_safety_certificate_label)"
+                    }],
+                    "_Name":"SortFilter",
+                    "_Type":"Control.Type.FormCell.Sorter",
+                    "IsEditable":true
+                }
+            ]
+            },
+            {
+                "Controls":
+                    [
+                        {
+                            "_Name": "StatusFilter",
+                            "_Type": "Control.Type.FormCell.ListPicker",
+                            "Caption": "$(L,mobile_status)",
+                            "AllowMultipleSelection": true,
+                            "IsPickerDismissedOnSelection": false,
+                            "IsSearchCancelledAfterSelection": true,
+                            "IsSelectedSectionEnabled": true,
+                            "PickerItems": "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsStatusesFilter.js",
+                            "FilterProperty": "PMMobileStatus/MobileStatus"
+                        }
+                    ]
+            },
+            {
+                "Controls":
+                    [
+                        {
+                            "AllowMultipleSelection":true,
+                            "AllowEmptySelection":true,
+                            "Caption":"$(L,priority)",
+                            "FilterProperty":"/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsPriorityFilter.js",
+                            "_Name":"PriorityFilter",
+                            "_Type":"Control.Type.FormCell.Filter",
+                            "IsEditable":true
+                        }
+                    ]
+            },
+            {
+                "Controls": [
+                        {
+                            "AllowMultipleSelection": true,
+                            "IsPickerDismissedOnSelection": false,
+                            "IsSearchCancelledAfterSelection": true,
+                            "IsSelectedSectionEnabled": true,
+                            "Search": {
+                                "Enabled": true,
+                                "Delay": 500,
+                                "MinimumCharacterThreshold": 3,
+                                "Placeholder": "$(L,search)",
+				                "BarcodeScanner": true
+                            },
+                            "Caption": "$(L,wcm_technical_object)",
+                            "_Name": "TechnicalObjectFilter",
+                            "_Type": "Control.Type.FormCell.ListPicker",
+                            "FilterProperty": "TechObject",
+                            "PickerItems": {
+                                "ObjectCell": {
+                                    "Title": "{ShortText} ({TechObjectExternal})",
+                                    "Footnote": "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/TechObjectFilterItemFootnote.js",
+                                    "PreserveIconStackSpacing": false
+                                },
+                                "ReturnValue": "{TechObjectInternal}",
+                                "Target": {
+                                    "EntitySet": "WCMDocumentTechnicalObjects",
+                                    "Service": "/SAPAssetManager/Services/AssetManager.service",
+                                    "QueryOptions": "$orderby=ShortText"
+                                }
+                            }
+                        }
+                ]
+            },
+            {
+                "Controls":
+                    [
+                        {
+                            "AllowMultipleSelection":true,
+                            "AllowEmptySelection":true,
+                            "Caption":"$(L,operational_group)",
+                            "FilterProperty":"/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsOperationalGroupsFilter.js",
+                            "_Name":"OperationalGroupFilter",
+                            "_Type":"Control.Type.FormCell.Filter",
+                            "IsEditable":true
+                        }
+                    ]
+            },
+            {
+            "Controls": [
+                {
+                    "AllowMultipleSelection":true,
+                    "AllowEmptySelection":true,
+                    "Caption":"$(L,tag_print_format)",
+                    "FilterProperty":"/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsTagFormatFilter.js",
+                    "_Name":"TagFormatFilter",
+                    "_Type":"Control.Type.FormCell.Filter",
+                    "IsEditable":true
+                }
+            ]
+        },
+        {
+            "Controls": [
+                {
+                    "Title": "$(L,reset_all)",
+                    "_Type": "Control.Type.FormCell.Button",
+                    "ButtonType": "Text",
+                    "_Name": "ResetButton",
+                    "OnPress": "/SAPAssetManager/Rules/Filter/FilterReset.js",
+                    "TextAlignment": "/SAPAssetManager/Rules/Common/Platform/ModalButtonAlign.js"
+                }
+            ]
+        }],
+        "_Name":"FormCellContainer",
+        "_Type":"Control.Type.FormCellContainer"
+    }],
+    "_Type":"Page",
+    "_Name":"OperationalItemsListFilter"
+}

@@ -1,0 +1,32 @@
+{
+    "Caption": "$(L, add_attachment)",
+    "OnLoaded": "/SAPAssetManager/Rules/Equipment/AddEditDocumentPageOnLoaded.js",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "right",
+                "SystemItem":"$(PLT,'Done','')",
+                "Text": "/SAPAssetManager/Rules/Common/Platform/DoneText.js",
+                "OnPress": "/SAPAssetManager/Rules/InspectionCharacteristics/Update/InspectionCharacteristicsAddOrDeleteAttachment.js"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "Sections": [
+                {
+                    "Controls": [
+                        {
+                            "_Type": "Fragment",
+                            "Fragment": "/SAPAssetManager/Pages/Fragments/Documents/DocumentFormCell.fragment"
+                        }  
+                    ]
+                }
+            ],
+            "_Name": "FormCellContainer",
+            "_Type": "Control.Type.FormCellContainer"
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "InspectionCharacteristicsAddEditAttachmentsPage"
+}

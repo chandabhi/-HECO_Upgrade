@@ -1,0 +1,593 @@
+{
+  "_Type": "Page",
+  "_Name": "SideMenuDrawer",
+  "Controls": [
+    {
+      "_Type": "Control.Type.SideDrawer",
+      "ClearHistory": false,
+      "DataSubscriptions": "/SAPAssetManager/Rules/Common/DataSubscriptions.js",
+      "DrawerButton":"$(PLT,/SAPAssetManager/Images/sidemenu.pdf,/SAPAssetManager/Images/sidemenu.android.png)",
+      "Header": {
+        "IconIsCircular": true,
+        "Icon":"$(PLT,/SAPAssetManager/Images/sidemenuprofile.png,/SAPAssetManager/Images/sidemenuprofile.android.png)",
+        "Headline": "#Application/#AppData/UserId",
+        "SubHeadline": "/SAPAssetManager/Rules/SideDrawer/SideDrawerHeadLine.js"
+      },
+      "Sections": [
+        {
+          "PreserveImageSpacing": false,
+          "Items": [
+              {
+              "Title": "$(L,home)",
+              "PageToOpen":"/SAPAssetManager/Pages/ApplicationLandingPage.page",
+              "_Name": "OverviewBlank",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/overview.png,/SAPAssetManager/Images/overview.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableIfNoPersona.js"
+            },
+            {
+              "Title": "$(L,home)",
+              "PageToOpen":"/SAPAssetManager/Pages/Overview.page",
+              "_Name": "OverviewMT",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/overview.png,/SAPAssetManager/Images/overview.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableMaintenanceTechnician.js"
+            },
+            {
+              "Title": "$(L,home)",
+              "PageToOpen":"/SAPAssetManager/Pages/Inventory/InventoryOverview.page",
+              "_Name": "OverviewIC",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/overview.png,/SAPAssetManager/Images/overview.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L,home)",
+              "PageToOpen":"/SAPAssetManager/Pages/FieldService/FieldServiceOverview.page",
+              "_Name": "OverviewST",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/overview.png,/SAPAssetManager/Images/overview.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableFieldServiceTechnician.js"
+            },
+            {
+              "Title": "$(L,home)",
+              "PageToOpen":"/SAPAssetManager/Pages/WCM/WCMOverview.page",
+              "_Name": "OverviewWCM",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/overview.png,/SAPAssetManager/Images/overview.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/WCM/IsWCMOperator.js"
+            },
+            {
+              "Title": "$(L, document_download)",
+              "OnPress": "/SAPAssetManager/Actions/Inventory/Fetch/FetchDocuments.action",
+              "_Name": "Download",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/sidemenusearch.png,/SAPAssetManager/Images/sidemenusearch.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L, add_goods_issue)",
+              "OnPress": "/SAPAssetManager/Rules/Inventory/Stock/SetAdhocGoodsIssue.js",
+              "_Name": "AddGoodsIssue",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/additems.png,/SAPAssetManager/Images/additems.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L, add_goods_receipt)",
+              "_Name": "AddGoodsReceipt",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/additems.png,/SAPAssetManager/Images/additems.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "OnPress": "/SAPAssetManager/Rules/Inventory/Stock/SetAdhocGoodsReceipt.js",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L, add_stock_transfer)",
+              "_Name": "AddStockTransfer",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/additems.png,/SAPAssetManager/Images/additems.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "OnPress": "/SAPAssetManager/Rules/Inventory/Stock/SetAdhocStockTransfer.js",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L, add_physical_inventory)",
+              "OnPress": "/SAPAssetManager/Rules/Inventory/PhysicalInventory/SetPhysicalInventoryCreate.js",
+              "_Name": "AddPhysicalInventyry",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/additems.png,/SAPAssetManager/Images/additems.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L, add_purchase_requisition)",
+              "OnPress": "/SAPAssetManager/Rules/Inventory/PurchaseRequisition/AddPurchaseRequisitionNav.js",
+              "_Name": "AddPurchaseRequisition",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/additems.png,/SAPAssetManager/Images/additems.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L, stock_lookup)",
+              "OnPress": "/SAPAssetManager/Rules/Inventory/Stock/StockSearchNav.js",
+              "_Name": "StockLookup",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/stocksearch.png,/SAPAssetManager/Images/stocksearch.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableInventoryClerk.js"
+            },
+            {
+              "Title": "$(L,map)",
+              "PageToOpen":"/SAPAssetManager/Pages/Extensions/MapSideMenu.page",
+              "_Name": "Map",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/maps.png,/SAPAssetManager/Images/maps.android.png)",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/Maps/IsMTGISEnabled.js"
+            },
+            {
+              "Title": "$(L,map)",
+              "OnPress": "/SAPAssetManager/Actions/Extensions/WCMMapSideMenuNav.action",
+              "_Name": "WCMMap",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/maps.png,/SAPAssetManager/Images/maps.android.png)",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/Maps/IsWCMGISEnabled.js"
+            },
+            {
+              "Title": "$(L,map)",
+              "PageToOpen":"/SAPAssetManager/Pages/FieldService/FSMMap.page",
+              "_Name": "FSMMap",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/maps.png,/SAPAssetManager/Images/maps.android.png)",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/Maps/IsFSMGISEnabled.js"
+            },
+            {
+              "Title": "$(L,map)",
+              "PageToOpen":"/SAPAssetManager/Pages/FieldService/FSMS4Map.page",
+              "_Name": "FSMS4Map",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/maps.png,/SAPAssetManager/Images/maps.android.png)",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsS4SidePanelEnabled.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerSubOperationsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/operations.png,/SAPAssetManager/Images/operations.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/WorkOrders/SubOperations/SubOperationsListViewNav.js",
+              "_Name": "SubOperationsList",
+              "Visible": "/SAPAssetManager/Rules/WorkOrders/SubOperations/IsSubOperationLevelAssigmentType.js",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                }
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerOperationsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/operations.png,/SAPAssetManager/Images/operations.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/WorkOrders/Operations/OperationsListViewNav.js",
+              "_Name": "OperationsList",
+              "Visible": "/SAPAssetManager/Rules/WorkOrders/Operations/IsOperationLevelAssigmentType.js",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                }
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerWorkOrdersCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/orders.png,/SAPAssetManager/Images/orders.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/WorkOrders/WorkOrdersListViewNav.js",
+              "_Name": "WorkOrderList",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableWorkOrdersFacet.js"
+            },
+            {
+                "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerWorkApprovalsCount.js",
+                "PageToOpen": "/SAPAssetManager/Pages/WCM/WorkApprovals/WorkApprovalsListView.page",
+                "_Name": "WorkApprovals",
+                "ResetIfPressedWhenActive": true,
+                "Image": "$(PLT,/SAPAssetManager/Images/workapprovals.png,/SAPAssetManager/Images/workapprovals.android.png)",
+                 "Styles": {
+                    "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+                "Visible": "/SAPAssetManager/Rules/SideDrawer/SideDrawerWorkApprovalsVisible.js"
+            },
+            {
+                "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerWorkPermitsCount.js",
+                "OnPress": "/SAPAssetManager/Rules/WCM/WorkPermits/WorkPermitsListViewNav.js",
+                "_Name": "WorkPermits",
+                "ResetIfPressedWhenActive": true,
+                "Image": "$(PLT,/SAPAssetManager/Images/workpermits.png,/SAPAssetManager/Images/workpermits.android.png)",
+                 "Styles": {
+                    "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+                "Visible": "/SAPAssetManager/Rules/WCM/IsWCMOperator.js"
+            },
+            {
+                "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerLOTOCertificatesCount.js",
+                "OnPress": "/SAPAssetManager/Rules/WCM/SafetyCertificates/LOTOCertificatesListViewNav.js",
+                "_Name": "LOTOCertificates",
+                "ResetIfPressedWhenActive": true,
+                "Image": "$(PLT,/SAPAssetManager/Images/certificates.png,/SAPAssetManager/Images/certificates.android.png)",
+                 "Styles": {
+                    "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+                "Visible": "/SAPAssetManager/Rules/WCM/IsWCMOperator.js"
+            },
+            {
+                "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerOtherCertificatesCount.js",
+                "OnPress": "/SAPAssetManager/Rules/WCM/SafetyCertificates/OtherCertificatesListViewNav.js",
+                "_Name": "OtherCertificates",
+                "ResetIfPressedWhenActive": true,
+                "Image": "$(PLT,/SAPAssetManager/Images/othercertificates.png,/SAPAssetManager/Images/othercertificates.android.png)",
+                 "Styles": {
+                    "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+                "Visible": "/SAPAssetManager/Rules/WCM/IsWCMOperator.js"
+            },
+            {
+                "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerOperationalItemsCount.js",
+                "OnPress": "/SAPAssetManager/Actions/WCM/OperationalItems/OperationalItemsListViewNav.action",
+                "_Name": "OperationalItems",
+                "ResetIfPressedWhenActive": true,
+                "Image": "$(PLT,/SAPAssetManager/Images/operationalitems.png,/SAPAssetManager/Images/operationalitems.android.png)",
+                 "Styles": {
+                    "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                    "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+                "Visible": "/SAPAssetManager/Rules/WCM/IsWCMOperator.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerServiceItemsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image": "/SAPAssetManager/Images/doc.text.png",
+              "OnPress": "/SAPAssetManager/Rules/ServiceOrders/ListView/AllServiceItemsListViewNav.js",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsS4SidePanelEnabled.js",
+              "Styles": {
+                "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "_Name": "ServiceOrders"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerServiceOrdersCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/orders.png,/SAPAssetManager/Images/orders.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/SideDrawer/ServiceOrdersListViewNav.js",
+              "_Name": "ServiceOrderList",
+              "Styles": {
+                "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableFieldServiceTechnician.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerServiceRequestsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image": "/SAPAssetManager/Images/exclamationmark.png",
+              "OnPress": "/SAPAssetManager/Actions/ServiceOrders/ServiceRequestsListViewNav.action",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsS4SidePanelEnabled.js",
+              "Styles": {
+                "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "_Name": "ServiceRequests"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerExpensesCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/expense.png,/SAPAssetManager/Images/expense.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/SideDrawer/ExpensesListView.js",
+              "_Name": "ExtensesList",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+              "Visible": "/SAPAssetManager/Rules/ServiceOrders/Expenses/ExpensesVisible.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerServicePartsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image": "/SAPAssetManager/Images/shippingbox.png",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsS4SidePanelEnabled.js",
+              "OnPress": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServicePartsListViewNav.js",
+              "Styles": {
+                "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "_Name": "FSMParts"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerServiceNotificationsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/notifications.png,/SAPAssetManager/Images/notifications.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/Notifications/NotificationsListViewNav.js",
+              "_Name": "ServiceNotificationList",
+              "Styles": {
+                "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsS4SidePanelDisabled.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerNotificationsCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/notifications.png,/SAPAssetManager/Images/notifications.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/Notifications/NotificationsListViewNav.js",
+              "_Name": "NotificationList",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableMaintenanceTechnician.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerEquipmentCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/equipment.png,/SAPAssetManager/Images/equipment.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/Equipment/EquipmentListViewNav.js",
+              "_Name": "EquipmentList",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableForTechniciansAndWCM.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/FunctionalLocation/FunctionalLocationCaption.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/functionallocations.png,/SAPAssetManager/Images/functionallocations.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/FunctionalLocation/FunctionalLocationListViewNav.js",
+              "_Name": "FunctionalLocationList",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableForTechniciansAndWCM.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerServiceConfirmationsCount.js",
+              "OnPress": "/SAPAssetManager/Actions/Confirmations/List/ConfirmationsListViewNav.action",
+              "ResetIfPressedWhenActive": true,
+              "Image": "/SAPAssetManager/Images/checkmark.png",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsS4SidePanelEnabled.js",
+              "Styles": {
+                "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "_Name": "FSMConfirmations"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerRemindersCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/reminders.png,/SAPAssetManager/Images/reminders.android.png)",
+              "OnPress": "/SAPAssetManager/Actions/Reminders/RemindersListViewNav.action",
+              "_Name": "ReminderList",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableForTechniciansAndWCM.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/OverviewPage/TimeCaptureSection/TimeCaptureSectionTitle.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/timesheets.png,/SAPAssetManager/Images/timesheets.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/OverviewPage/TimeCaptureSection/OnPressTimeCaptureSectionSeeAll.js",
+              "_Name": "TimeCaptureSection",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/IsTimeSectionEnabled.js"
+            },
+            {
+              "Title": "$(L,time_records)",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/timesheets.png,/SAPAssetManager/Images/timesheets.android.png)",
+              "OnPress": "/SAPAssetManager/Actions/Confirmations/ConfirmationsOverviewListViewNav.action",
+              "_Name": "TimeCaptureSectionFST",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+                },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableTimeRecords.js"
+            },
+            {
+              "Title": "$(L, vehicle_stock_lookup)",
+              "OnPress": "/SAPAssetManager/Rules/Inventory/Stock/StockSearchNav.js",
+              "_Name": "VehicleStockLookup",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/vehicleStockLookup.png,/SAPAssetManager/Images/vehicleStockLookup.android.png)",
+               "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              },
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnableStockLookUp.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerInspectionLotCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/checklists.png,/SAPAssetManager/Images/checklists.android.png)",
+              "OnPress": "/SAPAssetManager/Actions/WorkOrders/InspectionLot/InspectionLotListViewNav.action",
+              "_Name": "InspectionLotList",
+              "Visible": "/SAPAssetManager/Rules/SideDrawer/EnabledChecklistSideMenu.js"
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/Forms/FSM/TotalFormInstancesCountSideBarCaption.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/checklists.png,/SAPAssetManager/Images/checklists.android.png)",
+              "OnPress": "/SAPAssetManager/Actions/Forms/FSM/FSMFormsInstancesListViewNav.action",
+              "_Name": "SmartFormInstanceList",
+              "Visible": "/SAPAssetManager/Rules/Forms/FSM/FSMSmartFormsFeatureIsEnabled.js"
+            },
+            {
+              "Title": "$(L,crew)",
+              "Image":"$(PLT,/SAPAssetManager/Images/crew.png,/SAPAssetManager/Images/crew.android.png)",
+              "ResetIfPressedWhenActive": true,
+              "OnPress": "/SAPAssetManager/Rules/Crew/CrewSummaryNavWrapper.js",
+              "Visible": "/SAPAssetManager/Rules/ComponentsEnablement/IsCrewComponentEnabled.js",
+              "_Name": "Crew"
+            }
+          ]
+        },
+        {
+
+          "PreserveImageSpacing": false,
+          "Items": [
+            {
+              "Title": "$(L,profile_settings)",
+              "OnPress": "/SAPAssetManager/Rules/ProfileSettings/UserProfileSettingsNav.js",
+              "ResetIfPressedWhenActive": true,
+              "_Name": "Profile",
+              "Image":"$(PLT,/SAPAssetManager/Images/settings.png,/SAPAssetManager/Images/settings.android.png)",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              }
+            },
+            {
+              "Title": "/SAPAssetManager/Rules/SideDrawer/SideDrawerErrorCount.js",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT,/SAPAssetManager/Images/errors.png,/SAPAssetManager/Images/errors.android.png)",
+              "OnPress": "/SAPAssetManager/Rules/ErrorArchive/ErrorArchiveAndSyncNav.js",
+              "_Name": "Errors",
+              "Styles": {
+                  "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,
+                  "SectionItemActive": "$(PLT,SectionItemActive,SideDrawerItemActive)",
+                  "SectionItemOnPress": "$(PLT,SectionItemActive,SideDrawerItemActive)"
+              }
+            },
+            {
+              "Title": "$(L, sync)",
+              "ResetIfPressedWhenActive": true,
+              "Image":"$(PLT, /SAPAssetManager/Images/syncForSidebar.png, /SAPAssetManager/Images/syncForSidebar.android.png)",
+				      "OnPress": "/SAPAssetManager/Rules/ApplicationEvents/ApplicationOnSync.js",
+              "_Name": "Sync"
+            }
+          ]
+        }
+      ],
+       "Styles": {
+        "DrawerBackground": "SideDrawerBackground",
+        "HeaderBackground": "SideDrawerHeaderBackground",
+        "HeaderIcon": "SideDrawerHeaderIcon",
+        "HeaderHeadline": "SideDrawerHeadline",
+        "HeaderSubHeadline": "SideDrawerSubHeadline",
+        "HeaderSeparator": "$(PLT,SideDrawerHeaderSeparator,SideDrawerHeaderSeparatorAndroid)",
+        "SectionCaption": "SideDrawerSectionCaption",
+        "SectionSeparator": "$(PLT,SideDrawerSectionSeparator,SideDrawerSectionSeparatorAndroid)",
+        "SectionItemActive": "SideDrawerItemActive",
+        "SectionItemOnPress": "SideDrawerItemOnPress",
+        "SectionItemInactive": "SideDrawerItemInactive"
+      }
+    }
+  ]
+}

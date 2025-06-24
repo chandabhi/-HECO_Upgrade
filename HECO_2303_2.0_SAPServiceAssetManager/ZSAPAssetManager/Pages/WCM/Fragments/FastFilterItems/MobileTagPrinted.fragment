@@ -1,0 +1,8 @@
+{
+	"_Name": "TagPrinted",
+	"_Type": "Control.Type.FastFilterItem",
+	"FilterType": "Filter",
+	"FilterProperty": "PMMobileStatus/MobileStatus",
+	"DisplayValue": "/SAPAssetManager/Rules/WCM/Common/MobileStatusTexts/MobileStatusTagPrintedText.js",
+	"ReturnValue": "/SAPAssetManager/Globals/MobileStatus/ParameterNames/WCM/TagPrintedParameterName.global"
+}

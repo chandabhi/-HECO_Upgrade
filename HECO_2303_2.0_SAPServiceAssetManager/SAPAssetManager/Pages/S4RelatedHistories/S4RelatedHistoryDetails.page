@@ -1,0 +1,70 @@
+{
+	"_Type": "Page",
+	"_Name": "S4RelatedHistoryDetails",
+	"Caption": "/SAPAssetManager/Rules/S4RelatedHistories/S4RelatedHistoryDetailsPageCaption.js",
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "S4RelatedHistoryDetailsSectionedTable",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "S4RelatedHistoryDetailsSection",
+					"Header": {
+						"Caption": "/SAPAssetManager/Rules/S4RelatedHistories/S4RelatedHistoryDetailsSectionCaption.js"
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L,description)",
+							"Value": "/SAPAssetManager/Rules/S4RelatedHistories/S4RelatedHistoryDescription.js"
+						},
+						{
+							"KeyName": "$(L,final_confirmation)",
+							"Value": "/SAPAssetManager/Rules/S4RelatedHistories/FinalConfirmationValue.js",
+							"Visible": "/SAPAssetManager/Rules/S4RelatedHistories/IsConfirmationDetails.js"
+						},
+						{
+							"KeyName": "$(L,start_date)",
+							"Value": "/SAPAssetManager/Rules/DateTime/RequestStartDate.js",
+							"Visible": "/SAPAssetManager/Rules/S4RelatedHistories/IsOrderOrRequestDetails.js"
+						},
+						{
+							"KeyName": "$(L,service_order_id)",
+							"Value": "{ObjectID}",
+							"Visible": "/SAPAssetManager/Rules/S4RelatedHistories/IsOrderOrRequestDetails.js"
+						},
+						{
+							"KeyName": "$(L,confirmation_id)",
+							"Value": "{ObjectID}",
+							"Visible": "/SAPAssetManager/Rules/S4RelatedHistories/IsConfirmationDetails.js"
+						},
+						{
+							"KeyName": "$(L,end_date)",
+							"Value": "/SAPAssetManager/Rules/DateTime/RequestEndDate.js",
+							"Visible": "/SAPAssetManager/Rules/S4RelatedHistories/IsOrderOrRequestDetails.js"
+						},
+						{
+							"KeyName": "$(L,priority)",
+							"Value": "/SAPAssetManager/Rules/S4RelatedHistories/S4RelatedHistoryPriority.js",
+							"Visible": "/SAPAssetManager/Rules/S4RelatedHistories/IsOrderOrRequestDetails.js"
+						}
+					]
+				},
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "S4RelatedHistoryNotesSection",
+					"Layout": {
+						"NumberOfColumns": 1,
+                        "MinimumInteritemSpacing": "$(PLT,66,0)" 
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L, notes)",
+							"Value": "/SAPAssetManager/Rules/S4RelatedHistories/S4RelatedHistoryNotes.js"
+						}
+					]
+				}
+			]
+		}
+	]
+}

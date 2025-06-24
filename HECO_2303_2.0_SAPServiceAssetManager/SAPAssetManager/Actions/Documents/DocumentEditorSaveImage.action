@@ -1,0 +1,7 @@
+{
+    "Title" : "$(L, save_image_title)",
+ 	"Message" : "$(L, save_image_message)",
+    "OKCaption" : "$(L, yes)",
+    "CancelCaption" : "$(L, no)",
+    "_Type" : "Action.Type.Message"
+}

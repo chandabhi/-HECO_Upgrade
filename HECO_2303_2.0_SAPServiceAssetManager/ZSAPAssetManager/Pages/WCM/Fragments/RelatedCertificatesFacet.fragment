@@ -1,0 +1,7 @@
+{
+	"AccessoryType": "disclosureIndicator",
+	"KeyName": "$(L,certificates)",
+	"Value": "/SAPAssetManager/Rules/WCM/SafetyCertificates/RelatedSafetyCertificatesCount.js",
+	"OnPress": "/SAPAssetManager/Actions/WCM/SafetyCertificatesListViewNav.action",
+	"Visible": "/SAPAssetManager/Rules/WCM/IsWCMOperator.js"
+}

@@ -1,0 +1,26 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNoteCaption.js",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{TextString}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1,
+						"MinimumInteritemSpacing": "$(PLT,66,0)" 
+            		},
+					"_Name": "WCMNote",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "WCMNoteDetailsPage",
+	"_Type": "Page"
+}

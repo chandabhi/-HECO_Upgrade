@@ -1,0 +1,5 @@
+{
+	"Position": "right",
+	"SystemItem":"$(PLT,'Done','')",
+	"Text": "/SAPAssetManager/Rules/Common/Platform/DoneText.js"
+}

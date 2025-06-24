@@ -1,0 +1,6 @@
+{
+    "_Type": "Control.Type.FormCell.DatePicker",
+    "Caption": "$(L,wcm_date_to)",
+    "Mode": "Datetime",
+    "IsVisible": false
+}

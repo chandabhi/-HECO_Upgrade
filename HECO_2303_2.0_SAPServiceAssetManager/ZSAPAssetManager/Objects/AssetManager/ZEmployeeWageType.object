@@ -1,0 +1,24 @@
+{
+	"Collection": [
+		"ZEmployeeWageTypes"
+	],
+	"Properties": [
+		{
+			"Key": true,
+			"_Name": "zWageType",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "zLongText",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "zShortText",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/SAPAssetManager/Services/AssetManager.service",
+	"_Name": "ZEmployeeWageType"
+}

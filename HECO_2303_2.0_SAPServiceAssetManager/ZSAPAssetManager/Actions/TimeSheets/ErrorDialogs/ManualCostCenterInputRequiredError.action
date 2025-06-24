@@ -1,0 +1,6 @@
+{
+    "_Type": "Action.Type.Message",
+    "Title": "$(L,validation_error)",
+    "Message": "$(L,Zvalidation_ManualCostCenterInput)",
+    "OKCaption": "$(L,ok)"
+}

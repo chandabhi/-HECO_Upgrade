@@ -1,0 +1,27 @@
+{
+    "Search": {
+        "Enabled" : true,
+        "Delay": 500,
+        "MinimumCharacterThreshold": 3,
+        "Placeholder": "$(L,search)",
+        "BarcodeScanner": true
+    },
+    "Header": {
+        "UseTopPadding": false
+    },
+    "EmptySection": {
+        "Caption": "$(L,no_operational_items_available)"
+    },
+    "ObjectCell":
+    {
+        "_Type": "Fragment",
+        "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/OperationalItems/OperationalItemObjectCell.fragment"
+    },
+    "Target": {
+        "EntitySet" : "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsListViewEntitySet.js",
+        "Service" : "/SAPAssetManager/Services/AssetManager.service",
+        "QueryOptions": "/SAPAssetManager/Rules/WCM/OperationalItems/ListView/OperationalItemsListViewQueryOptions.js"
+    },
+    "_Type" : "Section.Type.ObjectTable",
+    "_Name" : "OperationalItemsListSection"
+}

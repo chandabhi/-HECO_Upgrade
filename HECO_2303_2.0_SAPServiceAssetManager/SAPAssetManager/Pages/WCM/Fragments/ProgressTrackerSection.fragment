@@ -1,0 +1,29 @@
+{
+    "_Type": "Section.Type.FormCell",
+    "Controls": [
+        {
+            "_Type": "Control.Type.FormCell.Extension",
+            "Module": "extension-ProgressTrackerFramework",
+            "Control": "ProgressTrackerExtension",
+            "Class": "ProgressTrackerExtension",
+            "Height": "/SAPAssetManager/Rules/TimelineControl/ProgressTrackerHeight.js",
+            "ExtensionProperties": {
+                "Config": {
+                    "IsIndexVisible": false,
+                    "IsCompactMode": false,
+                    "IsCentered": false
+                },
+                "InitialSteps": "/SAPAssetManager/Rules/WCM/Common/WCMActivityTrackerStatusStepsData.js",
+                "OnDataChanged": "/SAPAssetManager/Rules/TimelineControl/ProgressTrackerOnDataChanged.js",
+                "IsSelectable": false
+            },
+            "Visible": true,
+            "_Name": "ProgressTrackerExtensionControl"
+        }
+    ],
+    "_Name": "ProgressTrackerExtensionSection",
+    "Header": {
+        "Caption": "$(L,activity)",
+        "UseTopPadding": true
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"Caption": "$(L,app_display_name)",
+	"ActionBar": {
+		"Items": [
+			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment"
+		]
+	},
+	"_Name": "ApplicationLandingPage",
+	"_Type": "Page"
+}

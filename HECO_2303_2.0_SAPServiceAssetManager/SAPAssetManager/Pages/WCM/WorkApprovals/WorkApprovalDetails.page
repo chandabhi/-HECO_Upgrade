@@ -1,0 +1,119 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/WorkApprovalDetailsCaption.js",
+	"Controls": [
+		{
+			"Sections": [
+				 {
+                    "ObjectHeader": {
+                        "HeadlineText": "{ShortText}",
+                        "Tags": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/WorkApprovalTags.js",
+                        "BodyText": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/WorkApprovalFuncLocDescription.js",
+                        "Footnote": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/WorkApprovalEquipmentDescription.js"
+                    },
+                    "_Type": "Section.Type.ObjectHeader",
+                    "_Name": "WorkApprovalObjectHeaderSection"
+                },
+                "/SAPAssetManager/Pages/WCM/Fragments/ProgressTrackerSection.fragment",
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "WorkApprovalDetailsSection",
+					"Header": {
+						"Caption": "$(L,work_approval_details)"
+					},
+					"KeyAndValues": [
+                        {
+							"KeyName": "$(L,planner_group)",
+                            "Value": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsPlannerGroup.js"
+						},
+                        {
+							"KeyName": "$(L,main_work_center)",
+                            "Value": "/SAPAssetManager/Rules/WCM/Common/GetWorkCenterIdDescription.js"
+						},
+                        {
+							"KeyName": "$(L,valid_from)",
+                            "Value": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/ValidFromDate.js"
+						},
+                        {
+							"KeyName": "$(L,valid_to)",
+                            "Value": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/ValidToDate.js"
+						}
+					]
+				},
+				{
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/RelatedWorkOrders/RelatedWorkOrdersObjectTable.fragment",
+                    "Properties": {
+                        "Header": {
+                            "Caption": "$(L,workorders)"
+                        },
+                        "MaxItemCount": 2,
+                        "Footer": {
+                            "AttributeLabel": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/GetRelatedObjectsCount.js",
+                            "Visible": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/IsFooterVisible.js"
+                        }
+                    }
+                },
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/WorkPermitObjectTable.fragment",
+                    "Properties": {
+                        "Header": {
+                            "Caption": "$(L,wcm_work_permits)"
+                        },
+                        "Search": {
+                            "Enabled": false
+                        },
+                        "MaxItemCount": 2,
+                        "Footer": {
+                            "Visible": "/SAPAssetManager/Rules/WCM/WorkApprovals/Details/IsFooterVisible.js"
+					    }
+                    }
+                },
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/RelatedSingleFunctionalLocationObjectTable.fragment",
+                    "Properties": {
+                        "Target": {
+                            "EntitySet": "{{#Property:@odata.readLink}}/MyFunctionalLocations"
+                        }
+                    }
+                },
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/WCM/Fragments/RelatedSingleMyEquipmentObjectTable.fragment",
+                    "Properties": {
+                        "Target": {
+                            "EntitySet": "{{#Property:@odata.readLink}}/MyEquipments"
+                        }
+                    }
+                },
+				{
+                    "SimplePropertyCells": [
+                        {
+                            "SimplePropertyCell": "/SAPAssetManager/Pages/Fragments/Documents/DocumentsSimplePropertyCell.fragment"
+                        },
+                        {
+                            "_Type": "Fragment",
+                            "Fragment": "/SAPAssetManager/Pages/Fragments/Notes/NotesFacet.fragment",
+                            "Properties": {
+                                "SimplePropertyCell": {
+                                    "Value": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNotesCount.js",
+                                    "OnPress": "/SAPAssetManager/Rules/WCM/WCMNotes/WCMNotesListNav.js"
+                                }
+                            }
+                        }
+                    ],
+                    "Layout": {
+                        "NumberOfColumns": 2,
+                        "MinimumInteritemSpacing": "$(PLT,66,0)"
+                    },
+                    "_Type": "Section.Type.SimplePropertyCollection"
+                }
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "WorkApprovalDetailsPage",
+	"_Type": "Page"
+}

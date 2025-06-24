@@ -1,0 +1,32 @@
+{
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "Sections":
+            [{
+                "_Type": "Section.Type.FormCell",
+                "_Name": "FormCellSection1",
+                "Controls":
+                [{
+                    "Caption": "$(L,testing)",
+                    "Value": "Testing 123",
+                    "IsAutoResizing": true,
+                    "_Name": "TestControl",
+                    "_Type": "Control.Type.FormCell.SimpleProperty"
+                }]
+            }
+        ],
+        "_Name": "FormCellContainer",
+        "_Type": "Control.Type.SectionedTable"
+    }],
+    "ToolBar": {},
+    "_Type": "Page",
+    "_Name": "CreateUpdatePage"
+}

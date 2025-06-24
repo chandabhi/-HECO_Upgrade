@@ -1,0 +1,63 @@
+{
+	"Caption": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalTitle.js",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"Caption": "$(L, 'details')"
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L, 'description')",
+								"Value": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalTitle.js"
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L, 'category')",
+								"Value": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalSubhead.js"
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L, 'status')",
+								"Value": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalStatus.js"
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L, 'issued_by')",
+								"Value": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalIssuedByPerson.js"
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"KeyName": "$(L, 'issue_date')",
+								"Value": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalIssueDate.js"
+							}
+						}
+					],
+					"_Type": "Section.Type.SimplePropertyCollection"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L, 'notes')",
+							"Value": "/SAPAssetManager/Rules/WCM/Approvals/ApprovalNotesValue.js"
+						}	
+					],
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ApprovalDetailsPage",
+	"_Type": "Page"
+}

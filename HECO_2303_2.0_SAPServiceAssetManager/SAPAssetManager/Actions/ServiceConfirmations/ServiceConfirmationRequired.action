@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.CheckRequiredFields",
+    "OnFailure": "/SAPAssetManager/Rules/Common/UpdateRequiredFailed.js",
+    "OnSuccess": "/SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/ServiceConfirmationOnCommit.js",
+    "RequiredFields": [
+       "DescriptionNote",
+       "ServiceOrderLstPkr"
+    ],
+    "ValidationRule": "/SAPAssetManager/Rules/Common/Validation/TechnicalObjectCreateUpdateValidation.js"
+}

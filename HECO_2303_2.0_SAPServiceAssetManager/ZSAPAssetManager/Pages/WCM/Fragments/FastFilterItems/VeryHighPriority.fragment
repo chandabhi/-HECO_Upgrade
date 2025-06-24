@@ -1,0 +1,8 @@
+{  
+	"_Name": "VeryHighPriority",
+	"_Type": "Control.Type.FastFilterItem",
+	"FilterType": "Filter",
+	"FilterProperty": "Priority",
+	"DisplayValue": "/SAPAssetManager/Rules/WCM/Common/PriorityVeryHighText.js",
+	"ReturnValue": "/SAPAssetManager/Globals/Priorities/VeryHigh.global"
+}

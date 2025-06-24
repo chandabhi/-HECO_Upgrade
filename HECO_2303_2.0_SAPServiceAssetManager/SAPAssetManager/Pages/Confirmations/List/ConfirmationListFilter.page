@@ -1,0 +1,119 @@
+{
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
+            },
+            {
+                "Position": "right",
+                "SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
+                "Text": "/SAPAssetManager/Rules/Filter/FilterText.js",
+                "OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js"
+            }
+        ]
+    },
+    "Caption":"$(L,filter)",
+    "Result": "/SAPAssetManager/Rules/Confirmations/List/Filter/ConfirmationListFilterResults.js",
+    "Controls":[
+        {
+            "Sections":[
+                {
+                    "Controls":[
+                        {
+                            "AllowEmptySelection":false,
+                            "Caption":"$(L,sort_by)",
+                            "SortByItems":
+                            [{
+                                "ReturnValue":"Description",
+                                "DisplayValue":"$(L, description)"
+                            },
+                            {
+                                "ReturnValue":"ObjectID",
+                                "DisplayValue":"$(L, confirmation_id)"
+                            }],
+                            "_Name":"SortFilter",
+                            "_Type":"Control.Type.FormCell.Sorter",
+                            "IsEditable":true
+                        }
+                    ]
+                },
+                {
+					"Controls": [
+						{
+							"Caption": "$(L,status)",
+							"_Name": "StatusLstPicker",
+							"IsPickerDismissedOnSelection": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+                            "Value": "/SAPAssetManager/Rules/Confirmations/List/Filter/InitialStatusPickerValue.js",
+                            "PickerItems": [
+								{
+									"DisplayValue": "$(L, open)",
+                                	"ReturnValue": "MobileStatus_Nav/MobileStatus eq 'OPEN'"
+								},
+								{
+									"DisplayValue": "$(L, completed)",
+                                	"ReturnValue": "MobileStatus_Nav/MobileStatus eq 'COMPLETED'"
+								},
+                                {
+									"DisplayValue": "$(L, final_text)",
+                                	"ReturnValue": "FinalConfirmation eq 'Y'"
+								}
+							],
+							"_Type": "Control.Type.FormCell.ListPicker",
+                            "FilterProperty": "Status"
+						}
+					]
+				},
+                {
+					"Controls": [
+						{
+							"Caption": "$(L,assignedto)",
+							"_Name": "AssignedToPicker",
+							"IsPickerDismissedOnSelection": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+                            "Search": {
+                                "Enabled": true,
+                                "Delay": 500,
+                                "MinimumCharacterThreshold": 3,
+                                "Placeholder": "$(L,search)",
+                                "BarcodeScanner": false
+                            },
+                            "PickerItems": {
+                                "DisplayValue": "{EmployeeName}",
+                                "ReturnValue": "{PersonnelNumber}",
+                                "Target": {
+                                    "EntitySet": "Employees",
+                                    "Service": "/SAPAssetManager/Services/AssetManager.service",
+                                    "QueryOptions": "$orderby=EmployeeName"
+                                }
+                            },
+							"_Type": "Control.Type.FormCell.ListPicker",
+                            "FilterProperty": "ServiceEmployee"
+						}
+					]
+				},
+                {
+                    "Controls": [
+                        {
+                            "Title": "$(L,reset_all)",
+                            "OnPress": "/SAPAssetManager/Rules/WorkOrders/WorkOrderListFilterReset.js",
+                            "_Type": "Control.Type.FormCell.Button",
+                            "ButtonType": "Text",
+                            "Semantic": "Tint",
+                            "_Name": "ResetButton",
+                            "TextAlignment": "/SAPAssetManager/Rules/Common/Platform/ModalButtonAlign.js"
+                        }
+                    ]
+                }
+            ],
+            "_Name":"FormCellContainer",
+            "_Type":"Control.Type.FormCellContainer"
+        }
+    ],
+    "_Type":"Page",
+    "_Name":"ConfirmationListFilterPage"
+}

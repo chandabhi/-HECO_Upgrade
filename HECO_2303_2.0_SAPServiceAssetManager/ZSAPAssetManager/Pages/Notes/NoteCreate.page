@@ -1,0 +1,47 @@
+{
+    "OnLoaded": "/SAPAssetManager/Rules/Notes/NoteCreateUpdateOnPageLoad.js",
+    "OnUnloaded": "/SAPAssetManager/Rules/Notes/NoteCreateUpdateOnPageUnloaded.js",
+    "Caption": "/SAPAssetManager/Rules/Notes/CreateUpdatePageCaption.js",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "right",
+                "SystemItem": "$(PLT,'Done','')",
+                "Text": "/SAPAssetManager/Rules/Common/Platform/DoneText.js",
+                "OnPress": "/SAPAssetManager/Rules/Notes/NoteCreateOnCommit.js"
+            },
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "Visible": "/SAPAssetManager/Rules/WorkOrders/Complete/IsNotCompleteAction.js",
+                "OnPress": "/SAPAssetManager/Rules/Common/CheckForChangesBeforeClose.js"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "Sections": [
+                {
+                    "Header": {
+                        "Caption" : "$(PLT,/SAPAssetManager/Rules/Supervisor/TechnicianRole/NoteFieldCaption.js,'')"
+                    },
+                    "Controls": [
+                        {
+                            "Caption" : "$(PLT,'',/SAPAssetManager/Rules/Supervisor/TechnicianRole/NoteFieldCaption.js)",
+                            "PlaceHolder": "/SAPAssetManager/Rules/Supervisor/TechnicianRole/NoteFieldCaption.js",
+                            "Value": "",
+                            "_Name": "LongTextNote",
+                            "_Type": "Control.Type.FormCell.Note",
+                            "IsAutoResizing": true
+                        }
+                    ],
+                    "_Type": "Section.Type.FormCell"
+                }
+            ],
+            "_Name": "FormCellContainer",
+            "_Type": "Control.Type.SectionedTable"
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "NoteAdd"
+}

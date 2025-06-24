@@ -1,0 +1,41 @@
+{
+    "EmptySection": {
+        "Caption": "$(L,no_confirmations_available)"
+    },
+    "Search": {
+        "Enabled": false,
+        "Delay": 500,
+        "MinimumCharacterThreshold": 3,
+        "Placeholder": "$(L,search)",
+        "BarcodeScanner": true
+    },
+    "ObjectCell": {
+        "Icons": "/SAPAssetManager/Rules/ServiceOrders/ListView/ServiceOrderListViewIconImages.js",
+        "PreserveIconStackSpacing": true,
+        "Title": "{Description}",
+        "Subhead": "{ObjectID}",
+        "Footnote": "/SAPAssetManager/Rules/Confirmations/Details/GetConfirmationDetailsNetValue.js",
+        "SubstatusText": "/SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersListViewFormat.js",
+        "StatusText": "/SAPAssetManager/Rules/Confirmations/List/GetObjectFinalStatusLabel.js",
+        "Styles": {
+            "StatusText": "SuccessGreenLabel"
+        },
+        "AccessoryType": "disclosureIndicator",
+        "OnPress": "/SAPAssetManager/Actions/Confirmations/Details/ConfirmationsDetailsNav.action"
+    },
+    "Footer": {
+        "Caption": "$(L,see_all)",
+        "AccessoryType": "disclosureIndicator",
+        "FooterStyle": "attribute",
+        "AttributeLabel": "#Count",
+        "OnPress": "/SAPAssetManager/Actions/Confirmations/List/ConfirmationsListViewNav.action",
+        "Visible": true
+    },
+    "Target": {
+        "EntitySet": "S4ServiceConfirmations",
+        "Service": "/SAPAssetManager/Services/AssetManager.service",
+        "QueryOptions": "$expand=ServiceConfirmationItems_Nav,MobileStatus_Nav,RefObjects_Nav/MyEquipment_Nav,RefObjects_Nav/MyFunctionalLocation_Nav,RefObjects_Nav/Material_Nav,Partners_Nav,OrderTransHistory_Nav,Document"
+    },
+    "_Name": "ConfirmationListSection",
+    "_Type": "Section.Type.ObjectTable"
+}

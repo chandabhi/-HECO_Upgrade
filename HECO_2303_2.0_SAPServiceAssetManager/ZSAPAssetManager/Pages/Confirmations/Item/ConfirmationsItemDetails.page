@@ -1,0 +1,268 @@
+{
+    "Caption": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsScreenCaption.js",
+    "OnReturning": "/SAPAssetManager/Rules/Confirmations/Details/ConfirmationDetailsOnReturning.js",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "right",
+                "SystemItem": "Edit",
+                "Visible": "/SAPAssetManager/Rules/Confirmations/Item/IsEditConfirmationItemEnabled.js",
+                "OnPress": "/SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/ServiceConfirmationItemUpdateNav.js"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "_Type": "Control.Type.SectionedTable",
+            "_Name": "SectionedTable",
+            "Sections": [
+                {
+                    "Header": {
+                        "UseTopPadding": true,
+                        "Caption": "$(L, confirmation_item_details)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L, product_id_label)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsProductId.js"
+                        },
+                        {
+                            "KeyName": "$(L, valuation_type)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsValuationType.js"
+                        },
+                        {
+                            "KeyName": "$(L, product_description)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsProductName.js"
+                        },
+                        {
+                            "KeyName": "$(L, net_value)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsNetValue.js"
+                        },
+                        {
+                            "KeyName": "$(L, start_of_work)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsRequestStart.js"
+                        },
+                        {
+                            "KeyName": "$(L, quantity)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsQuantity.js"
+                        },
+                        {
+                            "KeyName": "$(L, actual_duration)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsDuration.js"
+                        },
+                        {
+                            "KeyName": "$(L, status)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsStatus.js"
+                        },
+                        {
+                            "KeyName": "$(L, service_type)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsServiceType.js"
+                        }
+                    ],
+                    "Visible": "/SAPAssetManager/Rules/Confirmations/Item/IsItemServiceItem.js",
+                    "DataSubscriptions": ["PMMobileStatuses"],
+                    "Target": {
+						"EntitySet": "{@odata.readLink}",
+						"Service": "/SAPAssetManager/Services/AssetManager.service",
+						"QueryOptions": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailDataQuery.js"
+					},
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "ConfItemDetails"
+                },
+                {
+                    "Header": {
+                        "UseTopPadding": true,
+                        "Caption": "$(L, confirmation_item_details)"
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L, product_id_label)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsProductId.js"
+                        },
+                        {
+                            "KeyName": "$(L, product_description)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsProductName.js"
+                        },
+                        {
+                            "KeyName": "$(L, amount)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsAmount.js"
+                        },
+                        {
+                            "KeyName": "$(L, net_value)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsNetValue.js"
+                        },
+                        {
+                            "KeyName": "$(L, quantity)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsQuantity.js"
+                        },
+                        {
+                            "KeyName": "$(L, status)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsStatus.js"
+                        }
+                    ],
+                    "Visible": "/SAPAssetManager/Rules/Confirmations/Item/IsItemNotServiceItem.js",
+                    "DataSubscriptions": ["PMMobileStatuses"],
+                    "Target": {
+						"EntitySet": "{@odata.readLink}",
+						"Service": "/SAPAssetManager/Services/AssetManager.service",
+						"QueryOptions": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailDataQuery.js"
+					},
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "ConfItemDetailsNonService"
+                },
+                {
+                    "_Type": "Fragment",
+                    "Fragment": "/SAPAssetManager/Pages/Fragments/Confirmations/ConfirmationsObjectTableSection.fragment",
+                    "Properties": {
+                        "MaxItemCount": 1,
+                        "Header": {
+                            "Caption": "$(L,confirmation)",
+                            "UseTopPadding": false
+                        },
+                        "Target": {
+                            "EntitySet": "{{#Property:@odata.id}}/S4ServiceConfirmation_Nav"
+                        },
+                        "Footer": {
+                            "Visible": false
+                        }
+                    }
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L, service_contract_warranty)",
+                        "UseTopPadding": true
+                    },
+                    "KeyAndValues": [
+                        {
+                            "KeyName": "$(L, service_contract)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsServiceContract.js"
+                        },
+                        {
+                            "KeyName": "$(L, accounting_indicator)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsAccountingInd.js"
+                        },
+                        {
+                            "KeyName": "$(L, service_profile)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsServiceProfile.js"
+                        },
+                        {
+                            "KeyName": "$(L, warranty)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsWarranty.js"
+                        },
+                        {
+                            "KeyName": "$(L, service_contract_item)",
+                            "Value": "/SAPAssetManager/Rules/Confirmations/Item/GetItemDetailsServiceContractItem.js"
+                        }
+                    ],
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "SrvContractWarranty"
+                },
+                {
+                    "Header": {
+                        "Caption": "$(L, categorization)",
+                        "UseTopPadding": true
+                    },
+                    "KeyAndValues": [
+						{
+							"KeyName": "$(L,category_1)",
+							"Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category1Value.js"
+						},
+						{
+							"KeyName": "$(L,category_2)",
+							"Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category2Value.js"
+						},
+						{
+							"KeyName": "$(L,category_3)",
+							"Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category3Value.js"
+						},
+						{
+							"KeyName": "$(L,category_4)",
+							"Value": "/SAPAssetManager/Rules/ServiceOrders/Details/Category4Value.js"
+						}
+					],
+                    "_Type": "Section.Type.KeyValue",
+                    "_Name": "Categorization"
+                },
+                {
+                    "Header": {
+                        "UseTopPadding": true
+                    },
+                    "SimplePropertyCells": [
+                        {
+                           "SimplePropertyCell": {
+                                "KeyName": "$(L,notes)",
+                                "AccessoryType": "disclosureIndicator",
+								"Value": "/SAPAssetManager/Rules/Notes/NotesCount.js",
+								"OnPress": "/SAPAssetManager/Rules/Notes/NotesViewNav.js"
+                            }
+                        },
+                        {
+                           "SimplePropertyCell": {
+                                "KeyName": "$(L, service_contract)",
+                                "AccessoryType": "disclosureIndicator",
+								"OnPress": "/SAPAssetManager/Rules/ServiceOrders/ServiceContracts/ServiceContractDetailsNav.js",
+                                "Visible": "/SAPAssetManager/Rules/ServiceOrders/ServiceContracts/IsServiceContractVisible.js"
+                            }
+                        },
+                        {
+                           "SimplePropertyCell": {
+                                "KeyName": "$(L, reference_objects)",
+                                "AccessoryType": "disclosureIndicator",
+                                "Value": "/SAPAssetManager/Rules/ServiceOrders/Details/ReferenceObjectsCount.js",
+                                "OnPress": "/SAPAssetManager/Actions/ReferenceObjects/ReferenceObjectDetailsNav.action",
+								"Visible": "/SAPAssetManager/Rules/ServiceOrders/IsS4ServiceIntegrationEnabled.js"
+                            }
+                        },
+                        {
+                           "SimplePropertyCell": {
+                                "KeyName": "$(L, business_partners)",
+                                "AccessoryType": "disclosureIndicator",
+                                "Value": "/SAPAssetManager/Rules/BusinessPartners/BusinessPartnersCount.js",
+								"OnPress": "/SAPAssetManager/Actions/BusinessPartners/BusinessPartnersListViewNav.action"
+                            }
+                        },
+                        {
+							"SimplePropertyCell": "/SAPAssetManager/Pages/Fragments/Documents/DocumentsSimplePropertyCell.fragment"
+						},
+                        {
+                            "SimplePropertyCell": {
+                                "KeyName": "$(L, organizational_data)",
+                                "AccessoryType": "disclosureIndicator",
+                                "OnPress": "/SAPAssetManager/Rules/ServiceOrders/Details/OrganizationalData/OrganizationalDataNav.js",
+								"Visible": "/SAPAssetManager/Rules/ServiceOrders/Details/OrganizationalData/IsOrganizationalDataEnabled.js"
+                            }
+                        }
+                    ],
+                    "Layout": {
+                        "NumberOfColumns": 2,
+                        "MinimumInteritemSpacing": "$(PLT,66,0)"
+                    },
+                    "_Type": "Section.Type.SimplePropertyCollection"
+                }
+            ]
+        }
+    ],
+    "ToolBar": {
+        "Visible": "/SAPAssetManager/Rules/Confirmations/Details/IsConfirmationCompleted.js",
+        "Controls":[
+            {
+                "_Name": "FlexibleSpaceLeft",
+                "_Type": "Control.Type.ToolbarItem",
+                "SystemItem": "FlexibleSpace"
+            },
+            {
+                "_Name": "ConfirmationItemComplete",
+                "_Type": "Control.Type.ToolbarItem",
+                "Caption": "$(L, complete_confirmation_item)",
+                "OnPress": "/SAPAssetManager/Rules/Confirmations/Item/CompleteConfirmationItem.js"
+            },
+            {
+                "_Name": "FlexibleSpaceRight",
+                "_Type": "Control.Type.ToolbarItem",
+                "SystemItem": "FlexibleSpace"
+            }
+        ]
+    },
+    "_Type": "Page",
+    "_Name": "ConfirmationsItemDetailsPage"
+}

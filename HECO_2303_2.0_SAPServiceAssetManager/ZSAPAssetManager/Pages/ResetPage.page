@@ -1,0 +1,10 @@
+{
+	"Caption": "Resetting Application",
+	"ActionBar": {
+		"Items": [
+			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment"
+		]
+	},
+	"_Name": "ResetPage",
+	"_Type": "Page"
+}

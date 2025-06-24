@@ -1,0 +1,66 @@
+{
+    "Caption": "/SAPAssetManager/Rules/Documents/DocumentEditorCaption.js",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "Visible": "/SAPAssetManager/Rules/Documents/DocumentEditorCancelVisible.js",
+                "OnPress": "/SAPAssetManager/Rules/Documents/DocumentEditorOnCancel.js"
+            },
+            {
+                "_Name": "CropButton",
+                "Position": "right",
+                "Caption": "$(L,crop)",
+                "Visible": "/SAPAssetManager/Rules/Documents/DocumentEditorIsImageFormatWrapper.js",
+                "OnPress": "/SAPAssetManager/Rules/Documents/DocumentEditorEnterCropMode.js"
+            },
+            {
+                "_Name": "ResizeButton",
+                "Position": "right",
+                "Caption": "$(L,resize)",
+                "Visible": "/SAPAssetManager/Rules/Documents/DocumentEditorIsImageFormatWrapper.js",
+                "OnPress": "/SAPAssetManager/Rules/Documents/DocumentEditorResizeNav.js"
+            },
+            {
+                "_Name": "EditButton",
+                "Position": "right",
+                "SystemItem": "Edit",
+                "Visible": "/SAPAssetManager/Rules/Documents/DocumentEditorVisible.js",
+                "OnPress": "/SAPAssetManager/Rules/Documents/DocumentEditorEnterEditMode.js"
+            },
+            {
+                "_Name": "ClearButton",
+                "Position": "right",
+                "Caption": "$(L,clear)",
+                "Visible": false,
+                "OnPress": "/SAPAssetManager/Rules/Documents/DocumentEditorClearAnnotations.js"
+            },
+            {
+                "_Name": "SaveButton",
+                "Position": "right",
+                "SystemItem": "Save",
+                "Visible": false,
+                "OnPress": "/SAPAssetManager/Rules/Documents/DocumentEditorSave.js"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "_Type": "Control.Type.Extension",
+            "Module": "extension-DocumentEditor",
+            "Control": "DocumentEditorExtension",
+            "Class": "DocumentEditorExtension",
+            "_Name": "DocumentEditorExtensionControl",
+            "DataSubscriptions": [],
+            "ExtensionProperties": {
+                "Config": {},
+                "FileInfo": "/SAPAssetManager/Rules/Documents/DocumentEditorGetFileInfo.js",
+                "OnSave": "/SAPAssetManager/Rules/Documents/DocumentEditorOnSave.js",
+                "OnDelete": "/SAPAssetManager/Rules/Documents/DocumentEditorOnDelete.js"
+            }
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "DocumentEditorPage"
+}

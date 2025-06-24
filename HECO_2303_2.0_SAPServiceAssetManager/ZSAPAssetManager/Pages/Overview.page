@@ -1,0 +1,38 @@
+{
+	"Caption": "$(L,app_display_name)",
+	"OnLoaded": "/SAPAssetManager/Rules/OmniSpatial/ZOmniOnLoad.js",
+	"OnResume": "/SAPAssetManager/Rules/OmniSpatial/ZOmniOnLoad.js",
+	"OnReturning": "/SAPAssetManager/Rules/OverviewPage/OverviewOnPageReturning.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "right",
+				"Caption": "/SAPAssetManager/Rules/SideDrawer/ZAvailabilityTitle.js",
+				"_Name": "AvailabilityTitle",
+				"OnPress": "/SAPAssetManager/Rules/User/ZHECOUpdateAvailability.js"
+			},
+			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
+			{
+				"Position": "right",
+				"_Name": "AutoSync",
+				"Caption": "AutoSync",
+				"IconText": "SyncIcon",
+				"Icon": "$(PLT, /SAPAssetManager/Images/auto-sync.pdf, /SAPAssetManager/Images/auto-sync.android.png)",
+				"OnPress": "/SAPAssetManager/Rules/ApplicationEvents/ApplicationOnSync.js",
+				"Visible": "/SAPAssetManager/Rules/Sync/IsAutoSyncInProgress.js"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Class": "OmniSpatialExtension",
+			"Control": "OmniSpatialExtension",
+			"Module": "extension-OmniSpatial",
+			"_Name": "OmniSpatialRendererControl",
+			"_Type": "Control.Type.Extension",
+			"IsVisible": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "OverviewPage"
+}

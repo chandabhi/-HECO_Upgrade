@@ -1,0 +1,139 @@
+{
+	"ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
+            },
+            {
+                "Position": "right",
+                "SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
+                "Text": "/SAPAssetManager/Rules/Filter/FilterText.js",
+                "OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js"
+            }
+        ]
+    },
+	"Caption": "$(L,filter)",
+	"Result": "/SAPAssetManager/Rules/Forms/FSM/FSMFilteringResult.js",
+	"Controls":
+    [{
+		"Sections":
+        [{
+			"Controls":
+			[{
+                "AllowEmptySelection":true,
+                "Caption":"$(L,sort_by)",
+                "SortByItems":
+                [{
+                    "ReturnValue":"FSMFormTemplate_Nav/Name",
+                    "DisplayValue":"$(L,name)"
+                },
+                {
+                    "ReturnValue":"Closed",
+                    "DisplayValue":"$(L,status)"
+                }
+                ],
+                "_Name":"SortFilter",
+                "_Type":"Control.Type.FormCell.Sorter",
+                "IsEditable":true
+            }]
+		},
+        {
+            "Controls":
+            [{
+                "_Name": "WorkOrderFilter",
+                "_Type": "Control.Type.FormCell.ListPicker",
+                "Caption": "$(L,workorder)",
+                "AllowMultipleSelection": false,
+                "IsPickerDismissedOnSelection": true,
+                "IsSearchCancelledAfterSelection": true,
+                "Search": {
+                    "Enabled": true,
+                    "Delay": 500,
+                    "MinimumCharacterThreshold": 3,
+                    "Placeholder": "$(L,search)",
+                    "BarcodeScanner": true
+                },
+                "PickerItems": {
+                    "DisplayValue": "{{#Property:OrderId}} - {{#Property:OrderDescription}}",
+                    "ReturnValue": "{OrderId}",
+                    "Target": {
+                        "EntitySet": "MyWorkOrderHeaders",
+                        "Service": "/SAPAssetManager/Services/AssetManager.service",
+                        "QueryOptions": "/SAPAssetManager/Rules/Forms/FSM/FSMWorkOrderFilterQueryOptions.js"
+                    }
+                },
+                "OnValueChange": "/SAPAssetManager/Rules/Forms/FSM/FSMWorkOrderFilterOnValueChange.js",
+                "IsEditable" : "/SAPAssetManager/Rules/Forms/FSM/FSMWorkOrderFilterIsEditable.js"
+            },
+            {
+                "_Name": "OperationFilter",
+                "_Type": "Control.Type.FormCell.ListPicker",
+                "Caption": "$(L,operation)",
+                "AllowMultipleSelection": false,
+                "IsPickerDismissedOnSelection": true,
+                "IsSearchCancelledAfterSelection": true,
+                "Search": {
+                    "Enabled": true,
+                    "Delay": 500,
+                    "MinimumCharacterThreshold": 3,
+                    "Placeholder": "$(L,search)",
+                    "BarcodeScanner": true
+                },
+                "PickerItems": {
+                    "DisplayValue": "{{#Property:OperationNo}} - {{#Property:OperationShortText}}",
+                    "ReturnValue": "{OperationNo}",
+                    "Target": {
+                        "EntitySet": "MyWorkOrderOperations",
+                        "Service": "/SAPAssetManager/Services/AssetManager.service",
+                        "QueryOptions": "/SAPAssetManager/Rules/Operations/OperationsDefaultQueryOptions.js"
+                    }
+                },
+                "OnValueChange": "/SAPAssetManager/Rules/Forms/FSM/FSMOperationFilterOnValueChange.js"
+            }]
+        },
+        {
+            "Controls":
+            [{
+                "Caption":"$(L,type)",
+                "AllowEmptySelection":true,
+                "AllowMultipleSelection":true,
+                "_Type":"Control.Type.FormCell.Filter",
+                "IsEditable":true,
+                "_Name":"FSMTypeFilter",
+                "FilterProperty":"/SAPAssetManager/Rules/Forms/FSM/FSMTypeFilter.js"
+            }]
+        },
+        {
+            "Controls":
+            [{
+                "Caption":"$(L,status)",
+                "AllowEmptySelection":true,
+                "AllowMultipleSelection":true,
+                "_Type":"Control.Type.FormCell.Filter",
+                "IsEditable":true,
+                "_Name":"FSMStatusFilter",
+                "FilterProperty":"/SAPAssetManager/Rules/Forms/FSM/FSMStatusFilter.js"
+            }]
+        },
+		{
+            "Controls": [
+                {
+                    "Title": "$(L,reset_all)",
+                    "OnPress": "/SAPAssetManager/Rules/Forms/FSM/FSMListFilterReset.js",
+                    "_Type": "Control.Type.FormCell.Button",
+                    "ButtonType": "Text",
+                    "Semantic": "Tint",
+                    "_Name": "ResetButton",
+                    "TextAlignment": "/SAPAssetManager/Rules/Common/Platform/ModalButtonAlign.js"
+                }
+            ]
+        }],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Name": "FSMFilterPage",
+	"_Type": "Page",
+    "OnLoaded": "/SAPAssetManager/Rules/Forms/FSM/FSMListFilterOnLoaded.js"
+}

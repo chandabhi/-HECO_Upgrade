@@ -1,0 +1,43 @@
+{
+	"Caption": "/SAPAssetManager/Rules/ErrorArchive/ErrorArchiveCount.js",
+	"OnReturning": "/SAPAssetManager/Rules/ErrorArchive/ErrorArchiveOnReturn.js",
+	"ActionBar": {
+        "Items": [
+            {
+                "Position": "left",
+                "SystemItem": "Cancel",
+                "Visible": "/SAPAssetManager/Rules/Sync/SyncErrorCloseIsVisible.js",
+                "OnPress": "/SAPAssetManager/Actions/Page/ClosePage.action"
+            }
+        ]
+    },
+	"Controls":
+	[{
+		"Sections":[
+		{
+			"_Type": "Fragment",
+			"Fragment": "/SAPAssetManager/Pages/Fragments/ErrorArchive/ErrorArchiveSection.fragment"
+
+		},
+		{
+           "Header": {
+             "UseTopPadding": true
+           },
+          "Buttons": [
+            {
+              "Title" : "$(L,discard_all)",
+              "Style": "ResetRed",
+              "OnPress" : "/SAPAssetManager/Rules/Common/DiscardAllErrorsAction.js",
+			  "Visible": "/SAPAssetManager/Rules/Common/IsDiscardAllErrorsButtonVisible.js",
+              "TextAlignment" : "center"
+            }
+          ],
+          "_Type": "Section.Type.ButtonTable"
+		}],
+		"_Type" : "Control.Type.SectionedTable",
+		"_Name" : "ErrorArchiveSection"
+	}],
+	"_Type": "Page",
+	"_Name": "ErrorsArchivePage",
+	"DataSubscriptions": ["ErrorArchive"]
+}

@@ -1,0 +1,7 @@
+{
+    "Position": "right",
+    "Icon": "$(PLT,'',/SAPAssetManager/Images/filter.android.png)",
+    "Text": "$(L,filter)",
+    "OnPress":"",
+    "_Name": "FilterButton"
+}

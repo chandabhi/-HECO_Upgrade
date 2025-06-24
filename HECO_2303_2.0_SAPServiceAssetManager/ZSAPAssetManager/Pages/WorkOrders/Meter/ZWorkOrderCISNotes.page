@@ -1,0 +1,83 @@
+{
+    "Caption": "$(L, zservice_notes)",
+    "ActionBar": {
+        "Items": [
+            {
+                "Position": "right",
+                "SystemItem": "$(PLT,'Done','')",
+                "Text": "/SAPAssetManager/Rules/Common/Platform/DoneText.js",
+                "OnPress": "/SAPAssetManager/Actions/Page/ClosePage.action"
+            }
+        ]
+    },
+    "Controls": [
+        {
+            "Sections": [
+                {
+                    "Header": {
+                        "Caption" : "$(L, zcustomer_alert)"
+                    },
+                    "Controls": [
+                        {
+                            "Value": "/SAPAssetManager/Rules/Meter/HECO/ZCISCustomerAlertNotesValue.js",
+                            "_Name": "ZCISCustomerAlertNotesValue",
+                            "_Type": "Control.Type.FormCell.Note",
+                            "IsEditable": false,
+                            "IsAutoResizing": true
+                        }
+                    ],
+                    "_Type": "Section.Type.FormCell"
+                },
+                {
+                    "Header": {
+                        "Caption" : "$(L, zlocation_notes)"
+                    },
+                    "Controls": [
+                        {
+                            "Value": "/SAPAssetManager/Rules/Meter/HECO/ZCISLocationNotesValue.js",
+                            "_Name": "LocationNote",
+                            "_Type": "Control.Type.FormCell.Note",
+                            "IsEditable": false,
+                            "IsAutoResizing": true
+                        }
+                    ],
+                    "_Type": "Section.Type.FormCell"
+                },
+                {
+                    "Header": {
+                        "Caption" : "$(L, zmeter_read_instructions)"
+                    },
+                    "Controls": [
+                        {
+                            "Value": "/SAPAssetManager/Rules/Meter/HECO/ZCISMRInstructionNotesValue.js",
+                            "_Name": "ZCISMRInstructionNotesValue",
+                            "_Type": "Control.Type.FormCell.Note",
+                            "IsEditable": false,
+                            "IsAutoResizing": true
+                        }
+                    ],
+                    "_Type": "Section.Type.FormCell"
+                },
+                {
+                    "Header": {
+                        "Caption" : "$(L, zspecial_notes)"
+                    },
+                    "Controls": [
+                        {
+                            "Value": "/SAPAssetManager/Rules/Meter/HECO/ZCISSpecialInstructionNotesValue.js",
+                            "_Name": "ZCISSpecialInstructionNotesValue",
+                            "_Type": "Control.Type.FormCell.Note",
+                            "IsEditable": false,
+                            "IsAutoResizing": true
+                        }
+                    ],
+                    "_Type": "Section.Type.FormCell"
+                }
+            ],
+            "_Name": "FormCellContainer",
+            "_Type": "Control.Type.SectionedTable"
+        }
+    ],
+    "_Type": "Page",
+    "_Name": "ZWorkOrderCISNotes"
+}
