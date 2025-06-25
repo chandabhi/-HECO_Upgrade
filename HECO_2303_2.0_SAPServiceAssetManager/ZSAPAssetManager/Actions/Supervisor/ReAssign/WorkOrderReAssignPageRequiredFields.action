@@ -1,9 +1,0 @@
-{
-    "RequiredFields":
-    [
-        "AssignToLstPkr"
-    ],
-    "_Type": "Action.Type.CheckRequiredFields",
-    "OnSuccess": "/SAPAssetManager/Rules/Supervisor/ReAssign/WorkOrderReAssignChangeSet.js",
-    "OnFailure": "/SAPAssetManager/Rules/Common/UpdateRequiredFailed.js"
-}

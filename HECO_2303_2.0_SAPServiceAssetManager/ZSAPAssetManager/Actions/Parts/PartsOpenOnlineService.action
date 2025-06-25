@@ -1,4 +1,0 @@
-{
-	"Service": "/SAPAssetManager/Services/OnlineAssetManager.service",
-	"_Type": "Action.Type.ODataService.Initialize"
-}

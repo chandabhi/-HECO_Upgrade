@@ -1,9 +1,0 @@
-{
-	"_Type": "Action.Type.Navigation",
-	"PageToOpen" : "/SAPAssetManager/Pages/ResetPage.page",
-    "OuterNavigation" : true,
-    "ClearHistory": true,
-    "Transition": {
-        "Name": "None"
-    }
-}

@@ -1,8 +1,0 @@
-{
-	"PageToOpen": "/SAPAssetManager/Pages/Inventory/Fetch/FetchDocuments.page",
-    "ModalPage": true,
-	"_Type": "Action.Type.Navigation",
-    "ActionResult": {
-        "_Name": "filterResult"
-    }
-}

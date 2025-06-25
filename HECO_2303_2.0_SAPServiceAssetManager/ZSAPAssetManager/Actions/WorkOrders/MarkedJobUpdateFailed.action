@@ -1,6 +1,0 @@
-{
-    "Message": "$(L,unable_to_mark)",
-    "Duration": 5,
-    "Animated": true,
-    "_Type": "Action.Type.BannerMessage"
-}

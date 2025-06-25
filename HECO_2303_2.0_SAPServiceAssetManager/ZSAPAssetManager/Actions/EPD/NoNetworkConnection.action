@@ -1,6 +1,0 @@
-{
-	"_Type": "Action.Type.Message",
-	"Title": "$(L, error)",
-	"Message": "$(L, no_network_available)",
-	"OKCaption": "$(L, ok)"
-}

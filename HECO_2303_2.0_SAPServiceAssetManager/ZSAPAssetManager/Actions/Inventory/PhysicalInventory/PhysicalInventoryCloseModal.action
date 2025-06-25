@@ -1,5 +1,0 @@
-{ 
-    "CancelPendingActions": false,
-    "_Type": "Action.Type.ClosePage",
-    "OnSuccess": "/SAPAssetManager/Rules/ApplicationEvents/AutoSync/actions/PhysicalInventoryCreatedSuccessMessageWithAutoSync.js"
-}

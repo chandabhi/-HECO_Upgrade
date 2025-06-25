@@ -1,8 +1,0 @@
-{
-	"_Type": "Action.Type.Filter",
-	"PageToOpen": "/SAPAssetManager/Pages/ServiceOrders/Item/ServiceItemFilter.page",
-	"Filterable": "#Page:ServiceItemsListViewPage/#Control:SectionedTable",
-	"ActionResult": {
-		"_Name": "filterResult"
-	}
-}

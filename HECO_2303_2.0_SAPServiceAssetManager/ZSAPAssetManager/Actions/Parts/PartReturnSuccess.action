@@ -1,4 +1,0 @@
-{
-    "Message": "$(L,part_returned)",
-    "_Type": "Action.Type.ToastMessage"
-}

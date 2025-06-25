@@ -1,8 +1,0 @@
-{
-	"_Type": "Action.Type.ODataService.DeleteEntity",
-	"Target": {
-		"Service": "/SAPAssetManager/Services/AssetManager.service",
-		"EntitySet": "UserPreferences",
-		"ReadLink": "#ClientData/#Property:SignatureReadLink"
-	}
-}

@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "$(L,transaction_not_found)",
-    "Message": "$(L,transaction_discarded)",
-    "OKCaption": "$(L,ok)"
-}

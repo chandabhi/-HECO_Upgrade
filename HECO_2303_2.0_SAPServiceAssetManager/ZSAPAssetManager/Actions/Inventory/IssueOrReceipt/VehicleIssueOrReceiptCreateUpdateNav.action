@@ -1,5 +1,0 @@
-{
-	"PageToOpen": "/SAPAssetManager/Pages/Inventory/IssueOrReceipt/VehicleIssueOrReceiptCreate.page",
-	"_Type": "Action.Type.Navigation",
-    "ModalPage": true
-}

@@ -1,7 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Message": "$(L,final_confirmation_confirmation_title)",
-    "Title": "$(L,final_confirmation_confirmation_message)",
-    "OKCaption": "$(L, yes)",
-    "CancelCaption": "$(L, cancel)"
-}

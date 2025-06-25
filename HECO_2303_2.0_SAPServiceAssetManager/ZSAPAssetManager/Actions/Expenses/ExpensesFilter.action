@@ -1,8 +1,0 @@
-{
-    "_Type" : "Action.Type.Filter",
-    "PageToOpen" : "/SAPAssetManager/Pages/Expenses/ExpensesFilter.page",
-    "Filterable" : "#Page:ExpensesListViewPage/#Control:SectionedTable",
-    "ActionResult": {
-        "_Name": "filterResult"
-     }
-}

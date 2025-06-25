@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "$(L,activity_status_update)",
-    "Message": "$(L,meter_status_update)",
-    "OKCaption": "$(L,ok)"
-}

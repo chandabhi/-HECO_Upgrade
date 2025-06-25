@@ -1,5 +1,0 @@
-{
-    "_Type" : "Action.Type.Navigation",
-    "ModalPageFullscreen": true,
-    "PageToOpen" : "/SAPAssetManager/Pages/Documents/DocumentEditor.page"
-}

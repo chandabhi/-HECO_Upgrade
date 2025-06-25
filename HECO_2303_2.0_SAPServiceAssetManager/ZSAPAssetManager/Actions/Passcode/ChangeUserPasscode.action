@@ -1,5 +1,0 @@
-{
-    "OnFailure": "/SAPAssetManager/Actions/Passcode/ChangePasscodeFailure.action",
-    "OnSuccess": "/SAPAssetManager/Actions/Passcode/ChangePasscodeSuccess.action",
-    "_Type": "Action.Type.ChangeUserPasscode"
-}

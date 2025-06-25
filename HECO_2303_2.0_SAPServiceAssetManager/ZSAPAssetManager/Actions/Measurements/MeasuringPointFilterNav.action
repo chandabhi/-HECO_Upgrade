@@ -1,6 +1,0 @@
-{
-
-    "_Type" : "Action.Type.Filter",
-    "PageToOpen" : "/SAPAssetManager/Pages/Measurements/MeasuringPointFilter.page",
-    "Filterable" : "#Page:CreateUpdatePage/#ClientData/#Property:Filterable"
-}

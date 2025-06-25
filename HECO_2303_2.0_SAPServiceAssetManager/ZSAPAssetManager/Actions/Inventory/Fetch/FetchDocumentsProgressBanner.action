@@ -1,5 +1,0 @@
-{
-    "Message": "$(L,downloading_document)",
-    "_Type": "Action.Type.ProgressBanner",
-    "OnSuccess": "/SAPAssetManager/Actions/Inventory/Fetch/FetchUploadDocuments.action"
-}

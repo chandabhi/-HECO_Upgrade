@@ -1,8 +1,0 @@
-{
-	"Service": "/SAPAssetManager/Services/OnlineDigitalSignature.service",
-	"_Type": "Action.Type.ODataService.Initialize",
-	"OnFailure": "/SAPAssetManager/Actions/OData/DigitalSignature/CreateOnlineDigitalSignatureServiceFailed.action",
-	"ActionResult": {
-		"_Name": "result"
-	}
-}

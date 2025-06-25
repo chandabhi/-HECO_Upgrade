@@ -1,9 +1,0 @@
-{
-    "_Type" : "Action.Type.Filter",
-    "PageToOpen" : "/SAPAssetManager/Pages/Inventory/Search/InventorySearchFilter.page",
-    "Filterable" : "#Page:InboundOutboundListPage/#Control:SectionedTable",
-    "OnSuccess": "/SAPAssetManager/Rules/Inventory/Search/InventorySearchFilter.js",
-    "ActionResult": {
-        "_Name": "filterResult"
-     }
-}

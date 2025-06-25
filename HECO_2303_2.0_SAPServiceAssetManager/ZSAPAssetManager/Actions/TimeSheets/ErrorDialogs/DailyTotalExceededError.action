@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "$(L,validation_error)",
-    "Message": "$(L,validation_daily_total_exceeds_24_hours)",
-    "OKCaption": "$(L,ok)"
-}

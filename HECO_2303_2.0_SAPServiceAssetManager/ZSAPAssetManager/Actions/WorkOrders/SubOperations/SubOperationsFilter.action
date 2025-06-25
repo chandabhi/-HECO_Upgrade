@@ -1,9 +1,0 @@
-{
-    "_Type" : "Action.Type.Filter",
-    "PageToOpen" : "/SAPAssetManager/Pages/WorkOrders/SubOperation/SubOperationsFilter.page",
-    "Filterable" : "#Page:SubOperationsListViewPage/#Control:SectionedTable",
-    "OnSuccess": "/SAPAssetManager/Rules/WorkOrders/SubOperations/SubOperationsListViewFilter.js",
-    "ActionResult": {
-        "_Name": "filterResult"
-     }
-}

@@ -1,5 +1,0 @@
-{
-	"_Type": "Action.Type.ToastMessage",
-	"Message": "$(L,document_downloaded)",
-	"OnSuccess": "/SAPAssetManager/Rules/Inventory/Fetch/OpenDocumentPage.js"
-}

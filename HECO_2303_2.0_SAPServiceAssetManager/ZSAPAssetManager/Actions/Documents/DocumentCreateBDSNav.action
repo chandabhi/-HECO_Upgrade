@@ -1,5 +1,0 @@
-{
-    "ModalPage": true,
-    "_Type" : "Action.Type.Navigation",
-    "PageToOpen" : "/SAPAssetManager/Pages/Documents/DocumentCreateBDS.page"
-}

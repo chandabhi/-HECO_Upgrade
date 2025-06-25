@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "#ClientData/#Property:DialogTitle",
-    "Message": "#ClientData/#Property:DialogMessage",
-    "OKCaption": "#ClientData/#Property:DialogOkCaption"
-}

@@ -1,6 +1,0 @@
-{
-    "Message": "$(L,create_document_failed)",
-    "Duration": 2,
-    "Animated": true,
-    "_Type": "Action.Type.BannerMessage"
-}

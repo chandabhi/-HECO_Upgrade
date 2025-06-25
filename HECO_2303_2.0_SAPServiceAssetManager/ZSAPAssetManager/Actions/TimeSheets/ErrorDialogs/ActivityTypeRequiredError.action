@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "$(L,validation_error)",
-    "Message": "$(L,validation_activity_type_is_required_workorder)",
-    "OKCaption": "$(L,ok)"
-}

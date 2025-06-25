@@ -1,5 +1,0 @@
-{
-    "Message": "$(L,fetch_documents)",
-    "_Type": "Action.Type.ProgressBanner",
-    "OnSuccess": "/SAPAssetManager/Rules/Inventory/Fetch/FetchDocumentsOnline.js"
-}

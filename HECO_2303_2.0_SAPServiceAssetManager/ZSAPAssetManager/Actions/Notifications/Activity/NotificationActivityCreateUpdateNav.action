@@ -1,5 +1,0 @@
-{
-    "_Type" : "Action.Type.Navigation",
-	"ModalPage" : true,
-    "PageToOpen" : "/SAPAssetManager/Pages/Notifications/NotificationActivityCreateUpdate.page"
-}

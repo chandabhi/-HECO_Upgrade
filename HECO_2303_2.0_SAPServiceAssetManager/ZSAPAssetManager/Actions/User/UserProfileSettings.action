@@ -1,6 +1,0 @@
-{
-    "ModalPage": true,
-    "_Type" : "Action.Type.Navigation",
-    "PageToOpen" : "/SAPAssetManager/Pages/User/UserProfileSettings.page",
-    "PageMetadata": "/SAPAssetManager/Rules/UserProfile/AddPageElements.js"
-}

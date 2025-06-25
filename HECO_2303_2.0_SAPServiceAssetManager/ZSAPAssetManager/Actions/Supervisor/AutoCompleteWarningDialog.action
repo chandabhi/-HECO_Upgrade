@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "/SAPAssetManager/Rules/Supervisor/Approve/AutoCompleteOnApprovalWarningTitle.js",
-    "Message": "/SAPAssetManager/Rules/Supervisor/Approve/AutoCompleteOnApprovalWarningMessage.js",
-    "OKCaption": "$(L,ok)"
-}

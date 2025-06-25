@@ -1,9 +1,0 @@
-{
-	"Target":
-	{
-		"EntitySet": "WorkRequestConsequences",
-		"Service": "/SAPAssetManager/Services/AssetManager.service",
-		"ReadLink": ""
-	},
-	"_Type": "Action.Type.ODataService.DeleteEntity"
-}

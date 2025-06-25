@@ -1,6 +1,0 @@
-{
-    "_Type": "Action.Type.Message",
-    "Title": "$(L,fix_error)",
-    "Message": "$(L,sync_error_cannot_be_fixed)",
-    "OKCaption": "$(L,ok)"
-}

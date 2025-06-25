@@ -1,9 +1,0 @@
-{
-    "_Type" : "Action.Type.Filter",
-    "PageToOpen" : "/SAPAssetManager/Pages/Measurements/MeasuringPointsListFilter.page",
-    "Filterable" : "#Page:MeasuringPointsListViewPage/#Control:SectionedTable",
-    "OnSuccess": "/SAPAssetManager/Rules/Measurements/OnMeasuringPointsFilterSuccess.js",
-    "ActionResult": {
-        "_Name": "filterResult"
-     }
-}

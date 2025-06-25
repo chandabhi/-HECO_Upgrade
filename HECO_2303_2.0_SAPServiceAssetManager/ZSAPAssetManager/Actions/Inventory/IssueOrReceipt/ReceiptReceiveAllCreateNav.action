@@ -1,5 +1,0 @@
-{
-	"PageToOpen": "/SAPAssetManager/Pages/Inventory/PurchaseOrder/InventoryMaterialDocumentCreate.page",
-	"_Type": "Action.Type.Navigation",
-    "ModalPage": true
-}

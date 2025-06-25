@@ -1,6 +1,0 @@
-{
-    "Message": "$(L,forms_error_banner)",
-    "DismissBannerOnAction": true,
-    "Duration": 0,
-    "_Type": "Action.Type.BannerMessage"
-}

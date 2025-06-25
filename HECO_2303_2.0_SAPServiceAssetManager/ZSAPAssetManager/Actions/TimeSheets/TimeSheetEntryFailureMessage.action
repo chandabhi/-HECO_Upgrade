@@ -1,6 +1,0 @@
-{
-    "Message": "$(L,update_failed)",
-    "Duration": 3,
-    "Animated": true,
-    "_Type": "Action.Type.BannerMessage"
-}

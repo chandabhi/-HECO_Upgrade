@@ -1,8 +1,0 @@
-{
-	"_Type": "Action.Type.CheckRequiredFields",
-	"OnFailure": "/SAPAssetManager/Rules/UserPersonas/UpdateUserPersonaOnFailure.js",
-	"OnSuccess": "/SAPAssetManager/Rules/UserPersonas/OverviewUserPersona.js",
-    "RequiredFields": ["SwitchPersonaLstPkr"],
-	"ShowActivityIndicator": true,
-    "ActivityIndicatorText" : "  "
-}
