@@ -505,7 +505,7 @@
               "Title": "Reload Map",
               "ResetIfPressedWhenActive": true,
               "Image":"$(PLT,/SAPAssetManager/Images/maps.png,/SAPAssetManager/Images/maps.android.png)",
-              "OnPress": "/SAPAssetManager/Rules/OmniSpatial/ZOmniLoadMapData.js",
+              "OnPress": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniLoadMapData.js",
               "_Name": "ReloadMap",
               "Styles": {
                   "SectionItemInactive": "$(PLT,SectionItemActive,SideDrawerItemActive)" ,

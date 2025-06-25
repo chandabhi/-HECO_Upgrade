@@ -2,7 +2,7 @@
 	"PopoverItems": 
 	[{
 		"Title": "$(L,zfsm_crew_load)",
-		"OnPress" : "/SAPAssetManager/Rules/Crew/ZLoadFSMCrewAssignment.js"
+		"OnPress" : "/ZSAPAssetManager/Rules/Crew/ZLoadFSMCrewAssignment.js"
 	},
 	{
 		"Title": "$(L,add_crew_member)",

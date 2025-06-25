@@ -26,7 +26,7 @@ export default function DiscardAction(context) {
             // Issue 6 EditTimeSheet - fire update action to delete time entry
             if(context.binding.Status=="20"&&!context.binding['@sap.isLocal']){
                 context.binding.discard = true;
-                action = "/SAPAssetManager/Actions/TimeSheets/ZDIscardAfterSync.action";
+                action = "/ZSAPAssetManager/Actions/TimeSheets/ZDIscardAfterSync.action";
                 return context.executeAction(action)
              }
             let erroPageExists = false;

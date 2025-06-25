@@ -451,7 +451,7 @@ export class TimeSheetEventLibrary {
         if (ManualCostCenterInput) { //HECO Wage types don't allow use of attendance codes
             return Promise.resolve(true);
         } else {
-            return pageClientAPI.executeAction('/SAPAssetManager/Actions/TimeSheets/ErrorDialogs/ManualCostCenterInputRequiredError.action').then(function() {
+            return pageClientAPI.executeAction('/ZSAPAssetManager/Actions/TimeSheets/ErrorDialogs/ManualCostCenterInputRequiredError.action').then(function() {
                 return Promise.reject(false);
             });
         }

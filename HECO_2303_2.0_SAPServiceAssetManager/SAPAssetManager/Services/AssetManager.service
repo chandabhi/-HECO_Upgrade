@@ -1,7 +1,6 @@
 {
 	"DestinationName": "DEST_SAM2305_PPROP",
 	"LanguageURLParam": "sap-language",
-	"OfflineEnabled": true,
 	"OfflineOptions": {
     	"ServiceOptions": {
       		"supportsBind": false

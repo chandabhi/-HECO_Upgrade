@@ -317,8 +317,8 @@ export default async function DeviceMeterReadingsCreateUpdate(context) {
                                 'MeterReadingRecorded': reading,
                                 'MeterReaderNote': readerNote,
                                 'MeterReadingReason': readingReason,
-                                "ZMeterIRRWorkOrder": "/SAPAssetManager/Rules/Meter/CreateUpdate/ZMeterOrderId.js",
-                                "ZMeterIRRNotification": "/SAPAssetManager/Rules/Meter/CreateUpdate/ZMeterNotifNum.js"
+                                "ZMeterIRRWorkOrder": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/ZMeterOrderId.js",
+                                "ZMeterIRRNotification": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/ZMeterNotifNum.js"
                             };
 
                             if (isPeakReading) {
@@ -363,8 +363,8 @@ export default async function DeviceMeterReadingsCreateUpdate(context) {
                                 'PreviousReadingFloat': '/SAPAssetManager/Rules/Meter/PreviousReadingFloat.js',
                                 'PreviousReadingDate': '/SAPAssetManager/Rules/Meter/PreviousReadingDate.js',
                                 'PreviousReadingTime': '/SAPAssetManager/Rules/Meter/PreviousReadingTime.js',
-                                "ZMeterIRRWorkOrder": "/SAPAssetManager/Rules/Meter/CreateUpdate/ZMeterOrderId.js",
-                                "ZMeterIRRNotification": "/SAPAssetManager/Rules/Meter/CreateUpdate/ZMeterNotifNum.js"
+                                "ZMeterIRRWorkOrder": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/ZMeterOrderId.js",
+                                "ZMeterIRRNotification": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/ZMeterNotifNum.js"
                             };
 
                             if (isPeakReading) {

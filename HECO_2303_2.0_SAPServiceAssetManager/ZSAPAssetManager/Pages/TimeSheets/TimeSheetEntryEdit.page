@@ -54,8 +54,8 @@
                             },
                             "IsPickerDismissedOnSelection": true,
                             "IsSearchCancelledAfterSelection": true,
-                            "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditZWageType.js",
-                            "OnValueChange": "/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateWageTypeChange.js",
+                            "Value": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditZWageType.js",
+                            "OnValueChange": "/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateWageTypeChange.js",
                             "_Type": "Control.Type.FormCell.ListPicker",
                             "_Name": "ZWageTypeLstPkr"
                         },
@@ -65,7 +65,7 @@
                             "_Type": "Control.Type.FormCell.DurationPicker",
                             "Unit": "H",
                             "MinuteInterval": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/TimeSheetEntryMinuteInterval.js",
-                            "IsEditable": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditDuration.js",
+                            "IsEditable": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditDuration.js",
                             "IsVisible": true,
                             "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/TimeSheetEntryGetActualMinutes.js",
                             "OnValueChange": "/SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput.js"
@@ -76,8 +76,8 @@
                             "Mode" : "Time",
                             "_Type": "Control.Type.FormCell.DatePicker",
                             "_Name": "StartTimePicker",
-                            "IsEditable": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEnableTime.js",
-                            "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditStartTime.js"
+                            "IsEditable": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEnableTime.js",
+                            "Value": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditStartTime.js"
                         },
                         {
                             "Caption": "$(L, end_time)",
@@ -85,8 +85,8 @@
                             "Mode" : "Time",
                             "_Type": "Control.Type.FormCell.DatePicker",
                             "_Name": "EndTimePicker",
-                            "IsEditable": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEnableTime.js",
-                            "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEndTime.js"
+                            "IsEditable": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEnableTime.js",
+                            "Value": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEndTime.js"
                         },
                         {
                             "Caption": "$(L,absence_attendance_code)",
@@ -112,7 +112,7 @@
                                 }
                             },
                             "OnValueChange": "/SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput.js",
-                            "IsEditable": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEnableTime.js",
+                            "IsEditable": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditEnableTime.js",
                             "_Type": "Control.Type.FormCell.ListPicker",
                             "_Name": "AbsAttLstPkr",
                             "Value": "{AttendAbsenceType}"
@@ -122,9 +122,9 @@
                             "_Type": "Control.Type.FormCell.Switch",
                             "Caption": "$(L,zmanual_entry)",
                             "IsVisible": true,
-                            "IsEditable": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualEntrySwitch.js",
-                            "Value": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js",
-                            "OnValueChange": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZWorkOrderCreateUpdateManualEntry.js"
+                            "IsEditable": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualEntrySwitch.js",
+                            "Value": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js",
+                            "OnValueChange": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZWorkOrderCreateUpdateManualEntry.js"
                         },
                         {
                             "_Name": "ManualOrderInput",
@@ -133,8 +133,8 @@
                             "OnValueChange":"",
                             "PlaceHolder": "$(L,workorder)",
                             "Caption": "$(L,workorder)",
-                            "Value": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZValueManualOrderInput.js",
-                            "IsVisible": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js"
+                            "Value": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZValueManualOrderInput.js",
+                            "IsVisible": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js"
                         },
                         {
                             "_Name": "ManualOperationInput",
@@ -142,8 +142,8 @@
                             "MaxNumberOfLines": 1,
                             "PlaceHolder": "$(L,operation)",
                             "Caption": "$(L,operation)",
-                            "Value": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZValueManualOperationInput.js",
-                            "IsVisible": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js"
+                            "Value": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZValueManualOperationInput.js",
+                            "IsVisible": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js"
                         },
                         {
                             "_Name": "ManualCostCenterInput",
@@ -152,8 +152,8 @@
                             "PlaceHolder": "$(L,cost_center)",
                             "Caption": "$(L,cost_center)",
                             "OnValueChange":"",
-                            "Value": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZValueCostCent.js",
-                            "IsVisible": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js"
+                            "Value": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZValueCostCent.js",
+                            "IsVisible": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZVisibleManualOrderInput.js"
                         },
                         {
                             "Caption": "$(L,workorder)",
@@ -182,7 +182,7 @@
                             "IsEditable": "",
                             "_Type": "Control.Type.FormCell.ListPicker",
                             "_Name": "RecOrderLstPkr",
-                            "IsVisible": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryRecOrderVisible.js",
+                            "IsVisible": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryRecOrderVisible.js",
                             "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/TimeSheetEntryEditRecOrderValue.js"
                         },
                         {
@@ -210,7 +210,7 @@
                             },
                             "OnValueChange": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/TimeSheetEntryCreateUpdateOperationUpdate.js",
                             "IsEditable": "",
-                            "IsVisible": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryOperationLstPkrVisible.js",
+                            "IsVisible": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryOperationLstPkrVisible.js",
                             "_Type": "Control.Type.FormCell.ListPicker",
                             "_Name": "OperationLstPkr",
                             "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/TimeSheetEntryEditOperationValue.js"
@@ -314,7 +314,7 @@
                             "AllowMultipleSelection": false,
                             "IsPickerDismissedOnSelection": true,
                             "IsSearchCancelledAfterSelection": true,
-                            "IsEditable": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditWageType.js",
+                            "IsEditable": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditWageType.js",
                             "PickerItems":
                             {
                                 "DisplayValue" : "{{#Property:ZPositionID}} - {{#Property:ZPositionDesc}}",
@@ -326,7 +326,7 @@
                                     "QueryOptions": ""
                                 }
                             },
-                            "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditPosition.js",
+                            "Value": "/ZSAPAssetManager/Rules/TimeSheets/Entry/CreateUpdate/ZTimeSheetEntryEditPosition.js",
                             "_Type": "Control.Type.FormCell.ListPicker",
                             "_Name": "ZEmployeePositionLstPkr"
                         }

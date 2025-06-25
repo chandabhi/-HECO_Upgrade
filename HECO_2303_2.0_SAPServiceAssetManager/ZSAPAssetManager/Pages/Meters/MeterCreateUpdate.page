@@ -26,7 +26,7 @@
                     [
                         {
                             "Caption": "$(L,date)",
-                            "Value": "/SAPAssetManager/Rules/Meter/CreateUpdate/ZMeterActivityDate.js",
+                            "Value": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/ZMeterActivityDate.js",
                             "Mode" : "DateTime",
                             "DateTimeEntryMode" : "datetime",
                             "_Type": "Control.Type.FormCell.DatePicker",
@@ -277,7 +277,7 @@
                                     "QueryOptions" : "$orderby=MovementType"
                                 }
                             },
-                            "IsVisible": "/SAPAssetManager/Rules/Meter/CreateUpdate/MeterCreateUpdateGoodsMovementIsVisible.js",
+                            "IsVisible": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/MeterCreateUpdateGoodsMovementIsVisible.js",
                             "IsEditable": false,
                             "Value": "/SAPAssetManager/Rules/Meter/CreateUpdate/MeterCreateUpdateGoodsMovement.js",
                             "OnValueChange": "/SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput.js",

@@ -12,7 +12,7 @@
         "Description": "/SAPAssetManager/Rules/Documents/Create/DocumentCreateDescription.js",
         "OrderID": "/SAPAssetManager/Rules/WorkOrders/OperationWorkOrderId.js",
         "OperationNo": "/SAPAssetManager/Rules/WorkOrders/OperationNo.js",
-        "ZDocumentIsSensitive": "/SAPAssetManager/Rules/Documents/Create/ZDocumentCreateSensitive.js"
+        "ZDocumentIsSensitive": "/ZSAPAssetManager/Rules/Documents/Create/ZDocumentCreateSensitive.js"
     }
   },
   "Properties" : {
@@ -21,7 +21,7 @@
     "FileName": "/SAPAssetManager/Rules/Documents/Create/DocumentOnCreateFileName.js",
     "Description": "/SAPAssetManager/Rules/Documents/Create/DocumentCreateDescription.js",
     "MimeType": "/SAPAssetManager/Rules/Documents/Create/DocumentOnCreateMimeType.js",
-    "ZDocumentIsSensitive": "/SAPAssetManager/Rules/Documents/Create/ZDocumentCreateSensitive.js"
+    "ZDocumentIsSensitive": "/ZSAPAssetManager/Rules/Documents/Create/ZDocumentCreateSensitive.js"
   },
   "IsOnlineRequest": false,
   "ShowActivityIndicator": true,

@@ -33,7 +33,7 @@
 	},
 	{
 		"Title" : "$(L,zadjust_lat_long)",
-		"OnPress" : "/SAPAssetManager/Rules/Notifications/CreateUpdate/ZNotificationCreateUpdateAdjustLatLong.js"
+		"OnPress" : "/ZSAPAssetManager/Rules/Notifications/CreateUpdate/ZNotificationCreateUpdateAdjustLatLong.js"
 	}],
 	"_Type": "Action.Type.PopoverMenu"
 }

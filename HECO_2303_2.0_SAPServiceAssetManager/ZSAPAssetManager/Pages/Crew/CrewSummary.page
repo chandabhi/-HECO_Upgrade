@@ -28,7 +28,7 @@
 					},
 					"ContactCell": {
 						"Headline": "#Property:Employee/#Property:EmployeeName",
-                        "Subheadline": "/SAPAssetManager/Rules/Crew/Employees/ZCrewEmployeeSubheader.js",
+                        "Subheadline": "/ZSAPAssetManager/Rules/Crew/Employees/ZCrewEmployeeSubheader.js",
 						"OnPress": "/SAPAssetManager/Rules/Crew/Employees/CrewMemberDetailsNavWrapper.js",
                         "AccessoryType": "disclosureIndicator",
                         "ActivityItems": [

@@ -12,6 +12,6 @@ export default function ZCrewListItemProcessDisableLoop(context) {
         return Promise.resolve(true);
     } else { //Process row
         libCom.setStateVariable(context, 'CrewItemKeyCounter', counter);
-        return context.executeAction('/SAPAssetManager/Actions/Crew/ZCrewListItemDisable.action');
+        return context.executeAction('/ZSAPAssetManager/Actions/Crew/ZCrewListItemDisable.action');
     }
 }

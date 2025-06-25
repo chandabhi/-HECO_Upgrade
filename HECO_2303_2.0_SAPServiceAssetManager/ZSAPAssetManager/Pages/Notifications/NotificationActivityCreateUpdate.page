@@ -53,7 +53,7 @@
 				"Caption": "$(L,code)",
 				"IsEditable" : false,
 				"Value": "{ActivityCode}",
-				"OnValueChange": "/SAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateLocationNote.js",
+				"OnValueChange": "/ZSAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateLocationNote.js",
 				"PickerItems":
 				{
 					"DisplayValue" : "{{#Property:Code}} - {{#Property:CodeDescription}}",
@@ -82,10 +82,10 @@
 					{
 						"EntitySet" : "Locations",
 						"Service" : "/SAPAssetManager/Services/AssetManager.service",
-						"QueryOptions": "/SAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateLocationQuery.js"
+						"QueryOptions": "/ZSAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateLocationQuery.js"
 					}
 				},
-				"OnValueChange": "/SAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateDescriptionOnValueChange.js",
+				"OnValueChange": "/ZSAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateDescriptionOnValueChange.js",
 				"_Name": "ZLocationLstPkr",
 				"_Type": "Control.Type.FormCell.ListPicker"
 			},
@@ -106,7 +106,7 @@
                         "QueryOptions" : "$orderby=NoteID"
 					}
 				},
-				"OnValueChange": "/SAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateDescriptionOnValueChange.js",
+				"OnValueChange": "/ZSAPAssetManager/Rules/Notifications/Activity/CreateUpdate/ZNotificationActivityCreateUpdateDescriptionOnValueChange.js",
 				"_Name": "ZMeterReaderLstPkr",
 				"_Type": "Control.Type.FormCell.ListPicker"
 			}]

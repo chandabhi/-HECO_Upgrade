@@ -54,7 +54,7 @@
                             },
                             "IsPickerDismissedOnSelection": true,
                             "IsSearchCancelledAfterSelection": true,
-                            "OnValueChange": "/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateWageTypeChange.js",
+                            "OnValueChange": "/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateWageTypeChange.js",
                             "_Type": "Control.Type.FormCell.ListPicker",
                             "_Name": "ZWageTypeLstPkr"
                         },
@@ -148,7 +148,7 @@
                             "Caption": "$(L,zmanual_entry)",
                             "IsVisible": true,
                             "Value": false,
-                            "OnValueChange": "/SAPAssetManager/Rules/WorkOrders/CreateUpdate/ZWorkOrderCreateUpdateManualEntry.js"
+                            "OnValueChange": "/ZSAPAssetManager/Rules/WorkOrders/CreateUpdate/ZWorkOrderCreateUpdateManualEntry.js"
                         },
                         {
                             "_Name": "ManualOrderInput",

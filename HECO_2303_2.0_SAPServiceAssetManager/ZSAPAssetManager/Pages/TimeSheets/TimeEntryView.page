@@ -62,7 +62,7 @@
                         },
                         {
                             "KeyName": "$(L,zposition)",
-                            "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewZPosition.js"
+                            "Value": "ZSAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewZPosition.js"
                         },
                         {
                             "KeyName": "$(L,suboperation)",
@@ -74,7 +74,7 @@
                         },
                         {
                             "KeyName": "$(L,cost_center)",
-                            "Value": "/SAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewCostCenter.js"
+                            "Value": "/ZSAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewCostCenter.js"
                         }
                     ]
 				}

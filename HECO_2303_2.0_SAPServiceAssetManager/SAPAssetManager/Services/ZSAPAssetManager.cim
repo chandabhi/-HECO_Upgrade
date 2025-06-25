@@ -625,7 +625,7 @@
         },
         {
             "Source": "/ZSAPAssetManager/Rules/WorkOrders/WorkOrderSetTransferFields.js",
-            "Target": "/SAPAssetManager/Rules/WorkOrders/WorkOrderSetTransferFields.js"
+            "Target": "/ZSAPAssetManager/Rules/WorkOrders/WorkOrderSetTransferFields.js"
         },
         {
             "Source": "/ZSAPAssetManager/Rules/WorkOrders/WorkOrdersListViewNav.js",

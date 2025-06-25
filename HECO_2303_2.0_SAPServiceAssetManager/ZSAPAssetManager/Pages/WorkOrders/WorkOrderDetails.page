@@ -70,17 +70,7 @@
                         },
                         {
                             "ImageCell": {
-                                "Visible": "/SAPAssetManager/Rules/Meter/HECO/ZCISGetFlagHostile.js",
-                                "Image": "sap-icon://status-critical",
-                                "Title": "Hostile",
-                                "Styles": {
-                                    "Image": "FetchResetButton"
-                                }
-                            }
-                        },
-                        {
-                            "ImageCell": {
-                                "Visible": "/SAPAssetManager/Rules/Meter/HECO/ZCISGetFlagLifeSupport.js",
+                                "Visible": "/ZZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagLifeSupport.js",
                                 "Image": "sap-icon://e-care",
                                 "Title": "Life Supp",
                                 "Styles": {
@@ -90,7 +80,7 @@
                         },
                         {
                             "ImageCell": {
-                                "Visible": "/SAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIInNetwork.js",
+                                "Visible": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIInNetwork.js",
                                 "Image": "sap-icon://feed",
                                 "Title": "In-Network",
                                 "Styles": {
@@ -100,9 +90,9 @@
                         },
                         {
                             "ImageCell": {
-                                "Visible": "/SAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIOptVisible.js",
-                                "Image": "/SAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIOptImage.js",
-                                "Title": "/SAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIOptLabel.js",
+                                "Visible": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIOptVisible.js",
+                                "Image": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIOptImage.js",
+                                "Title": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagAMIOptLabel.js",
                                 "Styles": {
                                     "Image": "FetchResetButton"
                                 }
@@ -197,8 +187,8 @@
 						},
                         {
 							"KeyName": "$(L,zmru_sequence)",
-                            "Visible": "/SAPAssetManager/Rules/Meter/HECO/ZCISIsMeterOrder.js",
-                            "Value": "/SAPAssetManager/Rules/WorkOrders/ZWorkOrderMRUSequence.js"
+                            "Visible": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISIsMeterOrder.js",
+                            "Value": "/ZSAPAssetManager/Rules/WorkOrders/ZWorkOrderMRUSequence.js"
 						}
 					],
                     "Target": {

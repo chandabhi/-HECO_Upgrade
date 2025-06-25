@@ -1,6 +1,6 @@
 import libCom from '../Common/Library/CommonLibrary';
 import imageViewPath from './DocumentEditorImageViewPath';
-import imageViewLib from '../../Extensions/ImageViewModule/ImageViewLibrary';
+import imageViewLib from '../../../SAPAssetManager/Extensions/ImageViewModule/ImageViewLibrary';
 
 export default function DocumentEditorEstimate(context) {
     const imgSrc =  libCom.getStateVariable(context, 'DocumentEditorOriginalImageSource');

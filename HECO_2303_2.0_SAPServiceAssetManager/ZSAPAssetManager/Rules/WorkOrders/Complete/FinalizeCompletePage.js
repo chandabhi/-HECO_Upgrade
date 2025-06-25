@@ -70,7 +70,7 @@ export default function FinalizeCompletePage(context) {
                                                 (operCompleteNote&&context.binding.OrderType === 'TC01')
                                             ){
                                                     
-                                                context.executeAction('/SAPAssetManager/Actions/Notes/Create/ZNotesCopyOperCompleteToWO.action').then(() => {
+                                                context.executeAction('/ZSAPAssetManager/Actions/Notes/Create/ZNotesCopyOperCompleteToWO.action').then(() => {
                                                     libCom.setStateVariable(context, 'ZOperationCompleteNote', '');
                                                     return libAutoSync.autoSyncOnStatusChange(context);
                                                 })

@@ -1,0 +1,9 @@
+{
+    "mdk.referenceApplications": [
+        {
+            "name": "SAPAssetManager",
+            "path": "/Users/abhishekchand/Desktop/HECO/HECO_Upgrade/-HECO_Upgrade/HECO_2303_2.0_SAPServiceAssetManager/SAPAssetManager/Application.app",
+            "comp": "ZSAPAssetManager"
+        }
+    ]
+}

@@ -20,10 +20,10 @@ export default function ZCrewListItemProcessFSMLoop(context) {
                 return context.read('/SAPAssetManager/Services/AssetManager.service','CrewListItems',[],crewMemberQuery).then(result => {
                     if (result && result.length > 0 ) {
                         //If crew entry already exists, re-enable
-                        return context.executeAction('/SAPAssetManager/Actions/Crew/ZCrewListItemFSMEnable.action');
+                        return context.executeAction('/ZSAPAssetManager/Actions/Crew/ZCrewListItemFSMEnable.action');
                         
                     } else {
-                        return context.executeAction('/SAPAssetManager/Actions/Crew/ZCrewListItemFSMAdd.action');
+                        return context.executeAction('/ZSAPAssetManager/Actions/Crew/ZCrewListItemFSMAdd.action');
                     }
                 });
             } else {

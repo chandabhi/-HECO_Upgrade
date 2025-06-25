@@ -15,5 +15,5 @@ export default function ApplicationOnUserSwitch(context) {
     }
     storeParameters.setCustomHeaders(headers);
     ApplicationSettings.setBoolean(context,'didUserSwitchDeltaCompleted', false);
-    return context.executeAction('/SAPAssetManager/Actions/DeltaSyncProgressBannerMessage.action');
+    return context.executeAction('/ZSAPAssetManager/Actions/DeltaSyncProgressBannerMessage.action');
 }

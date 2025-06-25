@@ -6,5 +6,5 @@
     "MaxNumberOfLines": 2,
     "Duration": 3,
     "Animated": true,
-    "OnSuccess": "/SAPAssetManager/Rules/OmniSpatial/ZOmniOnSAMSync.js"
+    "OnSuccess": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniOnSAMSync.js"
 }

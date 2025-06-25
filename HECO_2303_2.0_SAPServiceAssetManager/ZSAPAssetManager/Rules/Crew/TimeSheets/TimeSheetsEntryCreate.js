@@ -97,18 +97,17 @@ function createTimesheet(context, perno, hours, increment) {
                         'Properties': {
                             'Counter': counter,
                             'Date': '/SAPAssetManager/Rules/TimeSheets/CreateUpdate/TimeSheetCreateUpdateDate.js',
-                            'Hours': '/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateDuration.js',
+                            'Hours': '/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateDuration.js',
                             'AttendAbsenceType': '#Control:AbsAttLstPkr/#SelectedValue',
                             'ActivityType': '#Control:ActivityTypeLstPkr/#SelectedValue',
                             'Workcenter': '#Control:WorkCenterLstPkr/#SelectedValue',
                             'PersonnelNumber': perno,
-                            "StartTime": "/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateStartTime.js",
-                            "EndTime": "/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateEndTime.js",
-                            'ZWageType': '/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateZWageType.js',
-                            "ZPosition": "/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateZPosition.js",
-                            "RecOrder" :"/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetOrder.js",
-                            "ZRecCCtr" :"/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCostCenter.js",
-                            "Operation": "/SAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetOperation.js"
+                            "StartTime": "/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateEndTime.js",
+                            'ZWageType': '/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateZWageType.js',
+                            "ZPosition": "/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateZPosition.js",
+                            "RecOrder" :"/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetOrder.js",
+                            "ZRecCCtr" :"/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetCostCenter.js",
+                            "Operation": "/ZSAPAssetManager/Rules/TimeSheets/CreateUpdate/ZTimeSheetOperation.js"
                         },
                         'Headers': {
                             'OfflineOData.TransactionID': counter,

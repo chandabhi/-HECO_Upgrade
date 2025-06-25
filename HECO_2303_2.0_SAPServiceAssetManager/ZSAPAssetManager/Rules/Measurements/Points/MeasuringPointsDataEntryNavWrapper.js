@@ -57,7 +57,7 @@ export default function MeasuringPointsDataEntryNavWrapper(context) {
             {
                 'Caption': "$(L,previous_reading)",
                 '_Name': 'PrevReadingSim',
-                'Value': '/SAPAssetManager/Rules/Measurements/Points/ZMeasuringPointPrevReadingDisplayValue.js',
+                'Value': '/ZSAPAssetManager/Rules/Measurements/Points/ZMeasuringPointPrevReadingDisplayValue.js',
                 '_Type': 'Control.Type.FormCell.SimpleProperty',
                 'IsEditable': false,
             },

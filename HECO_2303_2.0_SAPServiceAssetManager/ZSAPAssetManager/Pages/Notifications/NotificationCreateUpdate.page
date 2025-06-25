@@ -76,7 +76,7 @@
                 },
                 {
                     "_Type": "Control.Type.FormCell.Extension",
-                    "IsVisible": "/SAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocOnDevice.js",
+                    "IsVisible": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocOnDevice.js",
                     "Module": "extension-HierarchyFramework",
                     "Control": "HierarchyExtension",
                     "Class": "HierarchyExtension",
@@ -146,7 +146,7 @@
                 },
                 {
                     "_Type": "Control.Type.FormCell.Extension",
-                    "IsVisible": "/SAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocOnDevice.js",
+                    "IsVisible": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocOnDevice.js",
                     "Module": "extension-HierarchyFramework",
                     "Control": "HierarchyExtension",
                     "Class": "HierarchyExtension",
@@ -218,8 +218,8 @@
                     "_Type": "Control.Type.FormCell.SimpleProperty",
                     "_Name": "OmniSelectedFuncLoc",
                     "Caption": "$(L,functional_location)",
-                    "Value": "/SAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocFromOmni.js",
-                    "IsVisible": "/SAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocNotOnDevice.js",
+                    "Value": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocFromOmni.js",
+                    "IsVisible": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniFuncLocNotOnDevice.js",
                     "IsEditable": false
                 },
                 {
