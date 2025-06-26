@@ -272,7 +272,7 @@
                  "ObjectCell":
                 {
                     "PreserveIconStackSpacing": true,
-                    "AccessoryType": "/ZSAPAssetManager/Rules/Notifications/Details/NotificationDetailsEquipmentListFormat.js",
+                    "AccessoryType": "/SAPAssetManager/Rules/Notifications/Details/NotificationDetailsEquipmentListFormat.js",
                     "Title": "/SAPAssetManager/Rules/Notifications/Details/NotificationDetailsEquipmentListFormat.js",
                     "Subhead": "/SAPAssetManager/Rules/Notifications/Details/NotificationDetailsEquipmentListFormat.js",
                     "StatusText" : "/SAPAssetManager/Rules/Notifications/Details/NotificationDetailsEquipmentListFormat.js",

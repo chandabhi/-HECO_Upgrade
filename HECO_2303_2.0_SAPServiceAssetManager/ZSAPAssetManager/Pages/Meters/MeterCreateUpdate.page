@@ -277,7 +277,7 @@
                                     "QueryOptions" : "$orderby=MovementType"
                                 }
                             },
-                            "IsVisible": "/ZSAPAssetManager/Rules/Meter/CreateUpdate/MeterCreateUpdateGoodsMovementIsVisible.js",
+                            "IsVisible": "/SAPAssetManager/Rules/Meter/CreateUpdate/MeterCreateUpdateGoodsMovementIsVisible.js",
                             "IsEditable": false,
                             "Value": "/SAPAssetManager/Rules/Meter/CreateUpdate/MeterCreateUpdateGoodsMovement.js",
                             "OnValueChange": "/SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput.js",

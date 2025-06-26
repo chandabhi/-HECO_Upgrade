@@ -54,10 +54,10 @@
                     "ImageCells": [
                         {
                             "ImageCell": {
-                                "Visible": "/SAPAssetManager/Rules/Meter/HECO/ZCISCustomerAlertsVisible.js",
+                                "Visible": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISCustomerAlertsVisible.js",
                                 "Image": "sap-icon://bell",
                                 "Title": "Alerts",
-                                "OnPress": "/SAPAssetManager/Rules/Meter/HECO/ZCISNoteNav.js",
+                                "OnPress": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISNoteNav.js",
                                 "Target": {
                                     "EntitySet": "MyWorkOrderHeaders",
                                     "Service": "/SAPAssetManager/Services/AssetManager.service",
@@ -70,7 +70,17 @@
                         },
                         {
                             "ImageCell": {
-                                "Visible": "/ZZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagLifeSupport.js",
+                                "Visible": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagHostile.js",
+                                "Image": "sap-icon://status-critical",
+                                "Title": "Hostile",
+                                "Styles": {
+                                    "Image": "FetchResetButton"
+                                }
+                            }
+                        },
+                        {
+                            "ImageCell": {
+                                "Visible": "/ZSAPAssetManager/Rules/Meter/HECO/ZCISGetFlagLifeSupport.js",
                                 "Image": "sap-icon://e-care",
                                 "Title": "Life Supp",
                                 "Styles": {

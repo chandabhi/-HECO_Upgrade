@@ -27,7 +27,7 @@
             },{
                 "Caption": "$(L,operation)",
                 "IsEditable": false,
-                "Value": "/SAPAssetManager/Rules/MobileStatus/ZOperationTranferNo.js",
+                "Value": "/ZSAPAssetManager/Rules/MobileStatus/ZOperationTranferNo.js",
                 "_Name": "WorkOrderOperationNumber",
                 "_Type": "Control.Type.FormCell.SimpleProperty"
             },

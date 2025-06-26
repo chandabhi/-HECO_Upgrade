@@ -62,7 +62,7 @@
                         },
                         {
                             "KeyName": "$(L,zposition)",
-                            "Value": "ZSAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewZPosition.js"
+                            "Value": "/ZSAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewZPosition.js"
                         },
                         {
                             "KeyName": "$(L,suboperation)",

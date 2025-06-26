@@ -1,6 +1,0 @@
-{
-    "_Type": "Control.Type.ObjectCell",    
-    "Title": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/PartnerFunctionDescription.js",
-    "Subhead":"/SAPAssetManager/Rules/WCM/WorkPermitDetails/WCMBusinessPartnerName.js",
-    "Footnote": "/SAPAssetManager/Rules/WCM/WorkPermitDetails/WCMBusinessPartnerAddress.js"
-}

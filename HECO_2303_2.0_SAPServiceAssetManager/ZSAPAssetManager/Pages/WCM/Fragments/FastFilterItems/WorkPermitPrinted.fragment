@@ -1,8 +1,0 @@
-{
-	"_Name": "WorkPermitPrinted",
-	"_Type": "Control.Type.FastFilterItem",
-	"FilterType": "Filter",
-	"FilterProperty": "ActualSystemStatus",
-	"DisplayValue": "/SAPAssetManager/Rules/WCM/Common/StatusWorkPermitPrintedText.js",
-	"ReturnValue": "/SAPAssetManager/Globals/SystemStatuses/WorkPermitPrinted.global"
-}

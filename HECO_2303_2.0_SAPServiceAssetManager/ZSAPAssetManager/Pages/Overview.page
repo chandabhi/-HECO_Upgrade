@@ -1,15 +1,15 @@
 {
 	"Caption": "$(L,app_display_name)",
-	"OnLoaded": "/SAPAssetManager/Rules/OmniSpatial/ZOmniOnLoad.js",
-	"OnResume": "/SAPAssetManager/Rules/OmniSpatial/ZOmniOnLoad.js",
+	"OnLoaded": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniOnLoad.js",
+	"OnResume": "/ZSAPAssetManager/Rules/OmniSpatial/ZOmniOnLoad.js",
 	"OnReturning": "/SAPAssetManager/Rules/OverviewPage/OverviewOnPageReturning.js",
 	"ActionBar": {
 		"Items": [
 			{
 				"Position": "right",
-				"Caption": "/SAPAssetManager/Rules/SideDrawer/ZAvailabilityTitle.js",
+				"Caption": "/ZSAPAssetManager/Rules/SideDrawer/ZAvailabilityTitle.js",
 				"_Name": "AvailabilityTitle",
-				"OnPress": "/SAPAssetManager/Rules/User/ZHECOUpdateAvailability.js"
+				"OnPress": "/ZSAPAssetManager/Rules/User/ZHECOUpdateAvailability.js"
 			},
 			"/SAPAssetManager/Pages/Fragments/SyncButton.fragment",
 			{

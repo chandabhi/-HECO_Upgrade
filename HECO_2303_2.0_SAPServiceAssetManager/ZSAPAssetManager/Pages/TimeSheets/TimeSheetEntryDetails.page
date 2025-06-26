@@ -58,7 +58,7 @@
 								"Style": "GridTableRowText"
 							},
 							{
-								"Text": "/SAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewWageType.js",
+								"Text": "/ZSAPAssetManager/Rules/TimeSheets/Entry/View/ZTimeEntryViewWageType.js",
 								"TextAlignment": "center",
 								"Style": "GridTableRowText"
 							},
