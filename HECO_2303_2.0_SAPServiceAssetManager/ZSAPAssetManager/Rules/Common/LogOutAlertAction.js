@@ -2,7 +2,7 @@
 * Show Log out action prompot and log out the user
 * @param {IClientAPI} context
 */
-import Logger from '../Log/Logger';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
 export default function LogOutAlertAction(clientAPI) {
     const title = clientAPI.localizeText('logout_user_prompt_title');
     const message = clientAPI.localizeText('logout_user_promp_message');

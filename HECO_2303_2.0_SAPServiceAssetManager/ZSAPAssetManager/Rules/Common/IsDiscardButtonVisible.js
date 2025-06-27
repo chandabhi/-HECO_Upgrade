@@ -1,6 +1,6 @@
 import libCommon from './Library/CommonLibrary';
 import libMeter from '../Meter/Common/MeterLibrary';
-import IsMeterComponentEnabled from '../ComponentsEnablement/IsMeterComponentEnabled';
+import IsMeterComponentEnabled from '../../../SAPAssetManager/Rules/ComponentsEnablement/IsMeterComponentEnabled';
 
 export default function IsDiscardButtonVisible(context) {
     let pageName = libCommon.getPageName(context);

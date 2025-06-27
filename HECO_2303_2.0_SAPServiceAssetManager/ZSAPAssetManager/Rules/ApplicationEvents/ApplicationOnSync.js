@@ -1,5 +1,5 @@
-import isSyncInProgress from '../Sync/IsSyncInProgress';
-import errorLibrary from '../Common/Library/ErrorLibrary';
+import isSyncInProgress from '../../../SAPAssetManager/Rules/Sync/IsSyncInProgress';
+import errorLibrary from '../../../SAPAssetManager/Rules/Common/Library/ErrorLibrary';
 
 // MDK's solution to issue https://sapjira.wdf.sap.corp/browse/ICMTANGOAMF10-10286
 export default function ApplicationOnSync(clientAPI) {

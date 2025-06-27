@@ -1,5 +1,5 @@
 import libCom from '../../../Common/Library/CommonLibrary';
-import libVal from '../../../Common/Library/ValidationLibrary';
+import libVal  from '../../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 
 export default function StartValidation(context,control,start,length_field) {
 

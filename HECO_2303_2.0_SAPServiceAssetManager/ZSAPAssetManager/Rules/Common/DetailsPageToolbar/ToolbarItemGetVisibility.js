@@ -1,6 +1,6 @@
 import ToolbarGetStatusOptions from './ToolbarGetStatusOptions';
-import pageToolbar from './DetailsPageToolbarClass';
-import common from '../Library/CommonLibrary';
+import pageToolbar from './../../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/DetailsPageToolbarClass';
+import common from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
 import IsBusinessObjectChangeable from './IsBusinessObjectChangeable';
 
 export default function ToolbarItemGetVisibility(context) {

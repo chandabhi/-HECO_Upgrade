@@ -1,13 +1,13 @@
 
 import { TransactionNoteType as TransactionNoteType } from '../../Notes/NoteLibrary';
-import NoteUtils from '../Utils/NoteUtils';
-import libCommon from '../../Common/Library/CommonLibrary';
-import DocLib from '../../Documents/DocumentLibrary';
-import lamCopy from './NotificationItemCreateLAMCopy';
+import NoteUtils from '../../../../SAPAssetManager/Rules/Notifications/Utils/NoteUtils';
+import libCommon from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import DocLib from '../../../../SAPAssetManager/Rules/Documents/DocumentLibrary';
+import lamCopy from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationItemCreateLAMCopy';
 import libNotif from '../../Notifications/NotificationLibrary';
-import userFeaturesLib from '../../UserFeatures/UserFeaturesLibrary';
-import ExecuteActionWithAutoSync from '../../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
-import { isControlPopulated } from './RequiredFields';
+import userFeaturesLib from '../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import ExecuteActionWithAutoSync from '../../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import { isControlPopulated } from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/RequiredFields';
 
 function PartnerAddressLinks(context, partnerNum, partnerFunction) {
     let entitySet = '';

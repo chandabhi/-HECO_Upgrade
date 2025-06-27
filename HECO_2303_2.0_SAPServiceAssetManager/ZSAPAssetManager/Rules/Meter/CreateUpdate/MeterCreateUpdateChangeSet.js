@@ -1,6 +1,6 @@
 import libCommon from '../../Common/Library/CommonLibrary';
 import libMeter from '../../Meter/Common/MeterLibrary';
-import ODataDate from '../../Common/Date/ODataDate';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
 
 export default function MeterCreateUpdateChangeSet(context) {
     //HECO

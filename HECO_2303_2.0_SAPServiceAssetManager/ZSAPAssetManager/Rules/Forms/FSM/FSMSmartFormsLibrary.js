@@ -1,22 +1,22 @@
 import libThis from './FSMSmartFormsLibrary';
 import libCom from '../../Common/Library/CommonLibrary';
 import * as xmlModule from '@nativescript/core/xml';
-import Logger from '../../Log/Logger';
-import ValidationLibrary from '../../Common/Library/ValidationLibrary';
-import libPersona from '../../Persona/PersonaLibrary';
-import userFeaturesLib from '../../UserFeatures/UserFeaturesLibrary';
-import Base64Library from '../../Common/Library/Base64Library';
-import libLocal from '../../Common/Library/LocalizationLibrary';
-import libMeasure from '../../Measurements/MeasuringPointLibrary';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import ValidationLibrary from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import libPersona from '../..//../../SAPAssetManager/Rules/Persona/PersonaLibrary';
+import userFeaturesLib from '../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import Base64Library from '../../../../SAPAssetManager/Rules/Common/Library/Base64Library';
+import libLocal from '../../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
+import libMeasure from '../../../../SAPAssetManager/Rules/Measurements/MeasuringPointLibrary';
 import { v4 as uuidv4 } from 'uuid';
 import * as fs from '@nativescript/core/file-system';
-import NativeScriptObject from '../../Common/Library/NativeScriptObject';
-import IsAndroid from '../../Common/IsAndroid';
-import { GlobalVar } from '../../Common/Library/GlobalCommon';
+import NativeScriptObject from '../../../../SAPAssetManager/Rules/Common/Library/NativeScriptObject';
+import IsAndroid from '../../../../SAPAssetManager/Rules/Common/IsAndroid';
+import { GlobalVar } from '../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
 import { Evaluator } from './FSMCalculationLibrary';
-import isIOS from '../../Common/IsIOS';
-import ruleEvaluator from './FSMFormFieldOnValueChange';
-import IsS4ServiceIntegrationEnabled from '../../ServiceOrders/IsS4ServiceIntegrationEnabled';
+import isIOS from '../../../../SAPAssetManager/Rules/Common/IsIOS';
+import ruleEvaluator from './../../../../SAPAssetManager/Rules/Forms/FSM/FSMFormFieldOnValueChange';
+import IsS4ServiceIntegrationEnabled from '../../../../SAPAssetManager/Rules/ServiceOrders/IsS4ServiceIntegrationEnabled';
 
 /*
 * Contains all of the FSM Smartforms Feature related functions

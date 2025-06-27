@@ -1,10 +1,10 @@
-import libClock from '../../ClockInClockOut/ClockInClockOutLibrary';
-import libCommon from '../../Common/Library/CommonLibrary';
-import ExecuteActionWithAutoSync from '../../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
-import IsCompleteAction from '../../WorkOrders/Complete/IsCompleteAction';
+import libClock from '../../../../SAPAssetManager/Rules/ClockInClockOut/ClockInClockOutLibrary';
+import libCommon from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import ExecuteActionWithAutoSync from '../../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import IsCompleteAction from '../../../../SAPAssetManager/Rules/WorkOrders/Complete/IsCompleteAction';
 import WorkOrderCompletionLibrary from '../../WorkOrders/Complete/WorkOrderCompletionLibrary';
-import GetDuration from '../../Confirmations/CreateUpdate/OnCommit/GetDuration';
-import ConvertDoubleToHourString from '../../Confirmations/ConvertDoubleToHourString';
+import GetDuration from '../../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OnCommit/GetDuration';
+import ConvertDoubleToHourString from '../../../../SAPAssetManager/Rules/Confirmations/ConvertDoubleToHourString';
 
 export default function TimeSheetSuccess(context) {
     let result = context.getActionResult('actionResult').data; //Timesheet row that was just created

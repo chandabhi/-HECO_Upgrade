@@ -2,10 +2,10 @@
 * Create all the documents with correct extensions
 * @param {Icontext} context
 */
-import documentLinksOnUpdate from './DocumentCreateBDSLink';
-import libVal from '../../Common/Library/ValidationLibrary';
+import documentLinksOnUpdate from './../../../../SAPAssetManager/Rules/Documents/Create/DocumentCreateBDSLink';
+import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 import libCom from '../../Common/Library/CommonLibrary';
-import documentLinksOnCreate from '../Create/DocumentOnCreateLink';
+import documentLinksOnCreate from '../../../../SAPAssetManager/Rules/Documents/Create/DocumentOnCreateLink';
 
 export default function DocumentCreateBDS(context, attachmentList='') {
     let documentCreateAction = '';

@@ -1,7 +1,7 @@
 import { NoteLibrary as NoteLib } from './NoteLibrary';
 import libCommon from '../Common/Library/CommonLibrary';
-import Constants from '../Common/Library/ConstantsLibrary';
-import IsCompleteAction from '../WorkOrders/Complete/IsCompleteAction';
+import IsCompleteAction from '../../../SAPAssetManager/Rules/WorkOrders/Complete/IsCompleteAction';
+import Constants from '../../../SAPAssetManager/Rules/Common/Library/ConstantsLibrary';
 import WorkOrderCompletionLibrary from '../WorkOrders/Complete/WorkOrderCompletionLibrary';
 
 export default function NoteCreateOnCommit(clientAPI) {

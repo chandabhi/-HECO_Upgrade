@@ -1,11 +1,11 @@
 import { FDCSectionHelper } from '../../FDC/DynamicPageGenerator';
-import localization from '../../Common/Library/LocalizationLibrary';
+import localization from '../../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
 import libMeter from '../Common/MeterLibrary';
-import { GlobalVar } from '../../Common/Library/GlobalCommon';
+import { GlobalVar } from '../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
 import MeterReplaceInstall from './MeterReplaceInstall';
 import libCommon from '../../Common/Library/CommonLibrary';
-import libVal from '../../Common/Library/ValidationLibrary';
-import countDecimals from '../../Classification/Characteristics/Validation/CharacteristicsCountDecimal';
+import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import countDecimals from '../../../../SAPAssetManager/Rules/Classification/Characteristics/Validation/CharacteristicsCountDecimal';
 
 export default async function DeviceMeterReadingsCreateUpdate(context) {
     let sectionHelper = new FDCSectionHelper(context);

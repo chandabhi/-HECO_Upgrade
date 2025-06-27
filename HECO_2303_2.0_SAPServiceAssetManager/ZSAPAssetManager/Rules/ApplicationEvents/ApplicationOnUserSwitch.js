@@ -1,4 +1,4 @@
-import ApplicationSettings from '../Common/Library/ApplicationSettings';
+import ApplicationSettings from '../../../SAPAssetManager/Rules/Common/Library/ApplicationSettings';
 
 /**
 * Function that executes when reset action is being called with Skip Reset set to true

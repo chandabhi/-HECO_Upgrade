@@ -1,21 +1,21 @@
 
-import MobileStatusAction from './MobileStatusAction';
+import libEval from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import MobileStatusAction from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusAction';
 import libCommon from '../Common/Library/CommonLibrary';
-import libEval from '../Common/Library/ValidationLibrary';
-import libMobile from './MobileStatusLibrary';
-import libClock from '../ClockInClockOut/ClockInClockOutLibrary';
+import libMobile from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
+import libClock  from '../../../SAPAssetManager/Rules/ClockInClockOut/ClockInClockOutLibrary';
+import ODataDate from '../../../SAPAssetManager/Rules/Common/Date/ODataDate';
 import libSuper from '../Supervisor/SupervisorLibrary';
-import ODataDate from '../Common/Date/ODataDate';
-import mobileStatusEAMObjectType from './MobileStatusEAMObjectType';
+import mobileStatusEAMObjectType from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusEAMObjectType';
+import GenerateConfirmationCounter from '../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OnCommit/GenerateConfirmationCounter';
 
-import GenerateOffsetConfirmationNum from '../Confirmations/BlankFinal/GenerateOffsetConfirmationNum';
-import GenerateConfirmationCounter from '../Confirmations/CreateUpdate/OnCommit/GenerateConfirmationCounter';
-import FinalConfirmationOrderID from '../Confirmations/BlankFinal/FinalConfirmationOrderID';
-import FinalConfirmationOperation from '../Confirmations/BlankFinal/FinalConfirmationOperation';
-import FinalConfirmationSubOperation from '../Confirmations/BlankFinal/FinalConfirmationSubOperation';
-import FinalConfirmation from '../Confirmations/BlankFinal/FinalConfirmation';
-import ConfirmationCreateBlankReadLink from '../Confirmations/BlankFinal/ConfirmationCreateBlankReadLink';
-import mobileStatusHistoryEntryCreate from './MobileStatusHistoryEntryCreate';
+import FinalConfirmationOrderID from '../../../SAPAssetManager/Rules/Confirmations/BlankFinal/FinalConfirmationOrderID';
+import GenerateOffsetConfirmationNum from '../../../SAPAssetManager/Rules/Confirmations/BlankFinal/GenerateOffsetConfirmationNum';
+import FinalConfirmationOperation from '../../../SAPAssetManager/Rules/Confirmations/BlankFinal/FinalConfirmationOperation';
+import FinalConfirmationSubOperation from '../../../SAPAssetManager/Rules/Confirmations/BlankFinal/FinalConfirmationSubOperation';
+import FinalConfirmation from '../../../SAPAssetManager/Rules/Confirmations/BlankFinal/FinalConfirmation';
+import ConfirmationCreateBlankReadLink from '../../../SAPAssetManager/Rules/Confirmations/BlankFinal/ConfirmationCreateBlankReadLink';
+import mobileStatusHistoryEntryCreate from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusHistoryEntryCreate';
 export default class CompleteMobileStatusAction extends MobileStatusAction {
 
     getDefaultArgs() {

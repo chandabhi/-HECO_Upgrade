@@ -1,9 +1,9 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import operationQueryOptions from './OperationPickerQueryOptions';
-import libSuper from '../../Supervisor/SupervisorLibrary';
-import libMobile from '../../MobileStatus/MobileStatusLibrary';
-import OnOperationChangeListPickerUpdate, {redrawListControl} from './OnOperationChangeListPickerUpdate';
-import ResetValidationOnInput from '../../Common/Validation/ResetValidationOnInput';
+import operationQueryOptions from './../../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OperationPickerQueryOptions';
+import libSuper from '../../../../SAPAssetManager/Rules/Supervisor/SupervisorLibrary';
+import libMobile from '../../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
+import OnOperationChangeListPickerUpdate, {redrawListControl} from './../../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OnOperationChangeListPickerUpdate';
+import ResetValidationOnInput from '../../../../SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput';
 
 export default function OnWorkOrderChanged(context) {
     let binding = context.getBindingObject();

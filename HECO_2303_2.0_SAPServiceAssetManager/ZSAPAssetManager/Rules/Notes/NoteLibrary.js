@@ -1,9 +1,9 @@
 import libCommon from '../Common/Library/CommonLibrary';
-import libVal from '../Common/Library/ValidationLibrary';
-import ConstantsLibrary from '../Common/Library/ConstantsLibrary';
-import Logger from '../Log/Logger';
-import OffsetODataDate from '../Common/Date/OffsetODataDate';
-import ExecuteActionWithAutoSync from '../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import libVal from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import ConstantsLibrary from '../../../SAPAssetManager/Rules/Common/Library/ConstantsLibrary';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import OffsetODataDate from '../../../SAPAssetManager/Rules/Common/Date/OffsetODataDate';
+import ExecuteActionWithAutoSync from '../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
 
 export class NoteLibrary {
 

@@ -1,18 +1,18 @@
-import libCom from '../Common/Library/CommonLibrary';
-import libForm from '../Common/Library/FormatLibrary';
-import libVal from '../Common/Library/ValidationLibrary';
+import libCom from '../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import libForm from '../../../SAPAssetManager/Rules/Common/Library/FormatLibrary';
+import libVal from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 import libThis from './NotificationLibrary';
-import libDoc from '../Documents/DocumentLibrary';
-import Logger from '../Log/Logger';
-import { GlobalVar as globals } from '../Common/Library/GlobalCommon';
-import malfunctionStartDate from './MalfunctionStartDate';
-import malfunctionStartTime from './MalfunctionStartTime';
-import malfunctionEndDate from './MalfunctionEndDate';
-import malfunctionEndTime from './MalfunctionEndTime';
-import OffsetODataDate from '../Common/Date/OffsetODataDate';
-import isAndroid from '../Common/IsAndroid';
-import ValidationLibrary from '../Common/Library/ValidationLibrary';
-import IsAndroid from '../Common/IsAndroid';
+import libDoc from '../../../SAPAssetManager/Rules/Documents/DocumentLibrary';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import { GlobalVar as globals } from '../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
+import malfunctionStartDate from '../../../SAPAssetManager/Rules/Notifications/MalfunctionStartDate';
+import malfunctionStartTime from '../../../SAPAssetManager/Rules/Notifications/MalfunctionStartTime';
+import malfunctionEndDate from '../../../SAPAssetManager/Rules/Notifications/MalfunctionEndDate';
+import malfunctionEndTime from '../../../SAPAssetManager/Rules/Notifications/MalfunctionEndTime';
+import OffsetODataDate from '../../../SAPAssetManager/Rules/Common/Date/OffsetODataDate';
+import isAndroid from '../../../SAPAssetManager/Rules/Common/IsAndroid';
+import ValidationLibrary from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import IsAndroid from '../../../SAPAssetManager/Rules/Common/IsAndroid';
 
 export default class {
     static NormalizeSequenceNumber(value) {

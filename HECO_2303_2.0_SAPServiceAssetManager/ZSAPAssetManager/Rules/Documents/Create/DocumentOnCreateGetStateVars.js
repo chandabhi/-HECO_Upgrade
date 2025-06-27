@@ -1,5 +1,5 @@
 import ComLib from '../../Common/Library/CommonLibrary';
-import PersonaLib from '../../Persona/PersonaLibrary';
+import PersonaLib from '../../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
 
 export default function DocumentOnCreateGetStateVars(context) {
     const DocsDataPageName = ComLib.getStateVariable(context, 'DocsDataPageName');

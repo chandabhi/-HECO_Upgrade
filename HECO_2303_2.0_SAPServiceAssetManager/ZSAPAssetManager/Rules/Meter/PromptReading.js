@@ -1,7 +1,7 @@
 import common from '../Common/Library/CommonLibrary';
 import libMeter from '../Meter/Common/MeterLibrary';
 import meterReplaceInstall from './CreateUpdate/MeterReplaceInstall';
-import ExecuteActionWithAutoSync from '../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import ExecuteActionWithAutoSync from '../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
 import {DynamicPageGenerator} from '../FDC/DynamicPageGenerator';
 import ZDeviceMeterReadings0CreateUpdate from '../Meter/CreateUpdate/ZDeviceMeterReading0CreateUpdate';
 

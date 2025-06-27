@@ -1,7 +1,7 @@
-import IsPhaseModelEnabled from '../../Common/IsPhaseModelEnabled';
-import common from '../../Common/Library/CommonLibrary';
-import IsEmergencyWorkEnabled from '../../WorkOrders/IsEmergencyWorkEnabled';
-import libNotif from '../NotificationLibrary';
+import IsPhaseModelEnabled from '../../../../SAPAssetManager/Rules/Common/IsPhaseModelEnabled';
+import common from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import IsEmergencyWorkEnabled from '../../../../SAPAssetManager/Rules/WorkOrders/IsEmergencyWorkEnabled';
+import libNotif from '../../../../SAPAssetManager/Rules/Notifications/NotificationLibrary';
 
 export default function NotificationLinks(context) {
     const notificationType = libNotif.NotificationCreateUpdateTypeLstPkrValue(context);

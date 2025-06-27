@@ -1,11 +1,11 @@
 import { TimeSheetLibrary as libTimesheet } from '../../TimeSheets/TimeSheetLibrary';
 import libCom from '../../Common/Library/CommonLibrary';
-import GetDuration from '../../Confirmations/CreateUpdate/OnCommit/GetDuration';
-import ConvertDoubleToHourString from '../../Confirmations/ConvertDoubleToHourString';
-import ODataDate from '../../Common/Date/ODataDate';
-import IsCompleteAction from '../../WorkOrders/Complete/IsCompleteAction';
+import GetDuration from '../../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OnCommit/GetDuration';
+import ConvertDoubleToHourString from '../../../../SAPAssetManager/Rules/Confirmations/ConvertDoubleToHourString';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import IsCompleteAction from '../../../../SAPAssetManager/Rules/WorkOrders/Complete/IsCompleteAction';
 import WorkOrderCompletionLibrary from '../../WorkOrders/Complete/WorkOrderCompletionLibrary';
-import ExecuteActionWithAutoSync from '../../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import ExecuteActionWithAutoSync from '../../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
 import Duration from '../../../Rules/TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateDuration'
 
 export default function TimeSheetUpdateCrew(context) {

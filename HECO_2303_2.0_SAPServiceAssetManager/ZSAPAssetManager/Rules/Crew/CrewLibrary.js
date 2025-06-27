@@ -1,14 +1,14 @@
 import libCom from '../Common/Library/CommonLibrary';
-import libVal from '../Common/Library/ValidationLibrary';
-import libThis from './CrewLibrary';
-import Logger from '../Log/Logger';
-import { GlobalVar as GlobalClass } from '../Common/Library/GlobalCommon';
-import TimeSheetCreateUpdateDate from '../TimeSheets/CreateUpdate/TimeSheetCreateUpdateDate';
-import FetchRequest from '../Common/Query/FetchRequest';
-import ODataDate from '../Common/Date/ODataDate';
-import generateGUID from '../Common/guid';
-import ExecuteActionWithAutoSync from '../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
-import LocalizationLibrary from '../Common/Library/LocalizationLibrary';
+import libVal from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import libThis from './../../../SAPAssetManager/Rules/Crew/CrewLibrary';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import { GlobalVar as GlobalClass } from '../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
+import TimeSheetCreateUpdateDate from '../../../SAPAssetManager/Rules/TimeSheets/CreateUpdate/TimeSheetCreateUpdateDate';
+import FetchRequest from '../../../SAPAssetManager/Rules/Common/Query/FetchRequest';
+import ODataDate from '../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import generateGUID from '../../../SAPAssetManager/Rules/Common/guid';
+import ExecuteActionWithAutoSync from '../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import LocalizationLibrary from '../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
 
 export default class {
 

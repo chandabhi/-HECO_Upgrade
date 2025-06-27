@@ -1,7 +1,7 @@
 import libMeter from '../../Meter/Common/MeterLibrary';
-import meterDetailsOnReturn from '../../WorkOrders/Meter/MeterDetailsOnReturn';
-import libCommon from '../../Common/Library/CommonLibrary';
-import ExecuteActionWithAutoSync from '../../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import meterDetailsOnReturn from '../../../../SAPAssetManager/Rules/WorkOrders/Meter/MeterDetailsOnReturn';
+import libCommon from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import ExecuteActionWithAutoSync from '../../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
 import ZMeterIRRBPEMLog from './ZMeterIRRBPEMLog';
 
 export default function MeterReplaceInstall(context) {

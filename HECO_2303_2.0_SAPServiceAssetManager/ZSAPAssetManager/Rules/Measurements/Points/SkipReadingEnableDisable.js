@@ -1,5 +1,5 @@
 import libCommon from '../../Common/Library/CommonLibrary';
-import Logger from '../../Log/Logger';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
 
 export default function SkipReadingEnableDisable(context) {
     let nameSplit = context.getName().split('_');

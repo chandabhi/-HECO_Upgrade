@@ -1,9 +1,9 @@
-import DeleteUnusedOverviewEntities from '../Confirmations/Init/DeleteUnusedOverviewEntities';
-import setSyncInProgressState from '../Sync/SetSyncInProgressState';
-import errorLibrary from '../Common/Library/ErrorLibrary';
-import libCom from '../Common/Library/CommonLibrary';
-import Logger from '../Log/Logger';
-import appSettings from '../Common/Library/ApplicationSettings';
+import DeleteUnusedOverviewEntities from '../../../SAPAssetManager/Rules/Confirmations/Init/DeleteUnusedOverviewEntities';
+import setSyncInProgressState from '../../../SAPAssetManager/Rules/Sync/SetSyncInProgressState';
+import errorLibrary from '../../../SAPAssetManager/Rules/Common/Library/ErrorLibrary';
+import libCom from '../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import appSettings from '../../../SAPAssetManager/Rules/Common/Library/ApplicationSettings';
 
 export default function SyncData(clientAPI) {
     clientAPI.getClientData().Error='';

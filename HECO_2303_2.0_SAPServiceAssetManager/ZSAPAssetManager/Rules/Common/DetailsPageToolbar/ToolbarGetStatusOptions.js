@@ -1,8 +1,8 @@
-import NotificationChangeStatusOptions from '../../Notifications/MobileStatus/NotificationChangeStatusOptions';
-import OperationChangeStatusOptions from '../../Operations/MobileStatus/OperationChangeStatusOptions';
-import S4ServiceLibrary from '../../ServiceOrders/S4ServiceLibrary';
-import SubOperationChangeStatusOptions from '../../SubOperations/SubOperationChangeStatusOptions';
-import WorkOrderChangeStatusOptions from '../../WorkOrders/MobileStatus/WorkOrderChangeStatusOptions';
+import NotificationChangeStatusOptions from '../../../../SAPAssetManager/Rules/Notifications/MobileStatus/NotificationChangeStatusOptions';
+import OperationChangeStatusOptions from '../../../../SAPAssetManager/Rules/Operations/MobileStatus/OperationChangeStatusOptions';
+import S4ServiceLibrary from '../../../../SAPAssetManager/Rules/ServiceOrders/S4ServiceItemStatusLibrary';
+import SubOperationChangeStatusOptions from '../../../../SAPAssetManager/Rules/SubOperations/SubOperationChangeStatusOptions';
+import WorkOrderChangeStatusOptions from '../../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderChangeStatusOptions';
 
 export default function ToolbarGetStatusOptions(context) {
  let odataType = context.binding['@odata.type'];

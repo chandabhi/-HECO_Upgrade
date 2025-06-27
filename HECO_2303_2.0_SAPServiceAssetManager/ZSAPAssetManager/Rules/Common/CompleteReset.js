@@ -1,9 +1,9 @@
 import libCom from './Library/CommonLibrary';
-import personalLib from '../Persona/PersonaLibrary';
-import userFeaturesLib from '../UserFeatures/UserFeaturesLibrary';
-import locationLib from '../LocationTracking/LocationTrackingLibrary';
-import ApplicationSettings from './Library/ApplicationSettings';
-import errorLib from './Library/ErrorLibrary';
+import personalLib from '../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
+import userFeaturesLib from '../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import locationLib from '../../../SAPAssetManager/Rules/LocationTracking/LocationTrackingLibrary';
+import ApplicationSettings from './../../../SAPAssetManager/Rules/Common/Library/ApplicationSettings';
+import errorLib from './../../../SAPAssetManager/Rules/Common/Library/ErrorLibrary';
 
 export default function CompleteReset(clientAPI)
 {

@@ -1,6 +1,6 @@
-import hideCancel from '../../ErrorArchive/HideCancelForErrorArchiveFix';
+import hideCancel from '../../../../SAPAssetManager/Rules/ErrorArchive/HideCancelForErrorArchiveFix';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
 import common from '../../Common/Library/CommonLibrary';
-import ODataDate from '../../Common/Date/ODataDate';
 import {FDCSectionHelper} from '../../FDC/DynamicPageGenerator';
 import libMeter from './MeterLibrary';
 

@@ -1,4 +1,4 @@
-import common from '../../Common/Library/CommonLibrary';
+import common from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
 import notif from '../NotificationLibrary';
 
 export default function NotificationHistoryLinks(context) {

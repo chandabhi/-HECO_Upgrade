@@ -1,6 +1,6 @@
 import libCommon from '../Common/Library/CommonLibrary';
-import Validate from '../Common/Library/ValidationLibrary';
-import Constants from '../Common/Library/ConstantsLibrary';
+import Validate from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import Constants from '../../../SAPAssetManager/Rules/Common/Library/ConstantsLibrary';
 
 export default function NoteRemoteTextString(pageClientAPI) {
 

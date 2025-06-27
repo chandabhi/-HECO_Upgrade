@@ -1,13 +1,13 @@
 import { TimeSheetLibrary as libTimesheet, TimeSheetEventLibrary as libTSEvent } from '../../TimeSheets/TimeSheetLibrary';
 import libCom from '../../Common/Library/CommonLibrary';
-import ODataDate from '../../Common/Date/ODataDate';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
 import crew from '../CrewLibrary';
-import GenerateLocalID from '../../Common/GenerateLocalID';
-import GetDuration from '../../Confirmations/CreateUpdate/OnCommit/GetDuration';
-import ConvertDoubleToHourString from '../../Confirmations/ConvertDoubleToHourString';
-import IsCompleteAction from '../../WorkOrders/Complete/IsCompleteAction';
+import GenerateLocalID from '../../../../SAPAssetManager/Rules/Common/GenerateLocalID';
+import GetDuration from '../../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OnCommit/GetDuration';
+import ConvertDoubleToHourString from '../../../../SAPAssetManager/Rules/Confirmations/ConvertDoubleToHourString';
+import IsCompleteAction from '../../../../SAPAssetManager/Rules/WorkOrders/Complete/IsCompleteAction';
 import WorkOrderCompletionLibrary from '../../WorkOrders/Complete/WorkOrderCompletionLibrary';
-import ExecuteActionWithAutoSync from '../../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import ExecuteActionWithAutoSync from '../../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
 import ZTimeSheetCreateUpdateDuration from '../../TimeSheets/CreateUpdate/ZTimeSheetCreateUpdateDuration';
 
 /**

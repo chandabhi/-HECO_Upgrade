@@ -1,25 +1,25 @@
-import ComLib from '../../Common/Library/CommonLibrary';
-import valLib from '../../Common/Library/ValidationLibrary';
-import Logger from '../../Log/Logger';
-import NotificationUpdateSuccess from '../CreateUpdate/NotificationUpdateSuccess';
-import GetPlanningPlant from '../../Common/GetPlanningPlant';
-import GenerateNotificationID from '../GenerateNotificationID';
+import ComLib from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import valLib from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import NotificationUpdateSuccess from '../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationUpdateSuccess';
+import GetPlanningPlant from '../../../../SAPAssetManager/Rules/Common/GetPlanningPlant';
+import GenerateNotificationID from '../../../../SAPAssetManager/Rules/Notifications/GenerateNotificationID';
 import NotificationLibrary from '../NotificationLibrary';
-import BreakdownSwitchValue from '../BreakdownSwitchValue';
-import NotificationCreateUpdateQMCodeGroupValue from './NotificationCreateUpdateQMCodeGroupValue';
-import NotificationCreateUpdateQMCodeValue from './NotificationCreateUpdateQMCodeValue';
-import NotificationCreateUpdateQMCatalog from './NotificationCreateUpdateQMCatalog';
-import NotificationCreateSuccess from './NotificationCreateSuccess';
-import GetMalfunctionStartDate from '../MalfunctionStartDate';
-import GetMalfunctionStartTime from '../MalfunctionStartTime';
-import GetMalfunctionEndDate from '../MalfunctionEndDate';
-import GetMalfunctionEndTime from '../MalfunctionEndTime';
-import GetCurrentDate from '../../Confirmations/BlankFinal/GetCurrentDate';
-import NotificationReferenceNumber from './NotificationReferenceNumber';
-import NotificationReferenceType from './NotificationReferenceType';
-import libVal from '../../Common/Library/ValidationLibrary';
-import IsEmergencyWorkEnabled from '../../WorkOrders/IsEmergencyWorkEnabled';
-import { isControlPopulated } from './RequiredFields';
+import BreakdownSwitchValue from '../../../../SAPAssetManager/Rules/Notifications/BreakdownSwitchValue';
+import NotificationCreateUpdateQMCodeGroupValue from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationCreateUpdateQMCodeGroupValue';
+import NotificationCreateUpdateQMCodeValue from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationCreateUpdateQMCodeValue';
+import NotificationCreateUpdateQMCatalog from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationCreateUpdateQMCatalog';
+import NotificationCreateSuccess from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationCreateSuccess';
+import GetMalfunctionStartDate from '../../../../SAPAssetManager/Rules/Notifications/MalfunctionStartDate';
+import GetMalfunctionStartTime from '../../../../SAPAssetManager/Rules/Notifications/MalfunctionStartTime';
+import GetMalfunctionEndDate from '../../../../SAPAssetManager/Rules/Notifications/MalfunctionEndDate';
+import GetMalfunctionEndTime from '../.././../../SAPAssetManager/Rules/Notifications/MalfunctionEndTime';
+import GetCurrentDate from '../../../../SAPAssetManager/Rules/Confirmations/BlankFinal/GetCurrentDate';
+import NotificationReferenceNumber from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationReferenceNumber';
+import NotificationReferenceType from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationReferenceType';
+import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import IsEmergencyWorkEnabled from '../../../../SAPAssetManager/Rules/WorkOrders/WorkOrders/IsEmergencyWorkEnabled';
+import { isControlPopulated } from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/RequiredFields';
 
 export default function NotificationCreateUpdateOnCommit(clientAPI)
 {

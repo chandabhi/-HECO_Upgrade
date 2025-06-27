@@ -1,13 +1,13 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import Logger from '../../Log/Logger';
-import libLocal from '../../Common/Library/LocalizationLibrary';
-import libThis from './InspectionCharacteristics';
-import libVal from '../../Common/Library/ValidationLibrary';
-import MyButtonLib from '../../../Extensions/ButtonStackModule/ButtonStackLibrary';
-import deviceType from '../../Common/DeviceType';
-import enableMaintenanceTechnician from '../../SideDrawer/EnableMaintenanceTechnician';
-import {evaluateExpression} from '../../Common/Library/Evaluate';
-import InspectionCharacteristicsLinkedMeasuringPointValidation from './InspectionCharacteristicsLinkedMeasuringPointValidation';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import libLocal from '../../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
+import libThis from './../../../../SAPAssetManager/Rules/InspectionCharacteristics/Update/InspectionCharacteristics';
+import MyButtonLib from '../../../../SAPAssetManager/Extensions/ButtonStackModule/ButtonStackLibrary';
+import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import deviceType from '../../../../SAPAssetManager/Rules/Common/DeviceType';
+import enableMaintenanceTechnician from '../../../../SAPAssetManager/Rules/SideDrawer/EnableMaintenanceTechnician';
+import {evaluateExpression} from '../../../../SAPAssetManager/Rules/Common/Library/Evaluate';
+import InspectionCharacteristicsLinkedMeasuringPointValidation from '../../../../SAPAssetManager/Rules/InspectionCharacteristics/Update/InspectionCharacteristicsLinkedMeasuringPointValidation';
 
 export default class {
     /*

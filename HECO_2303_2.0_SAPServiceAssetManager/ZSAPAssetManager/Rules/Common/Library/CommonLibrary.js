@@ -1,13 +1,13 @@
-import libVal from './ValidationLibrary';
-import libThis from './CommonLibrary';
-import Logger from '../../Log/Logger';
-import { GlobalVar as GlobalClass } from './GlobalCommon';
-import IsAndroid from '../IsAndroid';
-import libPersona from '../../Persona/PersonaLibrary';
-import QueryBuilder from '../Query/QueryBuilder';
-import ApplicationSettings from './ApplicationSettings';
-import ODataDate from '../Date/ODataDate';
-import NativeScriptObject from './NativeScriptObject';
+import libVal from './../../../../SAPAssetManager/Rules/Common//Library/ValidationLibrary';
+import libThis from './../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import { GlobalVar as GlobalClass } from './../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
+import IsAndroid from '../../../../SAPAssetManager/Rules/Common/IsAndroid';
+import libPersona from '../../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
+import QueryBuilder from '../../../../SAPAssetManager/Rules/Common/Query/QueryBuilder';
+import ApplicationSettings from './../../../../SAPAssetManager/Rules/Common/Library/ApplicationSettings';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import NativeScriptObject from './../../../../SAPAssetManager/Rules/Common/Library/NativeScriptObject';
 
 export default class {
     /**

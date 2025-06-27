@@ -1,5 +1,5 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import Logger from '../../Log/Logger';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
 import StartValidation from './ValidationRules/StartValidation';
 import EndValidation from './ValidationRules/EndValidation';
 import LengthValidation from './ValidationRules/LengthValidation';

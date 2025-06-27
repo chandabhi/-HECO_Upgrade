@@ -1,8 +1,8 @@
 
 import libCom from '../../Common/Library/CommonLibrary';
 import libLocal from '../../Common/Library/LocalizationLibrary';
-import libVal from '../../Common/Library/ValidationLibrary';
-import Logger from '../../Log/Logger';
+import libLocal from '../../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
 
 export default function LAMCreateUpdateValuesChangedDataCapture(context) {
 

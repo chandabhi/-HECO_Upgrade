@@ -1,5 +1,5 @@
 import libCom from '../../../Common/Library/CommonLibrary';
-import libLocal from '../../../Common/Library/LocalizationLibrary';
+import libLocal from '../../../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
 
 export default function LengthValidation(context,control,length_field) {
 

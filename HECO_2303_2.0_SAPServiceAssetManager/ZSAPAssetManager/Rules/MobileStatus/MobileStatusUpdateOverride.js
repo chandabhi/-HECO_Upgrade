@@ -1,7 +1,7 @@
 import libCom from '../Common/Library/CommonLibrary';
-import libClock from '../ClockInClockOut/ClockInClockOutLibrary';
-import PersonaLibrary from '../Persona/PersonaLibrary';
-import AppVersionInfo from '../UserProfile/AppVersionInfo';
+import PersonaLibrary from '../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
+import libClock from '../../../SAPAssetManager/Rules/ClockInClockOut/ClockInClockOutLibrary';
+import AppVersionInfo from '../../../SAPAssetManager/Rules/UserProfile/AppVersionInfo';
 
 export default function MobileStatusUpdateOverride(context, status, mobileStatusNavLink, successAction) {
     

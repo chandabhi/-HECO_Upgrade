@@ -1,7 +1,7 @@
-import ToolbarGetStatusOptions from './ToolbarGetStatusOptions';
-import pageToolbar from './DetailsPageToolbarClass';
-import common from '../Library/CommonLibrary';
-import IsBusinessObjectChangeable from './IsBusinessObjectChangeable';
+import ToolbarGetStatusOptions from './../../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/ToolbarGetStatusOptions';
+import pageToolbar from './../../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/DetailsPageToolbarClass';
+import common from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import IsBusinessObjectChangeable from './../../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/IsBusinessObjectChangeable';
 
 export default function ToolbarItemGetCaption(context) {
     // we can't change mobile status of an object if we are not on the right level assignment, so avoid doing these steps

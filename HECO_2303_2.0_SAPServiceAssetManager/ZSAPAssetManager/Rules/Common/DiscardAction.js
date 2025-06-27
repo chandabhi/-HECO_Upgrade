@@ -1,12 +1,12 @@
-import matDocDelete from '../Inventory/MaterialDocument/MaterialDocumentDeleteWrapper';
-import updateHeaderStatus from '../Inventory/InboundOrOutbound/InboundOrOutboundUpdateHeaderStatus';
-import userFeaturesLib from '../UserFeatures/UserFeaturesLibrary';
-import meterDiscard from '../Meter/CreateUpdate/DiscardReadings';
-import removePhysicalInventoryDoc from '../Inventory/PhysicalInventory/RemovePhysicalInventoryDoc';
-import libCom from '../Common/Library/CommonLibrary';
-import IsCompleteAction from '../WorkOrders/Complete/IsCompleteAction';
-import DiscardPurchaseRequisitionItem from '../Inventory/PurchaseRequisition/DiscardPurchaseRequisitionItem';
-import { DiscardS4ServiceConfirmation, DiscardS4ServiceConfirmationItem }  from '../ServiceConfirmations/CreateUpdate/DiscardS4ServiceConfirmation';
+import matDocDelete from '../../../SAPAssetManager/Rules/Inventory/MaterialDocument/MaterialDocumentDeleteWrapper';
+import updateHeaderStatus from '../../../SAPAssetManager/Rules/Inventory/InboundOrOutbound/InboundOrOutboundUpdateHeaderStatus';
+import userFeaturesLib from '../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import meterDiscard from '../../../SAPAssetManager/Rules/Meter/CreateUpdate/DiscardReadings';
+import removePhysicalInventoryDoc from '../../../SAPAssetManager/Rules/Inventory/PhysicalInventory/RemovePhysicalInventoryDoc';
+import libCom from '../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import IsCompleteAction from '../../../SAPAssetManager/Rules/WorkOrders/Complete/IsCompleteAction';
+import DiscardPurchaseRequisitionItem from '../../../SAPAssetManager/Rules/Inventory/PurchaseRequisition/DiscardPurchaseRequisitionItem';
+import { DiscardS4ServiceConfirmation, DiscardS4ServiceConfirmationItem }  from '../../../SAPAssetManager/Rules/ServiceConfirmations/CreateUpdate/DiscardS4ServiceConfirmation';
 
 export default function DiscardAction(context) {
     let action = Promise.resolve();

@@ -1,4 +1,4 @@
-import {ValueIfExists as format} from './Formatter';
+import {ValueIfExists as format} from './../../../../SAPAssetManager/Rules/Meter/Format/Formatter';
 
 export default function MeterObjectCell(context) {
     let property = context.getProperty();

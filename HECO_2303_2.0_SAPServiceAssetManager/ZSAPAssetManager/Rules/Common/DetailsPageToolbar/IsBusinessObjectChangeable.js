@@ -1,6 +1,6 @@
 
-import libMobile from '../../MobileStatus/MobileStatusLibrary';
-import common from '../Library/CommonLibrary';
+import libMobile from '../../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
+import common from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
 
 export default function IsBusinessObjectChangeable(context,statusVisibileForWO=false) {
     const pageName = common.getPageName(context);

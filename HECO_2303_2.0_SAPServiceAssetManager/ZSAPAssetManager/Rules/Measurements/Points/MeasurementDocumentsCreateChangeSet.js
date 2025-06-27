@@ -1,9 +1,9 @@
 import { FDCSectionHelper } from '../../FDC/DynamicPageGenerator';
-import ODataDate from '../../Common/Date/ODataDate';
-import { SplitReadLink } from '../../Common/Library/ReadLinkUtils';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import MeasuringPointLibrary from '../../../../SAPAssetManager/Rules/Measurements/MeasuringPointLibrary';
+import { SplitReadLink } from '../../../../SAPAssetManager/Rules/Common/Library/ReadLinkUtils';
 import common from '../../Common/Library/CommonLibrary';
-import MeasuringPointLibrary from '../MeasuringPointLibrary';
-import Logger from '../../Log/Logger';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
 
 function PadNumber(value, padString, prefix = '') {
     let valueStr = value.toString();

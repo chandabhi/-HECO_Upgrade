@@ -1,7 +1,7 @@
 import libMeter from '../Meter/Common/MeterLibrary';
 import {DynamicPageGenerator} from '../FDC/DynamicPageGenerator';
 import CommonLibrary from '../Common/Library/CommonLibrary';
-import ODataDate from '../Common/Date/ODataDate';
+import ODataDate from '../../../SAPAssetManager/Rules/Common/Date/ODataDate';
 
 export default function MeterReadingsUpdateNav(context) {
     const sectionData =

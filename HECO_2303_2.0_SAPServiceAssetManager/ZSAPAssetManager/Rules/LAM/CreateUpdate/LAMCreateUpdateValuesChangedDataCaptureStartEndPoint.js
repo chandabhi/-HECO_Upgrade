@@ -1,6 +1,6 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import libLocal from '../../Common/Library/LocalizationLibrary';
-import Logger from '../../Log/Logger';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import libLocal from '../../../../SAPAssetManager/Rules/Common/Library/LocalizationLibrary';
 import StartValidation from './ValidationRules/StartValidation';
 
 export default function LAMCreateUpdateValuesChangedDataCaptureEndPoint(context) {

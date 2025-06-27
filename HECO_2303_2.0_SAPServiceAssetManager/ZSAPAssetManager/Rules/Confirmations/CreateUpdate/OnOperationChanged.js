@@ -1,6 +1,6 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import ResetValidationOnInput from '../../Common/Validation/ResetValidationOnInput';
-import OnOperationChangeListPickerUpdate, {redrawListControl} from './OnOperationChangeListPickerUpdate';
+import ResetValidationOnInput from '../../../../SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput';
+import OnOperationChangeListPickerUpdate, {redrawListControl} from './../../../../SAPAssetManager/Rules/Confirmations/CreateUpdate/OnOperationChangeListPickerUpdate';
 
 export default function OnOperationChanged(context) {
     let selection = context.getValue()[0] ? context.getValue()[0].ReturnValue : '';

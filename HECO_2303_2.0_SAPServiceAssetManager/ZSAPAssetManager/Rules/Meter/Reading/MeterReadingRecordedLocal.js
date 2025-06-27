@@ -1,4 +1,4 @@
-import meterReading from './MeterReadingRecorded';
+import meterReading from './../../../../SAPAssetManager/Rules/Meter/Reading/MeterReadingRecorded';
 import libMeter from '../Common/MeterLibrary';
 
 export default function MeterReadingRecordedLocal(context) {

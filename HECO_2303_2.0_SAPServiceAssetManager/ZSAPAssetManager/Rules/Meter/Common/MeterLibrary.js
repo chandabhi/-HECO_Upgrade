@@ -1,5 +1,5 @@
 import libCommon from '../../Common/Library/CommonLibrary';
-import validation from '../../Common/Library/ValidationLibrary';
+import validation from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 
 export default class {
 
