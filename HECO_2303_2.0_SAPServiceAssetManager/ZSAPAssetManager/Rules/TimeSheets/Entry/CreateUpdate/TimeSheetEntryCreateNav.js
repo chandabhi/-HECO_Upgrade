@@ -1,7 +1,7 @@
 import libCom from '../../../Common/Library/CommonLibrary';
-import libVal from '../../../Common/Library/ValidationLibrary';
+import libVal from '../../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 import libCrew from '../../../Crew/CrewLibrary';
-import userFeaturesLib from '../../../UserFeatures/UserFeaturesLibrary';
+import userFeaturesLib from '../../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
 
 export default function TimeSheetEntryCreateNav(clientAPI) {
 

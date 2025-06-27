@@ -1,5 +1,5 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import OperationsListViewWithResetFiltersNav from './OperationsListViewWithResetFiltersNav';
+import OperationsListViewWithResetFiltersNav from './../../../../SAPAssetManager/Rules/WorkOrders/Operations/OperationsListViewWithResetFiltersNav';
 
 export default function OperationsListViewNav(context) {
 

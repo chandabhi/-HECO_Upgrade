@@ -1,4 +1,4 @@
-import {ValueIfExists} from '../../../Common/Library/Formatter';
+import {ValueIfExists} from '../../../../../SAPAssetManager/Rules/Common/Library/Formatter';
 
 export default function TimeSheetEntryDetailsOrderDescription(context) {
     let binding = context.binding;

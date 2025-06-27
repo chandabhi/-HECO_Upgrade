@@ -1,4 +1,4 @@
-import OnDateChanged from '../Common/OnDateChanged';
+import OnDateChanged from '../../../SAPAssetManager/Rules/Common/OnDateChanged';
 import ZOmniLoadMapData from '../OmniSpatial/ZOmniLoadMapData';
 
 export default function OverviewOnPageReturning(context)

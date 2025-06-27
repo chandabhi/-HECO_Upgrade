@@ -1,8 +1,8 @@
-import { GlobalVar } from '../Common/Library/GlobalCommon';
-import libCommon from '../Common/Library/CommonLibrary';
-import ODataDate from '../Common/Date/ODataDate';
-import mobileStatusOverride from '../MobileStatus/MobileStatusUpdateOverride';
-import OpsMobileStat from '../MobileStatus/OperationMobileStatusPostUpdate';
+import { GlobalVar } from '../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
+import libCommon from '../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import ODataDate from '../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import mobileStatusOverride from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusUpdateOverride';
+import OpsMobileStat from '../../../SAPAssetManager/Rules/MobileStatus/OperationMobileStatusPostUpdate';
 
 export default function WorkOrderSetTransferFields(context) {
     let assnType = libCommon.getWorkOrderAssignmentType(context);

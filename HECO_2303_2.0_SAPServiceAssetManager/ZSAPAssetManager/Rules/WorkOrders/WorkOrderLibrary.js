@@ -1,32 +1,32 @@
-import libCommon from '../Common/Library/CommonLibrary';
-import libVal from '../Common/Library/ValidationLibrary';
-import assnType from '../Common/Library/AssignmentType';
-import ConstantsLibrary from '../Common/Library/ConstantsLibrary';
-import libWoMobile from './MobileStatus/WorkOrderMobileStatusLibrary';
-import libDoc from '../Documents/DocumentLibrary';
-import libControlDescription from '../Common/Controls/DescriptionNoteControl';
-import Logger from '../Log/Logger';
-import { UserPreferenceLibrary as libUserPref } from '../UserPreferences/UserPreferencesLibrary';
+import libCommon from '../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import libVal from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import assnType from '../../../SAPAssetManager/Rules/Common/Library/AssignmentType';
+import ConstantsLibrary from '../../../SAPAssetManager/Rules/Common/Library/ConstantsLibrary';
+import libWoMobile from '../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderMobileStatusLibrary';
+import libDoc from '../../../SAPAssetManager/Rules/Documents/DocumentLibrary';
+import libControlDescription from '../../../SAPAssetManager/Rules/Common/Controls/DescriptionNoteControl';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import { UserPreferenceLibrary as libUserPref } from '../../../SAPAssetManager/Rules/UserPreferences/UserPreferencesLibrary';
 //This reference to itself is necessary because promises lose context when running these functions,
 //causing sub-rules to be unaccessable when using "this." syntax
 import { WorkOrderLibrary as libWo, WorkOrderControlsLibrary as libWoControls, PrivateMethodsLibrary as libPrivate } from './WorkOrderLibrary';
 import markedJobCreateUpdateOnCommit from '../MarkedJobs/MarkedJobCreateUpdateOnCommit';
-import Stylizer from '../Common/Style/Stylizer';
-import DocLib from '../Documents/DocumentLibrary';
-import libClock from '../ClockInClockOut/ClockInClockOutLibrary';
-import OperationMobileStatus from '../MobileStatus/OperationMobileStatus';
-import libMobile from '../MobileStatus/MobileStatusLibrary';
-import userFeaturesLib from '../UserFeatures/UserFeaturesLibrary';
-import ODataDate from '../Common/Date/ODataDate';
-import PersonaLibrary from '../Persona/PersonaLibrary';
-import WorkOrdersFSMQueryOption from './ListView/WorkOrdersFSMQueryOption';
-import ExecuteActionWithAutoSync from '../ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
-import { PartnerFunction } from '../Common/Library/PartnerFunction';
-import { GlobalVar } from '../Common/Library/GlobalCommon';
+import Stylizer from '../../../SAPAssetManager/Rules/Common/Style/Stylizer';
+import DocLib from '../../../SAPAssetManager/Rules/Documents/DocumentLibrary';
+import libClock from '../../../SAPAssetManager/Rules/ClockInClockOut/ClockInClockOutLibrary';
+import OperationMobileStatus from '../../../SAPAssetManager/Rules/MobileStatus/OperationMobileStatus';
+import libMobile from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
+import userFeaturesLib from '../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import ODataDate from '../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import PersonaLibrary from '../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
+import WorkOrdersFSMQueryOption from '../../../SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersFSMQueryOption';
+import ExecuteActionWithAutoSync from '../../../SAPAssetManager/Rules/ApplicationEvents/AutoSync/ExecuteActionWithAutoSync';
+import { PartnerFunction } from '../../../SAPAssetManager/Rules/Common/Library/PartnerFunction';
+import { GlobalVar } from '../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
 import { OperationLibrary as libOperations } from './Operations/WorkOrderOperationLibrary';
-import IsPhaseModelEnabled from '../Common/IsPhaseModelEnabled';
-import WorkOrderCreateUpdatePrioritiesList from './CreateUpdate/WorkOrderCreateUpdatePrioritiesList';
-import WorkOrderCreateGetDefaultOrderType from './CreateUpdate/WorkOrderCreateGetDefaultOrderType';
+import IsPhaseModelEnabled from '../../../SAPAssetManager/Rules/Common/IsPhaseModelEnabled';
+import WorkOrderCreateUpdatePrioritiesList from '../../../SAPAssetManager/Rules/WorkOrders/CreateUpdate/WorkOrderCreateUpdatePrioritiesList';
+import WorkOrderCreateGetDefaultOrderType from '../../../SAPAssetManager/Rules/WorkOrders/CreateUpdate/WorkOrderCreateGetDefaultOrderType';
 
 /**
  * Contains all common Work Order related method, except CreateUpdate page event and contorl method;

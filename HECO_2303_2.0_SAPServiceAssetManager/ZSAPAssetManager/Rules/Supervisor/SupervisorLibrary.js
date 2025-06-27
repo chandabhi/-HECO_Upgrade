@@ -1,12 +1,12 @@
 import libCom from '../Common/Library/CommonLibrary';
-import {GlobalVar} from '../Common/Library/GlobalCommon';
-import libThis from './SupervisorLibrary';
-import libMobile from '../MobileStatus/MobileStatusLibrary';
-import {PartnerFunction} from '../Common/Library/PartnerFunction';
-import userFeaturesLib from '../UserFeatures/UserFeaturesLibrary';
-import { WorkOrderLibrary as libWO } from '../WorkOrders/WorkOrderLibrary';
-import { OperationLibrary as libOperations } from '../WorkOrders/Operations/WorkOrderOperationLibrary';
-import IsPhaseModelEnabled from '../Common/IsPhaseModelEnabled';
+import {GlobalVar} from '../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
+import libThis from '../../../SAPAssetManager/Rules/Supervisor/SupervisorLibrary';
+import libMobile from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
+import {PartnerFunction} from '../../../SAPAssetManager/Rules/Common/Library/PartnerFunction';
+import userFeaturesLib from '../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import { WorkOrderLibrary as libWO } from '../../../SAPAssetManager/Rules/WorkOrders/WorkOrderLibrary';
+import { OperationLibrary as libOperations } from '../../../SAPAssetManager/Rules/WorkOrders/Operations/WorkOrderOperationLibrary';
+import IsPhaseModelEnabled from '../../../SAPAssetManager/Rules/Common/IsPhaseModelEnabled';
 
 /* 
 * Contains all of the Supervisor Feature related functions

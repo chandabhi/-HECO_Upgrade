@@ -1,8 +1,8 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import RemoveCreatedExpenses from '../../Expense/List/RemoveCreatedExpenses';
+import RemoveCreatedExpenses from '../../../../SAPAssetManager/Rules/Expense/List/RemoveCreatedExpenses';
 import WorkOrderCompletionLibrary from './WorkOrderCompletionLibrary';
-import Logger from '../../Log/Logger';
-import RedrawCompletePage from './RedrawCompletePage';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import RedrawCompletePage from './../../../../SAPAssetManager/Rules/WorkOrders/Complete/RedrawCompletePage';
 
 export default function CancelCompletePage(context) {
     try {

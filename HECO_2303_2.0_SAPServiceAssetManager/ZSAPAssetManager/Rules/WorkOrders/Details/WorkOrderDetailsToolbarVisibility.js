@@ -1,6 +1,6 @@
-import pageToolbar from '../../Common/DetailsPageToolbar/DetailsPageToolbarClass';
-import common from '../../Common/Library/CommonLibrary';
-import WorkOrderEnableMobileStatus from '../MobileStatus/WorkOrderEnableMobileStatus';
+import pageToolbar from '../../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/DetailsPageToolbarClass';
+import common from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import WorkOrderEnableMobileStatus from '../../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderEnableMobileStatus';
 
 export default function WorkOrderDetailsToolbarVisibility(context) {
     if(context.binding.OrderType==="TC01"){

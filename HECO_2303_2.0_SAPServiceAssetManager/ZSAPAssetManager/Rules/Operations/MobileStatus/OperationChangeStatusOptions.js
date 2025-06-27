@@ -1,17 +1,17 @@
 import mobileStatusOverride from '../../MobileStatus/MobileStatusUpdateOverride';
 import common from '../../Common/Library/CommonLibrary';
 import libOpMobile from './OperationMobileStatusLibrary';
-import MobileStatusLibrary from '../../MobileStatus/MobileStatusLibrary';
-import libSuper from '../../Supervisor/SupervisorLibrary';
-import libClock from '../../ClockInClockOut/ClockInClockOutLibrary';
-import IsPhaseModelEnabled from '../../Common/IsPhaseModelEnabled';
-import isAssignEnableWorkOrderOperation from '../../Operations/MobileStatus/IsAssignEnableWorkOrderOperation';
-import isUnAssignEnableWorkOrderOperation from '../../Operations/MobileStatus/IsUnAssignEnableWorkOrderOperation';
-import personaLib from '../../Persona/PersonaLibrary';
-import Logger from '../../Log/Logger';
-import PhaseLibrary from '../../PhaseModel/PhaseLibrary';
-import WorkOrderCompletionLibrary from '../../WorkOrders/Complete/WorkOrderCompletionLibrary';
-import libVal from '../../Common/Library/ValidationLibrary';
+import MobileStatusLibrary from '../../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
+import libSuper from '../../../../SAPAssetManager/Rules/Supervisor/SupervisorLibrary';
+import libClock from '../../../../SAPAssetManager/Rules/ClockInClockOut/ClockInClockOutLibrary';
+import IsPhaseModelEnabled from '../../../../SAPAssetManager/Rules/Common/IsPhaseModelEnabled';
+import isAssignEnableWorkOrderOperation from '../../../../SAPAssetManager/Rules/Operations/MobileStatus/IsAssignEnableWorkOrderOperation';
+import isUnAssignEnableWorkOrderOperation from '../../../../SAPAssetManager/Rules/Operations/MobileStatus/IsUnAssignEnableWorkOrderOperation';
+import personaLib from '../../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import PhaseLibrary from '../../../../SAPAssetManager/Rules/PhaseModel/PhaseLibrary';
+import WorkOrderCompletionLibrary from '../../../../SAPAssetManager/Rules/WorkOrders/Complete/WorkOrderCompletionLibrary';
+import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 
 export default async function OperationChangeStatusOptions(context, WOPageFlag = false) {
     let operationBinding,OrderType;

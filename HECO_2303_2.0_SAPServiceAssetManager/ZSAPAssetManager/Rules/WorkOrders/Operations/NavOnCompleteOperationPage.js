@@ -1,7 +1,7 @@
-import IsWONotificationVisible from '../Complete/Notification/IsWONotificationVisible';
+import IsWONotificationVisible from '../../../../SAPAssetManager/Rules/WorkOrders/Complete/Notification/IsWONotificationVisible';
 import WorkOrderCompletionLibrary from '../Complete/WorkOrderCompletionLibrary';
-import libCommon from '../../Common/Library/CommonLibrary';
-import {ChecklistLibrary as libChecklist} from '../../Checklists/ChecklistLibrary';
+import libCommon from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import {ChecklistLibrary as libChecklist} from '../../../../SAPAssetManager/Rules/Checklists/ChecklistLibrary';
 
 export default function NavOnCompleteOperationPage(context, actionBinding) {
     let binding = actionBinding || libCommon.getBindingObject(context);

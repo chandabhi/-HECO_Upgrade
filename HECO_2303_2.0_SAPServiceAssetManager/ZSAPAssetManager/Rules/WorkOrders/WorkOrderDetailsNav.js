@@ -1,11 +1,11 @@
 import {WorkOrderLibrary as libWo} from '../WorkOrders/WorkOrderLibrary';
 import libCom from '../Common/Library/CommonLibrary';
-import userFeaturesLib from '../UserFeatures/UserFeaturesLibrary';
-import Logger from '../Log/Logger';
-import WorkOrderChangeStatusOptions from './MobileStatus/WorkOrderChangeStatusOptions';
+import userFeaturesLib from '../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import WorkOrderChangeStatusOptions from '../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderChangeStatusOptions';
 import OperationChangeStatusOptions from '../Operations/MobileStatus/OperationChangeStatusOptions';
-import pageToolbar from '../Common/DetailsPageToolbar/DetailsPageToolbarClass';
-import libMobile from '../MobileStatus/MobileStatusLibrary';
+import pageToolbar from '../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/DetailsPageToolbarClass';
+import libMobile from '../../../SAPAssetManager/Rules/MobileStatus/MobileStatusLibrary';
 
 export default function WorkOrderDetailsNav(context) {
     let actionBinding;

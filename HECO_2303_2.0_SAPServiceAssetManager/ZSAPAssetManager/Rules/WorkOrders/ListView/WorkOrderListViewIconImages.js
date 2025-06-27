@@ -1,5 +1,5 @@
 import libCommon from '../../Common/Library/CommonLibrary';
-import isAndroid from '../../Common/IsAndroid';
+import isAndroid from '../../../../SAPAssetManager/Rules/Common/IsAndroid';
 
 export default function WorkOrderListViewIconImages(context) {
     let binding = context.getBindingObject();

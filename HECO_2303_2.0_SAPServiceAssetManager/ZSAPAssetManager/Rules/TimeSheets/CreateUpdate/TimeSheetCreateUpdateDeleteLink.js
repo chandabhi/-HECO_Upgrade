@@ -1,5 +1,5 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import valLibrary from '../../Common/Library/ValidationLibrary';
+import valLibrary from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 
 export default function TimeSheetCreateUpdateDeleteLink(pageProxy) {
     var links = [];

@@ -1,6 +1,6 @@
 import libCommon from '../../../Common/Library/CommonLibrary';
 import { NoteLibrary as NoteLib, TransactionNoteType} from '../../../Notes/NoteLibrary';
-import Constants from '../../../Common/Library/ConstantsLibrary';
+import Constants from '../../../../../SAPAssetManager/Rules/Common/Library/ConstantsLibrary';
 import WorkOrderCompletionLibrary from '../WorkOrderCompletionLibrary';
 
 export default function ChangeNote(context) {

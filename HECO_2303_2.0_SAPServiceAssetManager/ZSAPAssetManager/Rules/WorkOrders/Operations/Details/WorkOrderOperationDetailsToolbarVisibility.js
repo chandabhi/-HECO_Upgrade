@@ -1,6 +1,6 @@
-import pageToolbar from '../../../Common/DetailsPageToolbar/DetailsPageToolbarClass';
+import pageToolbar from '../../../../../SAPAssetManager/Rules/Common/DetailsPageToolbar/DetailsPageToolbarClass';
 import common from '../../../Common/Library/CommonLibrary';
-import OperationEnableMobileStatus from '../../../Operations/MobileStatus/OperationEnableMobileStatus';
+import OperationEnableMobileStatus from '../../../../../SAPAssetManager/Rules/Operations/MobileStatus/OperationEnableMobileStatus';
 
 /**
 * Describe this function...

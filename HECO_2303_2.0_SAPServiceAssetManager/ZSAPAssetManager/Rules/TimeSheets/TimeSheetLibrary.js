@@ -1,9 +1,9 @@
-import libCom from '../Common/Library/CommonLibrary';
-import libVal from '../Common/Library/ValidationLibrary';
+import libCom from '../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import libVal from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 import { TimeSheetLibrary as libTS, TimeSheetEventLibrary as libTSEvent, TimeSheetControlsLibrary as libTSControls, TimeSheetDetailsLibrary as libTSDetails } from './TimeSheetLibrary';
-import ODataDate from '../Common/Date/ODataDate';
-import Logger from '../Log/Logger';
-import libTSActivityTypeCostCenter from './TimeSheetActivityTypeCostCenter';
+import ODataDate from '../../../SAPAssetManager/Rules/Common/Date/ODataDate';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
+import libTSActivityTypeCostCenter from './../../../SAPAssetManager/Rules/TimeSheets/TimeSheetActivityTypeCostCenter';
 
 export class TimeSheetEventLibrary {
 

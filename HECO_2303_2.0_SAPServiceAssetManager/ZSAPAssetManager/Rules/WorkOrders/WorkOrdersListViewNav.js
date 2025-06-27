@@ -1,5 +1,5 @@
 import libCom from '../Common/Library/CommonLibrary';
-import WOMobileLib from './MobileStatus/WorkOrderMobileStatusLibrary';
+import WOMobileLib from '../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderMobileStatusLibrary';
 
 export default function WorkOrdersListViewNav(context) {
     //OMNI Clear binding used by Omni and swipe

@@ -1,15 +1,15 @@
-import libCommon from '../../Common/Library/CommonLibrary';
-import Stylizer from '../../Common/Style/Stylizer';
-import libVal from '../../Common/Library/ValidationLibrary';
-import libControlDescription from '../../Common/Controls/DescriptionNoteControl';
-import Logger from '../../Log/Logger';
-import OpCreateSuccess from '../Operations/CreateUpdate/WorkOrderOperationBatchCreate';
+import libCommon from '../../../../SAPAssetManager/Rules/Common/Library/CommonLibrary';
+import Stylizer from '../../../../SAPAssetManager/Rules/Common/Style/Stylizer';
+import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import libControlDescription from '../../../../SAPAssetManager/Rules/Common/Controls/DescriptionNoteControl';
+import Logger from '../../../../SAPAssetManager/Rules/Log/Logger';
+import WorkOrderOperationsFSMQueryOption from '../../../../SAPAssetManager/Rules/WorkOrders/Operations/WorkOrderOperationsFSMQueryOption';
+import OpCreateSuccess from '../../../../SAPAssetManager/Rules/WorkOrders/Operations/CreateUpdate/WorkOrderOperationBatchCreate';
 import { OperationControlLibrary as libOperationControl, PrivateMethodLibrary as libPrivate } from './WorkOrderOperationLibrary';
-import userFeaturesLib from '../../UserFeatures/UserFeaturesLibrary';
-import ODataDate from '../../Common/Date/ODataDate';
-import WorkOrderOperationsFSMQueryOption from './WorkOrderOperationsFSMQueryOption';
+import userFeaturesLib from '../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import ODataDate from '../../../../SAPAssetManager/Rules/Common/Date/ODataDate';
 import { WorkOrderLibrary as libWO } from '../WorkOrderLibrary';
-import PersonaLibrary from '../../Persona/PersonaLibrary';
+import PersonaLibrary from '../../../../SAPAssetManager/Rules/Persona/PersonaLibrary';
 
 /**
  * Contains the methods that are general to Operation

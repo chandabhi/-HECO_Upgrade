@@ -1,9 +1,9 @@
-import TimeSheetCreateUpdateDate from './TimeSheetCreateUpdateDate';
-import FetchRequest from '../../Common/Query/FetchRequest';
-import userFeaturesLib from '../../UserFeatures/UserFeaturesLibrary';
+import TimeSheetCreateUpdateDate from '../../../../SAPAssetManager/Rules/TimeSheets/CreateUpdate/TimeSheetCreateUpdateDate';
+import FetchRequest from '../../../../SAPAssetManager/Rules/Common/Query/FetchRequest';
+import userFeaturesLib from '../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
 import commonLib from '../../Common/Library/CommonLibrary';
-import CrewLibrary from '../../Crew/CrewLibrary';
-import ODataDate from "../../Common/Date/ODataDate";
+import CrewLibrary from '../../../../SAPAssetManager/Rules/Crew/CrewLibrary';
+import ODataDate from "../../../../SAPAssetManager/Rules/Common/Date/ODataDate";
 
 export default function TimeSheetCreateUpdateOnCommit(context) {
     let manualSwitch = context.getControls('FormCellContainer')[0].getControl('ManualOrderSwitch').getValue();

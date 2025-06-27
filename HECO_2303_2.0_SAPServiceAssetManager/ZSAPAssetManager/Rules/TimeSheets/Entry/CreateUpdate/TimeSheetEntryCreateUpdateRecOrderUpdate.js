@@ -1,7 +1,7 @@
 import libCom from '../../../Common/Library/CommonLibrary';
 import {TimeSheetLibrary as libTS} from '../../TimeSheetLibrary';
-import libVal from '../../../Common/Library/ValidationLibrary';
-import ResetValidationOnInput from '../../../Common/Validation/ResetValidationOnInput';
+import libVal from '../../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import ResetValidationOnInput from '../../../../../SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput';
 
 export default function TimeSheetEntryCreateUpdateRecOrderUpdate(controlProxy) {
     ResetValidationOnInput(controlProxy);

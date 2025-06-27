@@ -1,8 +1,8 @@
 import { TimeSheetEventLibrary as libTSEvent } from '../../TimeSheetLibrary';
 import libCom from '../../../Common/Library/CommonLibrary';
-import libVal from '../../../Common/Library/ValidationLibrary';
-import userFeaturesLib from '../../../UserFeatures/UserFeaturesLibrary';
-import crewAllUsersQueryOptions from '../../../Crew/Employees/EmployeeQueryOptions';
+import libVal from '../../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import userFeaturesLib from '../../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
+import crewAllUsersQueryOptions from '../../../../../SAPAssetManager/Rules/Crew/Employees/EmployeeQueryOptions';
 
 export default function TimeSheetEntryCreateUpdateOnPageLoad(context) {
     libTSEvent.TimeSheetEntryCreateUpdateOnPageLoad(context);
