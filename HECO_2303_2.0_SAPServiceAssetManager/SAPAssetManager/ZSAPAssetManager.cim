@@ -109,7 +109,7 @@
         },
         {
             "Source": "/ZSAPAssetManager/Pages/Confirmations/ConfirmationsCreateUpdate.page",
-            "Target": "/SAPAssetManager/Pages/Confirmations/ConfirmationsCreateUpdate.page"
+            "Target": "/SAPAssetManager/Pages/Confirmations/ConfirmationsCreateUpdate.page"                                                                                                                                                                                                                                                                                                                                                                                                             
         },
         {
             "Source": "/ZSAPAssetManager/Pages/Crew/Timesheets/TimesheetDetails.page",
@@ -221,7 +221,7 @@
         },
         {
             "Source": "/ZSAPAssetManager/Rules/BusinessPartners/BusinessPartnerTelephone.js",
-            "Target": "/SAPAssetManager/Rules/BusinessPartners/BusinessPartnerWrapper.js"
+            "Target": "/SAPAssetManager/Rules/BusinessPartners/BusinessPartnerTelephone.js"
         },
         {
             "Source": "/ZSAPAssetManager/Rules/ClockInClockOut/TimeSheets/TimeSheetSuccess.js",
