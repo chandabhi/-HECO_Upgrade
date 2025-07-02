@@ -3,7 +3,7 @@ import {ValueIfExists} from './Format/Formatter';
 export default function PreviousReadingFloat(context) {
     let equipment;
 
-    if (!(equipment = context.binding.DeviceLink.EquipmentNum)) {
+    if (context.binding?.DeviceLink && !(equipment = context.binding.DeviceLink.EquipmentNum)) {
         equipment = context.evaluateTargetPathForAPI('#Page:MeterDetailsPage').binding.EquipmentNum;
     }
     let register = context.binding.RegisterNum;
