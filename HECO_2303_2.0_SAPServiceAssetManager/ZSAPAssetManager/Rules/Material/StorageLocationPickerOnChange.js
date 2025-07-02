@@ -1,4 +1,4 @@
-import ResetValidationOnInput from '../Common/Validation/ResetValidationOnInput';
+import ResetValidationOnInput from '../../../SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput';
 
 
 export default function StorageLocationPickerOnChange(context) {

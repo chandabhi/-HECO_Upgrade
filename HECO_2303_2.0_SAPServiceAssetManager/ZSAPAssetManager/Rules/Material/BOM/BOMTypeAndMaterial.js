@@ -1,5 +1,5 @@
-import libEval from '../../Common/Library/ValidationLibrary';
-import {ItemCategoryVar} from '../../Common/Library/GlobalItemCategory';
+import libEval from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import {ItemCategoryVar} from '../../../../SAPAssetManager/Rules/Common/Library/GlobalItemCategory';
 
 export default function BOMTypeAndMaterial(context) {
 

@@ -1,4 +1,4 @@
-import generateGUID from "../../Common/guid";
+import generateGUID from "../../../../SAPAssetManager/Rules/Common/guid";
 
 export default function ZCrewListItemCrewItemId(pageClientAPI) {
 

@@ -1,5 +1,5 @@
 import CommonLibrary from "../../Common/Library/CommonLibrary";
-import OffsetODataDate from "../../Common/Date/OffsetODataDate";
+import OffsetODataDate from "../../../../SAPAssetManager/Rules/Common/Date/OffsetODataDate";
 
 export default function ZCISPreviousReading(context) {
     //ZDeviceNum = {OrderId, NotifNum, EquipId}

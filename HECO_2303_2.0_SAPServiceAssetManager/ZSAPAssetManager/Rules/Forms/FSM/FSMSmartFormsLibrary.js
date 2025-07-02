@@ -13,7 +13,7 @@ import * as fs from '@nativescript/core/file-system';
 import NativeScriptObject from '../../../../SAPAssetManager/Rules/Common/Library/NativeScriptObject';
 import IsAndroid from '../../../../SAPAssetManager/Rules/Common/IsAndroid';
 import { GlobalVar } from '../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
-import { Evaluator } from './FSMCalculationLibrary';
+import { Evaluator } from './../../../../SAPAssetManager/Rules/Forms/FSM/FSMCalculationLibrary';
 import isIOS from '../../../../SAPAssetManager/Rules/Common/IsIOS';
 import ruleEvaluator from './../../../../SAPAssetManager/Rules/Forms/FSM/FSMFormFieldOnValueChange';
 import IsS4ServiceIntegrationEnabled from '../../../../SAPAssetManager/Rules/ServiceOrders/IsS4ServiceIntegrationEnabled';

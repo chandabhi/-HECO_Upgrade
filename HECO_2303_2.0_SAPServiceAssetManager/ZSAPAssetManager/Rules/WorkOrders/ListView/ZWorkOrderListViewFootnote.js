@@ -1,5 +1,5 @@
 import ZCISIsMeterOrder from "../../Meter/HECO/ZCISIsMeterOrder";
-import OffsetODataDate from "../../Common/Date/OffsetODataDate";
+import OffsetODataDate from "../../../../SAPAssetManager/Rules/Common/Date/OffsetODataDate";
 
 export default function ZWorkOrderListViewFootnote(context) {
     //HECO

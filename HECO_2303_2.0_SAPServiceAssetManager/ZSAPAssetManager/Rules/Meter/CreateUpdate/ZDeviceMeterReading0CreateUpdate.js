@@ -1,5 +1,5 @@
 
-import { GlobalVar } from '../../Common/Library/GlobalCommon';
+import { GlobalVar } from '../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';
 import libCommon from '../../Common/Library/CommonLibrary';
 import MeterReplaceInstall from './MeterReplaceInstall';
 

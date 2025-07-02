@@ -1,5 +1,5 @@
 import libCom from '../../Common/Library/CommonLibrary';
-import libEval from '../../Common/Library/ValidationLibrary';
+import libEval from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 
 export default function BOMChildrenCountOnline(context) {
     if (!libEval.evalIsEmpty(context.binding.ChildBoMId) && !libEval.evalIsEmpty(context.binding.ChildBoMCategory)) {

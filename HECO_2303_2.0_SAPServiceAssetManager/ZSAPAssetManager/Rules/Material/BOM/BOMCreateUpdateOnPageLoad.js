@@ -1,7 +1,7 @@
-import libEval from '../../Common/Library/ValidationLibrary';
+import libEval from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
 import libCom from '../../Common/Library/CommonLibrary';
-import style from '../../Common/Style/StyleFormCellButton';
-import hideCancel from '../../ErrorArchive/HideCancelForErrorArchiveFix';
+import style from '../../../../SAPAssetManager/Rules/Common/Style/StyleFormCellButton';
+import hideCancel from '../../../../SAPAssetManager/Rules/ErrorArchive/HideCancelForErrorArchiveFix';
 
 export default function BOMCreateUpdateOnPageLoad(context) {
     if (!context) {

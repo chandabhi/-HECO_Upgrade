@@ -1,4 +1,4 @@
-import userFeaturesLib from '../../UserFeatures/UserFeaturesLibrary';
+import userFeaturesLib from '../../../../SAPAssetManager/Rules/UserFeatures/UserFeaturesLibrary';
 
 export default function BOMVisible(context) {
     if (userFeaturesLib.isFeatureEnabled(context, context.getGlobalDefinition('/SAPAssetManager/Globals/Features/BOM.global').getValue())) {

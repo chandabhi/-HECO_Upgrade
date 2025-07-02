@@ -1,5 +1,5 @@
 import ZOmniLoadMapData from "./ZOmniLoadMapData";
-import DigitalSignatureCommit from "../DigitalSignature/DigitalSignatureCommit";
+import DigitalSignatureCommit from "../../../SAPAssetManager/Rules/DigitalSignature/DigitalSignatureCommit";
 
 export default function ZOmniOnSAMSync(context) 
 {

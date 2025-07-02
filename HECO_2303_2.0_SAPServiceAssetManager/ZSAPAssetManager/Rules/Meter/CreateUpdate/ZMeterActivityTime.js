@@ -1,5 +1,5 @@
 import CommonLibrary from "../../Common/Library/CommonLibrary";
-import ODataDate from "../../Common/Date/ODataDate";
+import ODataDate from "../../../../SAPAssetManager/Rules/Common/Date/ODataDate";
 
 export default function ZMeterActivityTime(context) {
     //Expected state variable format is oData stored in UTC

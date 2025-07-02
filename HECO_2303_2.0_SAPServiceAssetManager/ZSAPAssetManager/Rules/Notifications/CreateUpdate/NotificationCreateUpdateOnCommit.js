@@ -18,7 +18,7 @@ import GetCurrentDate from '../../../../SAPAssetManager/Rules/Confirmations/Blan
 import NotificationReferenceNumber from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationReferenceNumber';
 import NotificationReferenceType from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationReferenceType';
 import libVal from '../../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
-import IsEmergencyWorkEnabled from '../../../../SAPAssetManager/Rules/WorkOrders/WorkOrders/IsEmergencyWorkEnabled';
+import IsEmergencyWorkEnabled from '../../../../SAPAssetManager/Rules/WorkOrders/IsEmergencyWorkEnabled';
 import { isControlPopulated } from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/RequiredFields';
 
 export default function NotificationCreateUpdateOnCommit(clientAPI)

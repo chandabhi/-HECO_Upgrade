@@ -1,5 +1,4 @@
 import WorkOrderMobileStatusLibrary from '../../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderMobileStatusLibrary';
-import CompleteWorkOrderMobileStatusAction from '../../../../SAPAssetManager/Rules/MobileStatus/CompleteWorkOrderMobileStatusAction';
 import CompleteWorkOrderMobileStatusAction from '../../../../SAPAssetManager/Rules/WorkOrders/MobileStatus/CompleteWorkOrderMobileStatusAction';
 import RedrawCompletePage from '../../../../SAPAssetManager/Rules/WorkOrders/Complete/RedrawCompletePage';
 import PDFGenerateDuringCompletion from '../../../../SAPAssetManager/Rules/PDF/PDFGenerateDuringCompletion';

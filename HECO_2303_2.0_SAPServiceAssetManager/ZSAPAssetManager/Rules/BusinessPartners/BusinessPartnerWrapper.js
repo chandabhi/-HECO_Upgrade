@@ -1,5 +1,5 @@
-import libVal from '../Common/Library/ValidationLibrary';
-import {ValueIfExists} from '../Common/Library/Formatter';
+import libVal from '../../../SAPAssetManager/Rules/Common/Library/ValidationLibrary';
+import {ValueIfExists} from '../../../SAPAssetManager/Rules/Common/Library/Formatter';
 
 export class BusinessPartnerWrapper {
 

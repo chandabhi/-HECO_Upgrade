@@ -1,4 +1,4 @@
-import SysCompQueryptions from '../UserProfile/SysCompQueryptions';
+import SysCompQueryptions from '../../../SAPAssetManager/Rules/UserProfile/SysCompQueryptions';
 
 export default function NavToAboutPage(context) {
     var page = context

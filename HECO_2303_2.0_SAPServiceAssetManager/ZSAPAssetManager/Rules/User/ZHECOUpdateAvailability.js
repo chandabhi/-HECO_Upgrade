@@ -14,7 +14,7 @@ export default function ZHECOUpdateAvailability(context) {
             }
             CommonLibrary.setStateVariable(context, 'ZAvailability', availability);
             return context.executeAction({
-                'Name': '/SAPAssetManager/Actions/HECO/ZAvailableStatusUpdate.action',
+                'Name': '/ZSAPAssetManager/Actions/HECO/ZAvailableStatusUpdate.action',
                 'Properties': {
                     'UserGuid': userPref.UserGuid,
                     'RecordId': userPref.RecordId,
@@ -28,7 +28,7 @@ export default function ZHECOUpdateAvailability(context) {
         } else { //Preference doesn't exist so create new entry as Inactive
             CommonLibrary.setStateVariable(context, 'ZAvailability', availability);
             return context.executeAction({
-                'Name': '/SAPAssetManager/Actions/HECO/ZAvailableStatusCreate.action',
+                'Name': '/ZSAPAssetManager/Actions/HECO/ZAvailableStatusCreate.action',
                 'Properties': {
                     'UserGuid': '/SAPAssetManager/Rules/UserPreferences/UserPreferencesUserGuidOnCreate.js',
                     'RecordId': '/SAPAssetManager/Rules/UserPreferences/UserPreferencesRecordIdOnCreate.js',

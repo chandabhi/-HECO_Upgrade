@@ -1,0 +1,18 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "MyWorkOrderHeaderLongTexts",
+        "Service": "/SAPAssetManager/Services/AssetManager.service",
+        "QueryOptions": "/ZSAPAssetManager/Rules/Notes/ZNoteCopyOperNoteQuery.js"
+    },
+    "Properties": {
+        "OrderId": "/ZSAPAssetManager/Rules/Notes/ZNoteCopyOperNoteOrderId.js",
+        "NewTextString": "/ZSAPAssetManager/Rules/Notes/ZNoteCopyOperNoteText.js",
+        "TextString": "/ZSAPAssetManager/Rules/Notes/ZNoteCopyOperNoteText.js"
+    },
+    "Headers": {
+        "OfflineOData.TransactionID": "#Property:OrderId"
+    },
+    "OnFailure": "/SAPAssetManager/Actions/Notes/NoteCreateFailureMessage.action",
+    "CreateLinks": "/ZSAPAssetManager/Rules/Notes/ZNoteCopyOperNoteLinks.js"
+}

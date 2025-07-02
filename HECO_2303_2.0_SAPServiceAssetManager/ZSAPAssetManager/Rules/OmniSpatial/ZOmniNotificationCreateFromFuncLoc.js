@@ -1,4 +1,4 @@
-import notifCreateChangeSetNav from '../Notifications/CreateUpdate/NotificationCreateChangeSetNav';
+import notifCreateChangeSetNav from '../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationCreateChangeSetNav';
 import libCom from '../Common/Library/CommonLibrary';
 export default function ZOmniNotificationCreateFromFuncLoc(context, funcLocId)
 {   

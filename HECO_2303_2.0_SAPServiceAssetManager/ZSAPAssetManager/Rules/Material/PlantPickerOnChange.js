@@ -1,5 +1,5 @@
-import ResetValidationOnInput from '../Common/Validation/ResetValidationOnInput';
-import Logger from '../Log/Logger';
+import ResetValidationOnInput from '../../../SAPAssetManager/Rules/Common/Validation/ResetValidationOnInput';
+import Logger from '../../../SAPAssetManager/Rules/Log/Logger';
 
 export default function PlantPickerOnChange(context) {
     try {

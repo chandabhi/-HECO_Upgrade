@@ -1,6 +1,6 @@
 import { TimeSheetLibrary as libTimesheet } from '../../TimeSheets/TimeSheetLibrary';
-import {ValueIfExists} from '../../Common/Library/Formatter';
-import ConvertDoubleToHourString from '../../Confirmations/ConvertDoubleToHourString';
+import {ValueIfExists} from '../../../../SAPAssetManager/Rules/Common/Library/Formatter';
+import ConvertDoubleToHourString from '../../../../SAPAssetManager/Rules/Confirmations/ConvertDoubleToHourString';
 
 export default function ZCrewTimesheetHoursWorked(context) {
     let catTimeSheets = context.binding.Employee.CatsTimesheet;

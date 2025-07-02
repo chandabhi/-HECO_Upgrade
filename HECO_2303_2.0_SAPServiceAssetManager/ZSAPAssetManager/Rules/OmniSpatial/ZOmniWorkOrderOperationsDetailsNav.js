@@ -1,4 +1,4 @@
-import WorkOrderOperationDetailsNav from '../WorkOrders/Operations/Details/WorkOrderOperationDetailsNav.js';
+import WorkOrderOperationDetailsNav from '../../../SAPAssetManager/Rules/WorkOrders/Operations/Details/WorkOrderOperationDetailsNav';
 
 export default function ZOmniWorkOrderOperationsDetailsNav(context, orderId)
 {

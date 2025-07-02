@@ -1,4 +1,4 @@
-import OverviewOnPageLoad from '../OverviewPage/OverviewOnPageLoad';
+import OverviewOnPageLoad from '../../../SAPAssetManager/Rules/OverviewPage/OverviewOnPageLoad';
 import ZOmniLoadMapData from './ZOmniLoadMapData';
 
 

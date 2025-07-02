@@ -1,4 +1,4 @@
-import { GlobalVar } from "../../../Common/Library/GlobalCommon"
+import { GlobalVar } from "../../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon"
 
 export default function ZNotificationActivityCreateUpdateLocationQuery(context) {
     

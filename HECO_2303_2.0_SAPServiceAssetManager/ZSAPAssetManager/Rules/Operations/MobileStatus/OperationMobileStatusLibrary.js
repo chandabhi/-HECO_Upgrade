@@ -18,7 +18,6 @@ import checkDeviceRegistration from '../../../../SAPAssetManager/Rules/DigitalSi
 import libSuper from '../../../../SAPAssetManager/Rules/Supervisor/SupervisorLibrary';
 import noteWrapper from '../../../../SAPAssetManager/Rules/Supervisor/MobileStatus/NoteWrapper';
 import deviceRegistration from '../../../../SAPAssetManager/Rules/DigitalSignature/TOTPDeviceRegistration';
-import deviceRegistration from '../../../../SAPAssetManager/Rules/DigitalSignature/TOTPDeviceRegistration';
 import IsAssignOrUnAssignEnableWorkOrderOperation from '../../../../SAPAssetManager/Rules/Operations/MobileStatus/IsAssignOrUnAssignEnableWorkOrderOperation';
 import libThis from './OperationMobileStatusLibrary';
 import {GlobalVar} from '../../../../SAPAssetManager/Rules/Common/Library/GlobalCommon';

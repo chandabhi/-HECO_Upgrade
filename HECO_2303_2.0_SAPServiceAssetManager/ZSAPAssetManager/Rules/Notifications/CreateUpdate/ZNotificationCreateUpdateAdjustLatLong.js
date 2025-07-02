@@ -1,5 +1,5 @@
-import locSvcMgr from '../../LocationTracking/Services/ServiceManager';
-import NotificationUpdateSuccess from './NotificationUpdateSuccess';
+import locSvcMgr from '../../../../SAPAssetManager/Rules/LocationTracking/Services/ServiceManager';
+import NotificationUpdateSuccess from './../../../../SAPAssetManager/Rules/Notifications/CreateUpdate/NotificationUpdateSuccess';
 
 export default function ZNotificationCreateUpdateAdjustLatLong(clientAPI) {
     //HECO
